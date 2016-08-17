@@ -2,6 +2,7 @@
 
   float Vin=0;
   float Iin=0;
+  float Iin_raw=0;
   float Pin=0;
   const int numReadings = 10;
 
@@ -46,21 +47,31 @@ void loop() {
       digitalWrite(9, LOW);
       digitalWrite(10, LOW);
       digitalWrite(11, LOW);
+      digitalWrite(12, LOW);
   }
   else if (Pin < 1){
       digitalWrite(9, HIGH);
       digitalWrite(10, LOW);
       digitalWrite(11, LOW);
+      digitalWrite(12, LOW);
   }
   else if (Pin < 2){
       digitalWrite(9, HIGH);
       digitalWrite(10, HIGH);
       digitalWrite(11, LOW); 
+      digitalWrite(12, LOW);
+  }
+  else if (Pin < 3){
+      digitalWrite(9, HIGH);
+      digitalWrite(10, HIGH);
+      digitalWrite(11, HIGH);
+      digitalWrite(12, LOW);
   }
   else{
       digitalWrite(9, HIGH);
       digitalWrite(10, HIGH);
       digitalWrite(11, HIGH);
+      digitalWrite(12, HIGH);
   }
   
    // subtract the last reading:
@@ -114,8 +125,9 @@ void loop() {
   Pin = Ptotal / numReadings;
   delay(1);        // delay in between reads for stability
 
-  Vin = (Vaverage*0.039);
-  Iin = (Iaverage-512)*0.029326;
+  Vin = (Vaverage*0.039)+2.5;
+  Iin_raw = (Iaverage-511)*0.029326;
+  Iin = (-0.1118*Iin_raw*Iin_raw)+(0.725*Iin_raw) + 0.0048;
   Pin = Vin*Iin;
 //
 //  Vin = analogRead(4);//*0.039;
