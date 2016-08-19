@@ -2871,6 +2871,84 @@ Atmel ATmega8, ATmega168: 8-bit AVR microcontrollers
 </package>
 </packages>
 </library>
+<library name="resistor-power">
+<description>&lt;b&gt;Vitrohm Power Resistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="RWM8X45">
+<description>&lt;b&gt;Enamelled Wirewound Power Resistors Axial Leads&lt;/b&gt;&lt;p&gt;
+Source: www.vishay.com .. rwm.pdf</description>
+<wire x1="-22.78" y1="-4.625" x2="22.78" y2="-4.625" width="0.1524" layer="21"/>
+<wire x1="22.78" y1="4.625" x2="-22.78" y2="4.625" width="0.1524" layer="21"/>
+<wire x1="-22.78" y1="4.625" x2="-22.78" y2="-4.625" width="0.1524" layer="21"/>
+<wire x1="22.78" y1="-4.625" x2="22.78" y2="4.625" width="0.1524" layer="21"/>
+<wire x1="-25.74" y1="0" x2="-24.47" y2="0" width="0.8" layer="51"/>
+<wire x1="24.47" y1="0" x2="25.74" y2="0" width="0.8" layer="51"/>
+<pad name="1" x="-25.74" y="0" drill="1.1" diameter="2"/>
+<pad name="2" x="25.74" y="0" drill="1.1" diameter="2"/>
+<text x="-22.565" y="5.125" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.445" y="-0.635" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-24.47" y1="-0.4" x2="-22.855" y2="0.4" layer="21"/>
+<rectangle x1="22.855" y1="-0.4" x2="24.47" y2="0.4" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="switch">
+<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
+Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="255SB">
+<description>&lt;b&gt;SLIDING SWITCH&lt;/b&gt;&lt;p&gt;
+distributor Buerklin, 11G810</description>
+<wire x1="-5.588" y1="3.048" x2="5.588" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="5.588" y1="-3.048" x2="5.588" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="5.588" y1="-3.048" x2="-5.588" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="3.048" x2="-5.588" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.397" x2="3.81" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.81" y1="1.397" x2="-3.81" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.27" x2="-0.762" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0.762" x2="-1.27" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="3.81" y1="-1.524" x2="-0.762" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="1.524" x2="-1.778" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="1.524" x2="-1.27" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="-1.524" x2="-2.286" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="1.524" x2="-2.286" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="1.524" x2="-1.778" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="1.016" x2="-2.794" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="1.397" x2="-3.302" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="-3.81" y1="1.524" x2="-3.302" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="-1.524" x2="-2.794" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.524" x2="3.81" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.524" x2="3.81" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.762" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-1.524" x2="-1.27" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.524" x2="-1.27" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.524" x2="-1.778" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="-1.016" x2="-2.794" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="-1.524" x2="-3.302" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="-1.397" x2="-3.302" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="-1.524" x2="-3.81" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.397" x2="-3.81" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.524" x2="-3.81" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="1.524" x2="-3.302" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="1.524" x2="-2.794" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="1.524" x2="-2.794" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="1.524" x2="-2.286" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.524" x2="-1.27" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.524" x2="-0.762" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="1.524" x2="-0.762" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="1.524" x2="3.81" y2="1.524" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1.1176" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.1176" shape="long" rot="R90"/>
+<pad name="3" x="3.81" y="0" drill="1.1176" shape="long" rot="R90"/>
+<text x="-5.207" y="-2.794" size="1.27" layer="21" ratio="10">1</text>
+<text x="4.191" y="-2.794" size="1.27" layer="21" ratio="10">2</text>
+<text x="-5.588" y="3.556" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="3.556" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3140,6 +3218,21 @@ design rules under a new name.</description>
 <element name="C1" library="resistor" package="C1210" value="10u" x="48.18014375" y="40.7902875" rot="R270"/>
 <element name="JP1" library="pinhead" package="1X06" value="" x="79.648753125" y="45.055778125" rot="R270"/>
 <element name="C3" library="resistor" package="C1210" value="10u" x="36.53778125" y="34.7607875" rot="R90"/>
+<element name="VIN_BUCK1" library="pinhead" package="1X03" value="" x="5.42344375" y="14.7706625"/>
+<element name="R2" library="resistor-power" package="RWM8X45" value="22R" x="27.87084375" y="-0.361934375">
+<attribute name="MF" value="" x="27.87084375" y="-0.361934375" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="27.87084375" y="-0.361934375" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="27.87084375" y="-0.361934375" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="27.87084375" y="-0.361934375" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R4" library="resistor-power" package="RWM8X45" value="22R" x="27.87084375" y="-12.5588">
+<attribute name="MF" value="" x="27.87084375" y="-12.5588" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="27.87084375" y="-12.5588" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="27.87084375" y="-12.5588" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="27.87084375" y="-12.5588" size="1.778" layer="27" display="off"/>
+</element>
+<element name="S1" library="switch" package="255SB" value="" x="7.12524375" y="-22.50933125"/>
+<element name="USB_OUT" library="pinhead" package="1X03" value="" x="5.42344375" y="-29.3334625"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -3492,6 +3585,32 @@ design rules under a new name.</description>
 <vertex x="87.686271875" y="18.59759375"/>
 <vertex x="87.6628875" y="79.758925"/>
 </polygon>
+</signal>
+<signal name="N$22">
+<contactref element="S1" pad="2"/>
+<contactref element="VIN_BUCK1" pad="3"/>
+<wire x1="7.12524375" y1="-22.50933125" x2="7.96344375" y2="14.7706625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="R2" pad="2"/>
+<contactref element="R4" pad="2"/>
+<contactref element="USB_OUT" pad="1"/>
+<contactref element="VIN_BUCK1" pad="1"/>
+<wire x1="53.61084375" y1="-12.5588" x2="53.61084375" y2="-0.361934375" width="0" layer="19" extent="1-1"/>
+<wire x1="2.88344375" y1="14.7706625" x2="53.61084375" y2="-0.361934375" width="0" layer="19" extent="1-1"/>
+<wire x1="2.88344375" y1="-29.3334625" x2="2.88344375" y2="14.7706625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$24">
+<contactref element="R2" pad="1"/>
+<contactref element="R4" pad="1"/>
+<contactref element="S1" pad="1"/>
+<wire x1="2.13084375" y1="-12.5588" x2="3.31524375" y2="-22.50933125" width="0" layer="19" extent="1-1"/>
+<wire x1="2.13084375" y1="-0.361934375" x2="2.13084375" y2="-12.5588" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$25">
+<contactref element="USB_OUT" pad="3"/>
+<contactref element="S1" pad="3"/>
+<wire x1="10.93524375" y1="-22.50933125" x2="7.96344375" y2="-29.3334625" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
