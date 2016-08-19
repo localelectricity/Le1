@@ -131,7 +131,7 @@ void loop() {
   delay(1);        // delay in between reads for stability
 
   Vin = (Vaverage*0.039);
-  Iin_raw = (Iaverage-511)*0.029326;
+  Iin_raw = (Iaverage-510)*0.029326;
   Iin = (-0.1118*Iin_raw*Iin_raw)+(0.725*Iin_raw) + 0.0048;
   Pin = Vin*Iin;
 //
