@@ -140,8 +140,14 @@ void loop() {
 //  Pin = Vin*Iin;
   Serial.print("Vin:");
   Serial.print(Vin);
-  Serial.print(", Iin:");
+  Serial.print(" Iin:");
   Serial.print(Iin);
-  Serial.print(", Pin:");
+  Serial.print(" Pin:");
+  Serial.print(Pin);  
+  Serial.print("  |,");
+  Serial.print(Vin);
+  Serial.print(",");
+  Serial.print(Iin);
+  Serial.print(",");
   Serial.println(Pin);  
 }
