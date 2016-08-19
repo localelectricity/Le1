@@ -6,6 +6,8 @@
   float Pin=0;
   const int numReadings = 10;
 
+  int pinval=0;
+
   int Vreadings[numReadings];      // the readings from the analog input
   int VreadIndex = 0;              // the index of the current reading
   int Vtotal = 0;                  // the running total
@@ -50,21 +52,24 @@ void loop() {
       digitalWrite(12, LOW);
   }
   else if (Pin < 1){
-      digitalWrite(9, HIGH);
+      pinval = (Pin-1)*255;
+      analogWrite(9, pinval);
       digitalWrite(10, LOW);
       digitalWrite(11, LOW);
       digitalWrite(12, LOW);
   }
   else if (Pin < 2){
+      pinval = (Pin-2)*255;
       digitalWrite(9, HIGH);
-      digitalWrite(10, HIGH);
+      analogWrite(10, pinval);
       digitalWrite(11, LOW); 
       digitalWrite(12, LOW);
   }
   else if (Pin < 3){
+      pinval = (Pin-3)*255;
       digitalWrite(9, HIGH);
       digitalWrite(10, HIGH);
-      digitalWrite(11, HIGH);
+      analogWrite(11, pinval);
       digitalWrite(12, LOW);
   }
   else{
@@ -125,7 +130,7 @@ void loop() {
   Pin = Ptotal / numReadings;
   delay(1);        // delay in between reads for stability
 
-  Vin = (Vaverage*0.039)+1.3;
+  Vin = (Vaverage*0.039);
   Iin_raw = (Iaverage-511)*0.029326;
   Iin = (-0.1118*Iin_raw*Iin_raw)+(0.725*Iin_raw) + 0.0048;
   Pin = Vin*Iin;
@@ -135,8 +140,8 @@ void loop() {
 //  Pin = Vin*Iin;
   Serial.print("Vin:");
   Serial.print(Vin);
-  Serial.print(" Iin:");
+  Serial.print(", Iin:");
   Serial.print(Iin);
-  Serial.print(" Pin:");
-  Serial.println(Pin);
+  Serial.print(", Pin:");
+  Serial.println(Pin);  
 }
