@@ -22434,7 +22434,8 @@ Distributor Buerklin, 11G810</description>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="16.51" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="0" x2="-13.97" y2="0" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="1" pin="DIGITAL_10(PWM)"/>
+<wire x1="-5.08" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
