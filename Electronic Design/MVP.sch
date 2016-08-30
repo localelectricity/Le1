@@ -21832,7 +21832,7 @@ Distributor Buerklin, 11G810</description>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C1210" value="10u"/>
-<part name="VIN_BUCK1" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="VIN_BUCK/BOOST" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R2" library="resistor-power" deviceset="R" device="RWM8X45" value="22R"/>
 <part name="R4" library="resistor-power" deviceset="R" device="RWM8X45" value="22R"/>
 <part name="S1" library="switch" deviceset="255SB" device=""/>
@@ -21908,7 +21908,7 @@ Distributor Buerklin, 11G810</description>
 <instance part="JP1" gate="A" x="19.05" y="22.86"/>
 <instance part="SUPPLY6" gate="GND" x="5.08" y="13.97"/>
 <instance part="C3" gate="G$1" x="74.93" y="55.88"/>
-<instance part="VIN_BUCK1" gate="A" x="115.57" y="93.98"/>
+<instance part="VIN_BUCK/BOOST" gate="A" x="115.57" y="93.98"/>
 <instance part="R2" gate="G$1" x="77.47" y="105.41"/>
 <instance part="R4" gate="G$1" x="77.47" y="99.06"/>
 <instance part="S1" gate="1" x="64.77" y="77.47"/>
@@ -22270,14 +22270,20 @@ Distributor Buerklin, 11G810</description>
 <segment>
 <pinref part="IC3" gate="1" pin="DIGITAL_13"/>
 <wire x1="-12.7" y1="-7.62" x2="-11.43" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="P"/>
+<wire x1="-11.43" y1="-12.7" x2="-11.43" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="-17.78" x2="36.83" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="36.83" y1="-17.78" x2="36.83" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="36.83" y1="-5.08" x2="36.83" y2="-3.81" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-5.08" x2="36.83" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="36.83" y="-5.08"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-12.7" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-11.43" y="-12.7"/>
+<pinref part="JP2" gate="A" pin="5"/>
+<wire x1="16.51" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -22353,7 +22359,7 @@ Distributor Buerklin, 11G810</description>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="67.31" y1="72.39" x2="104.14" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="72.39" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="VIN_BUCK1" gate="A" pin="3"/>
+<pinref part="VIN_BUCK/BOOST" gate="A" pin="3"/>
 <wire x1="113.03" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -22370,7 +22376,7 @@ Distributor Buerklin, 11G810</description>
 <wire x1="83.82" y1="90.17" x2="91.44" y2="90.17" width="0.1524" layer="91"/>
 <junction x="83.82" y="99.06"/>
 <junction x="83.82" y="99.06"/>
-<pinref part="VIN_BUCK1" gate="A" pin="1"/>
+<pinref part="VIN_BUCK/BOOST" gate="A" pin="1"/>
 <wire x1="113.03" y1="96.52" x2="105.41" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="105.41" y1="96.52" x2="105.41" y2="99.06" width="0.1524" layer="91"/>
 </segment>
