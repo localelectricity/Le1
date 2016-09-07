@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21928,7 +21928,7 @@ Distributor Buerklin, 11G810</description>
 <instance part="+5V2" gate="1" x="36.83" y="15.24"/>
 <instance part="R5" gate="G$1" x="48.26" y="-10.16" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="48.26" y="-21.59"/>
-<instance part="+5V3" gate="1" x="5.08" y="-1.27"/>
+<instance part="+5V3" gate="1" x="5.08" y="-5.08"/>
 <instance part="POT1" gate="G$1" x="-40.64" y="71.12" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-39.37" y="65.151" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="-39.37" y="67.31" size="1.778" layer="96" rot="MR180"/>
@@ -22229,9 +22229,8 @@ Distributor Buerklin, 11G810</description>
 </segment>
 <segment>
 <pinref part="+5V3" gate="1" pin="+5V"/>
-<wire x1="5.08" y1="-3.81" x2="5.08" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="6"/>
-<wire x1="5.08" y1="-5.08" x2="16.51" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="7"/>
+<wire x1="5.08" y1="-7.62" x2="16.51" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -22455,10 +22454,10 @@ Distributor Buerklin, 11G810</description>
 <label x="-33.02" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="7"/>
-<wire x1="16.51" y1="-7.62" x2="8.89" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="8.89" y="-7.62"/>
-<label x="0" y="-8.89" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="6"/>
+<wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="10.16" y="-5.08"/>
+<label x="7.62" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
