@@ -5274,14 +5274,14 @@ In this library the device names are the same as the pin names of the symbols, t
 </classes>
 <parts>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0805"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="270E"/>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0805"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="270E"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="270E"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="270E"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="270E"/>
 <part name="LED2" library="led" deviceset="LED" device="5MM"/>
 <part name="LED3" library="led" deviceset="LED" device="5MM"/>
 <part name="LED4" library="led" deviceset="LED" device="5MM"/>
