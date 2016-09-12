@@ -304,31 +304,12 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+3V3">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+5V" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+3V3" prefix="+3V3">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -18467,75 +18448,6 @@ Source: 008-0260-0_E.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="v-reg">
-<description>&lt;b&gt;Voltage Regulators&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO220S">
-<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
-<wire x1="4.826" y1="-4.318" x2="5.08" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="4.826" y1="-4.318" x2="-4.826" y2="-4.318" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-4.064" x2="-4.826" y2="-4.318" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-1.143" x2="5.08" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-4.064" x2="-5.08" y2="-1.143" width="0.1524" layer="21"/>
-<circle x="-4.6228" y="-3.7084" radius="0.254" width="0" layer="21"/>
-<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-5.9182" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.175" y="-3.81" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="-3.81" size="1.27" layer="51" ratio="10">2</text>
-<text x="1.905" y="-3.81" size="1.27" layer="51" ratio="10">3</text>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="0" layer="21"/>
-<rectangle x1="-3.429" y1="-0.762" x2="-1.651" y2="0" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="0" layer="21"/>
-<rectangle x1="-0.889" y1="-0.762" x2="0.889" y2="0" layer="21"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="0" layer="21"/>
-<rectangle x1="1.651" y1="-0.762" x2="3.429" y2="0" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="78ADJ">
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<text x="2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.032" y="-4.318" size="1.524" layer="95">ADJ</text>
-<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
-<text x="0.127" y="-0.635" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
-<pin name="ADJ" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
-<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LM138-TS" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="78ADJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO220S">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="resistor-power">
 <description>&lt;b&gt;Vitrohm Power Resistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -21806,7 +21718,6 @@ Distributor Buerklin, 11G810</description>
 <part name="IC1" library="mylibrary" deviceset="SOIC8" device="" value="ACS711KLCTR-12AB-T"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C1210" value="0.1u"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R1210" value="100k"/>
 <part name="POT2" library="resistor" deviceset="R-TRIMM" device="4G/J" value="470k"/>
 <part name="D10" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="Q3" library="transistor-power" deviceset="PMOSFET_P" device="TO220BV" value="IRF9540"/>
@@ -21833,13 +21744,7 @@ Distributor Buerklin, 11G810</description>
 <part name="VIN_BUCK" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+5V" device=""/>
-<part name="IC2" library="v-reg" deviceset="LM138-TS" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+5V" device=""/>
-<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C1210" value="10u"/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C1210" value="10u"/>
@@ -21856,6 +21761,7 @@ Distributor Buerklin, 11G810</description>
 <part name="POT1" library="resistor" deviceset="R-TRIMM" device="4G/J" value="470k"/>
 <part name="D1" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1210" value="10u"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C1210" value="1n"/>
 </parts>
 <sheets>
 <sheet>
@@ -21876,7 +21782,6 @@ Distributor Buerklin, 11G810</description>
 </instance>
 <instance part="C4" gate="G$1" x="31.75" y="102.87"/>
 <instance part="SUPPLY1" gate="GND" x="31.75" y="93.98"/>
-<instance part="R3" gate="G$1" x="21.59" y="100.33" rot="R180"/>
 <instance part="POT2" gate="G$1" x="-13.97" y="78.74" smashed="yes">
 <attribute name="NAME" x="-12.7" y="84.709" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-12.7" y="82.55" size="1.778" layer="96"/>
@@ -21909,13 +21814,7 @@ Distributor Buerklin, 11G810</description>
 <instance part="VIN_BUCK" gate="A" x="93.98" y="54.61"/>
 <instance part="SUPPLY2" gate="GND" x="74.93" y="44.45"/>
 <instance part="+3V2" gate="1" x="74.93" y="64.77"/>
-<instance part="IC2" gate="G$1" x="85.09" y="25.4"/>
-<instance part="SUPPLY5" gate="GND" x="85.09" y="11.43"/>
-<instance part="+3V3" gate="1" x="73.66" y="30.48"/>
-<instance part="+3V4" gate="G$1" x="95.25" y="31.75"/>
-<instance part="C1" gate="G$1" x="95.25" y="21.59"/>
-<instance part="+3V1" gate="G$1" x="31.75" y="113.03"/>
-<instance part="+3V5" gate="G$1" x="-99.06" y="15.24"/>
+<instance part="+3V3" gate="1" x="31.75" y="113.03"/>
 <instance part="JP1" gate="A" x="19.05" y="22.86"/>
 <instance part="SUPPLY6" gate="GND" x="5.08" y="12.7"/>
 <instance part="C3" gate="G$1" x="74.93" y="55.88"/>
@@ -21935,6 +21834,7 @@ Distributor Buerklin, 11G810</description>
 </instance>
 <instance part="D1" gate="G$1" x="-8.89" y="73.66" rot="R90"/>
 <instance part="C6" gate="G$1" x="39.37" y="105.41"/>
+<instance part="C5" gate="G$1" x="24.13" y="95.25"/>
 </instances>
 <busses>
 </busses>
@@ -22036,9 +21936,12 @@ Distributor Buerklin, 11G810</description>
 <junction x="52.07" y="102.87"/>
 <junction x="39.37" y="97.79"/>
 <pinref part="IC1" gate="G$1" pin="5"/>
-<wire x1="13.97" y1="97.79" x2="31.75" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="13.97" y1="97.79" x2="24.13" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="24.13" y1="97.79" x2="31.75" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="97.79" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<junction x="24.13" y="97.79"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="1" pin="GND"/>
@@ -22069,15 +21972,6 @@ Distributor Buerklin, 11G810</description>
 <wire x1="83.82" y1="46.99" x2="83.82" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="VIN_BUCK" gate="A" pin="3"/>
 <wire x1="83.82" y1="52.07" x2="91.44" y2="52.07" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="ADJ"/>
-<wire x1="85.09" y1="17.78" x2="85.09" y2="16.51" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="85.09" y1="16.51" x2="85.09" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="16.51" x2="85.09" y2="16.51" width="0.1524" layer="91"/>
-<junction x="85.09" y="16.51"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="8"/>
@@ -22205,6 +22099,10 @@ Distributor Buerklin, 11G810</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <junction x="-87.63" y="50.8"/>
 <junction x="-92.71" y="50.8"/>
+<pinref part="IC3" gate="1" pin="ANALOG_REFERENCE"/>
+<wire x1="-73.66" y1="12.7" x2="-92.71" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-92.71" y1="12.7" x2="-92.71" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-92.71" y="15.24"/>
 </segment>
 <segment>
 <pinref part="+3V2" gate="1" pin="+5V"/>
@@ -22217,12 +22115,6 @@ Distributor Buerklin, 11G810</description>
 <wire x1="83.82" y1="57.15" x2="91.44" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="IN"/>
-<pinref part="+3V3" gate="1" pin="+5V"/>
-<wire x1="77.47" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="25.4" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="S2" gate="1" pin="S"/>
 <pinref part="+5V2" gate="1" pin="+5V"/>
 <wire x1="36.83" y1="6.35" x2="36.83" y2="12.7" width="0.1524" layer="91"/>
@@ -22232,19 +22124,20 @@ Distributor Buerklin, 11G810</description>
 <pinref part="JP2" gate="A" pin="7"/>
 <wire x1="5.08" y1="-7.62" x2="16.51" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="31.75" y1="105.41" x2="31.75" y2="110.49" width="0.1524" layer="91"/>
+<junction x="31.75" y="105.41"/>
+<pinref part="IC1" gate="G$1" pin="8"/>
+<wire x1="13.97" y1="105.41" x2="31.75" y2="105.41" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="B2" gate="1" pin="+"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="88.9" x2="-73.66" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="G$1" pin="6"/>
-<wire x1="16.51" y1="100.33" x2="13.97" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -22303,34 +22196,6 @@ Distributor Buerklin, 11G810</description>
 <junction x="-11.43" y="-12.7"/>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="16.51" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="OUT"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<wire x1="92.71" y1="25.4" x2="95.25" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="25.4" x2="95.25" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="95.25" y1="24.13" x2="95.25" y2="25.4" width="0.1524" layer="91"/>
-<junction x="95.25" y="25.4"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="26.67" y1="105.41" x2="31.75" y2="105.41" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="26.67" y1="100.33" x2="26.67" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="105.41" x2="31.75" y2="110.49" width="0.1524" layer="91"/>
-<junction x="31.75" y="105.41"/>
-<pinref part="IC1" gate="G$1" pin="8"/>
-<wire x1="13.97" y1="105.41" x2="26.67" y2="105.41" width="0.1524" layer="91"/>
-<junction x="26.67" y="105.41"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="1" pin="ANALOG_REFERENCE"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="-73.66" y1="12.7" x2="-99.06" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -22458,6 +22323,20 @@ Distributor Buerklin, 11G810</description>
 <wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="10.16" y="-5.08"/>
 <label x="7.62" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<wire x1="85.09" y1="17.78" x2="85.09" y2="16.51" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="24.13" y1="90.17" x2="16.51" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="90.17" x2="16.51" y2="100.33" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="6"/>
+<wire x1="16.51" y1="100.33" x2="13.97" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
