@@ -3173,7 +3173,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="51.238446875" y="32.5024875" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="47.37079375" y="29.963215625" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="IC1" library="mylibrary" package="SOIC8" value="ACS711KLCTR-12AB-T" x="43.9929625" y="47.0281875" smashed="yes" rot="R180">
+<element name="IC1" library="mylibrary" package="SOIC8" value="ACS712ELC-5A" x="43.9929625" y="47.0281875" smashed="yes" rot="R180">
 <attribute name="NAME" x="46.6599625" y="48.9331875" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="34.898875" y="50.4118" size="1.27" layer="27"/>
 </element>

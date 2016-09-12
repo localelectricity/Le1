@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -21715,7 +21715,7 @@ Distributor Buerklin, 11G810</description>
 <part name="B2" library="rectifier" deviceset="GBPC6" device="" value="GBPC3506W"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C1210" value="10n"/>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="E7.5-18" value="ECA2DHG221"/>
-<part name="IC1" library="mylibrary" deviceset="SOIC8" device="" value="ACS711KLCTR-12AB-T"/>
+<part name="IC1" library="mylibrary" deviceset="SOIC8" device="" value="ACS712ELC-5A"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C1210" value="0.1u"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="POT2" library="resistor" deviceset="R-TRIMM" device="4G/J" value="470k"/>
