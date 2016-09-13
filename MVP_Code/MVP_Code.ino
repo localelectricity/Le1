@@ -19,7 +19,7 @@
   int IreadIndex = 0;              // the index of the current reading
   int Itotal = 0;                  // the running total
   int Iaverage = 0;                // the average
-  int Ioffset = 512;
+  int Ioffset = 510;
   int IinOld = 0;
   
   int Preadings[numReadings];      // the readings from the analog input
@@ -35,7 +35,7 @@ void setup() {
   pinMode(12, OUTPUT);
   pinMode(13, INPUT);
   Serial.begin(9600);
-  analogReference(EXTERNAL);
+  //analogReference(EXTERNAL);
     // initialize all the readings to 0:
   for (int thisReading = 0; thisReading < numReadings; thisReading++) {
     Vreadings[thisReading] = 0;
@@ -82,8 +82,8 @@ void loop() {
 
   rstButton = digitalRead (13);
   if (rstButton == HIGH){
-    if ( Iin < 0.43 || Iin > 0.45){
-       if (Iin < 0.43){
+    if ( Iin < 0.53 || Iin > 0.55){
+       if (Iin < 0.53){
          Ioffset = Ioffset-1;
          Serial.print("BOON");
        }
@@ -154,8 +154,8 @@ void loop() {
   delay(1);        // delay in between reads for stability
 
   Vin = (Vaverage*0.039);
-  Iin_raw = (Iaverage-Ioffset)*0.029326;
-  Iin = (-0.1118*Iin_raw*Iin_raw)+(0.725*Iin_raw) + 0.0048;
+  Iin_raw = (Iaverage-Ioffset)*0.02642*0.5;
+  Iin = Iin_raw; //(-0.1118*Iin_raw*Iin_raw)+(0.725*Iin_raw) + 0.0048;
   Pin = Vin*Iin;
 //
 //  Vin = analogRead(4);//*0.039;
