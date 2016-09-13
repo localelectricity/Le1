@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -21964,14 +21964,13 @@ Distributor Buerklin, 11G810</description>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="74.93" y1="52.07" x2="74.93" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<junction x="74.93" y="46.99"/>
-<wire x1="74.93" y1="46.99" x2="74.93" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="74.93" y1="46.99" x2="83.82" y2="46.99" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="46.99" x2="83.82" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="VIN_BUCK" gate="A" pin="3"/>
 <wire x1="83.82" y1="52.07" x2="91.44" y2="52.07" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="74.93" y1="50.8" x2="74.93" y2="46.99" width="0.1524" layer="91"/>
+<junction x="74.93" y="46.99"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="8"/>
@@ -22074,13 +22073,7 @@ Distributor Buerklin, 11G810</description>
 <junction x="-49.53" y="76.2"/>
 <pinref part="POT1" gate="G$1" pin="A"/>
 <wire x1="-40.64" y1="76.2" x2="-44.45" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<pinref part="R12" gate="G$1" pin="S"/>
-<wire x1="-57.15" y1="83.82" x2="-59.69" y2="83.82" width="0.1524" layer="91"/>
+<junction x="-44.45" y="76.2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -22323,11 +22316,6 @@ Distributor Buerklin, 11G810</description>
 <wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="10.16" y="-5.08"/>
 <label x="7.62" y="-5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="85.09" y1="17.78" x2="85.09" y2="16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
