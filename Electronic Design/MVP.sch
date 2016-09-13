@@ -19662,10 +19662,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 </modules>
 <parts>
 <part name="B1" library="rectifier" deviceset="GBPC6" device="" value="GBPC3506W"/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C1210" value="10n"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C1206K" value="10n"/>
 <part name="C2" library="resistor" deviceset="CPOL-EU" device="E3.5-10" value="ECA2DHG221"/>
 <part name="IC1" library="mylibrary" deviceset="SOIC8" device="" value="ACS712ELC-5A"/>
-<part name="C3" library="resistor" deviceset="C-EU" device="C1210" value="0.1u"/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="POT2" library="resistor" deviceset="R-TRIMM" device="3296W" value="500k"/>
 <part name="D2" library="diode" deviceset="ZPD" device="" value="5.1V"/>
@@ -19683,9 +19683,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="X1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="16MHz"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R1206" value="10k"/>
 <part name="+5V1" library="supply1" deviceset="+5V" device=""/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C1210" value="100n"/>
-<part name="C9" library="resistor" deviceset="C-EU" device="C1210" value="22n"/>
-<part name="C8" library="resistor" deviceset="C-EU" device="C1210" value="22n"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
+<part name="C9" library="resistor" deviceset="C-EU" device="C0805K" value="22n"/>
+<part name="C8" library="resistor" deviceset="C-EU" device="C0805K" value="22n"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X8" device=""/>
@@ -19696,7 +19696,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="+3V3" library="supply1" deviceset="+5V" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="C6" library="resistor" deviceset="C-EU" device="C1210" value="10u"/>
+<part name="C6" library="resistor" deviceset="C-EU" device="C1206K" value="10u"/>
 <part name="VIN_BUCK/BOOST" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R2" library="resistor-power" deviceset="R" device="RWM8X45" value="22R"/>
 <part name="R3" library="resistor-power" deviceset="R" device="RWM8X45" value="22R"/>
@@ -19708,8 +19708,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="+5V3" library="supply1" deviceset="+5V" device=""/>
 <part name="POT1" library="resistor" deviceset="R-TRIMM" device="3296W" value="500k"/>
 <part name="D1" library="diode" deviceset="ZPD" device="" value="5.1V"/>
-<part name="C5" library="resistor" deviceset="C-EU" device="C1210" value="10u"/>
-<part name="C4" library="resistor" deviceset="C-EU" device="C1210" value="1n"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
 <part name="SW_OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
 </parts>
 <sheets>
@@ -19781,7 +19780,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <attribute name="VALUE" x="-39.37" y="67.31" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="D1" gate="G$1" x="-8.89" y="73.66" rot="R90"/>
-<instance part="C5" gate="G$1" x="39.37" y="105.41"/>
 <instance part="C4" gate="G$1" x="24.13" y="95.25"/>
 <instance part="SW_OUT" gate="A" x="67.31" y="74.93" rot="R270"/>
 </instances>
@@ -19812,9 +19810,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <net name="IIN" class="0">
 <segment>
 <wire x1="21.59" y1="102.87" x2="21.59" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="21.59" y1="107.95" x2="39.37" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="21.59" y1="107.95" x2="52.07" y2="107.95" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="39.37" y1="107.95" x2="52.07" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="52.07" y1="107.95" x2="52.07" y2="110.49" width="0.1524" layer="91"/>
 <junction x="52.07" y="110.49"/>
 <label x="52.07" y="113.03" size="1.778" layer="95"/>
@@ -19822,8 +19819,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <junction x="52.07" y="107.95"/>
 <pinref part="IC1" gate="G$1" pin="7"/>
 <wire x1="21.59" y1="102.87" x2="13.97" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<junction x="39.37" y="107.95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="1" pin="ANALOG_5"/>
@@ -19876,19 +19871,15 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <junction x="31.75" y="97.79"/>
-<wire x1="39.37" y1="100.33" x2="39.37" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="39.37" y1="97.79" x2="31.75" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="39.37" y1="97.79" x2="52.07" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="97.79" x2="52.07" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="52.07" y1="97.79" x2="52.07" y2="102.87" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="52.07" y1="102.87" x2="52.07" y2="104.14" width="0.1524" layer="91"/>
 <junction x="52.07" y="102.87"/>
-<junction x="39.37" y="97.79"/>
 <pinref part="IC1" gate="G$1" pin="5"/>
 <wire x1="13.97" y1="97.79" x2="24.13" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="24.13" y1="97.79" x2="31.75" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="97.79" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="24.13" y="97.79"/>
 </segment>
