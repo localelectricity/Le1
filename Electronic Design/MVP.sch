@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -19671,7 +19671,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="D2" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="Q1" library="transistor-power" deviceset="PMOSFET_P" device="TO220BV" value="IRF9540"/>
 <part name="Q2" library="transistor-power" deviceset="PMOSFET_P" device="TO220BV" value="IRF9540"/>
-<part name="POT3" library="resistor" deviceset="R-TRIMM" device="3299W" value="5k"/>
+<part name="POT3" library="resistor" deviceset="R-TRIMM" device="3296W" value="5k"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="VTA52" value="1k"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>

@@ -129,14 +129,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.656940625" y1="3.2193125" x2="95.264721875" y2="3.1491875" width="0" layer="20"/>
-<wire x1="95.264721875" y1="3.1491875" x2="95.267225" y2="81.62396875" width="0" layer="20"/>
+<wire x1="0.656940625" y1="13.0193125" x2="95.264721875" y2="12.9491875" width="0" layer="20"/>
+<wire x1="95.264721875" y1="12.9491875" x2="95.267225" y2="81.62396875" width="0" layer="20"/>
 <wire x1="95.267225" y1="81.62396875" x2="0.75049375" y2="81.57389375" width="0" layer="20"/>
-<wire x1="0.75049375" y1="81.57389375" x2="0.656940625" y2="3.2193125" width="0" layer="20"/>
+<wire x1="0.75049375" y1="81.57389375" x2="0.656940625" y2="13.0193125" width="0" layer="20"/>
 <hole x="3.6" y="78.6" drill="3.2"/>
 <hole x="92" y="78.4" drill="3.2"/>
-<hole x="4" y="6.4" drill="3.2"/>
-<hole x="92" y="6.2" drill="3.2"/>
+<hole x="3.4" y="15.8" drill="3.2"/>
+<hole x="92.4" y="16" drill="3.2"/>
 </plain>
 <libraries>
 <library name="rectifier">
@@ -1498,20 +1498,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/table&gt;
 &lt;/BODY&gt;&lt;/HTML&gt;</description>
 <packages>
-<package name="RTRIM3299W">
-<description>&lt;b&gt;Trimm resistor&lt;/b&gt; BOURNS</description>
-<wire x1="-2.78" y1="4.35" x2="3.07" y2="4.35" width="0.254" layer="21"/>
-<wire x1="3.07" y1="4.35" x2="3.07" y2="-4.35" width="0.254" layer="21"/>
-<wire x1="3.07" y1="-4.35" x2="-2.78" y2="-4.35" width="0.254" layer="21"/>
-<wire x1="-2.78" y1="-4.35" x2="-2.78" y2="4.35" width="0.254" layer="21"/>
-<circle x="-1.23" y="2.75" radius="1.1011" width="0.1524" layer="21"/>
-<pad name="1" x="1.27" y="-2.54" drill="0.6096"/>
-<pad name="2" x="1.27" y="0" drill="0.6096"/>
-<pad name="3" x="1.27" y="2.54" drill="0.6096"/>
-<text x="-3.38" y="-4.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.77" y="-4.5" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.38" y1="1.7" x2="-1.08" y2="3.8" layer="21"/>
-</package>
 <package name="RTRIM3296W">
 <description>&lt;b&gt;Trimm resistor&lt;/b&gt; BOURNS&lt;p&gt;
 Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&gt;</description>
@@ -2095,18 +2081,18 @@ design rules under a new name.</description>
 </element>
 <element name="Q1" library="transistor-power" package="TO220BV" value="IRF9540" x="31.524390625" y="62.87981875" rot="R180"/>
 <element name="Q2" library="transistor-power" package="TO220BV" value="IRF9540" x="43.854390625" y="62.87981875" rot="R180"/>
-<element name="POT3" library="resistor" package="RTRIM3299W" value="5k" x="15.75450625" y="52.7750625" smashed="yes" rot="R270">
-<attribute name="NAME" x="14.41450625" y="56.2500625" size="1.27" layer="25"/>
-<attribute name="VALUE" x="13.21450625" y="48.7300625" size="1.27" layer="27"/>
+<element name="POT3" library="resistor" package="RTRIM3296W" value="5k" x="16.95450625" y="54.1750625" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.61450625" y="57.6500625" size="1.27" layer="25"/>
+<attribute name="VALUE" x="14.41450625" y="50.1300625" size="1.27" layer="27"/>
 </element>
 <element name="R1" library="resistor" package="VTA52" value="1k" x="31.34895" y="46.051521875" rot="R90"/>
 <element name="VIN" library="pinhead" package="1X03" value="" x="4.548721875" y="70.209796875" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.377521875" y="65.325996875" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="1.373721875" y="72.749796875" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="VOUT+" library="pinhead" package="1X03" value="" x="4.748496875" y="38.667340625" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.077296875" y="34.283540625" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="1.573496875" y="41.207340625" size="1.27" layer="27" rot="R270"/>
+<element name="VOUT+" library="pinhead" package="1X03" value="" x="5.548496875" y="42.667340625" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.922703125" y="39.916459375" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="2.373496875" y="45.207340625" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="F1" library="fuse" package="FUSE_HOLDER_5X20MM" value="FUSEBLANK_5X20MM" x="28.978721875" y="73.319796875" smashed="yes">
 <attribute name="MF" value="" x="28.978721875" y="73.319796875" size="1.778" layer="27" display="off"/>
@@ -2115,7 +2101,10 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="28.978721875" y="73.319796875" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="34.010721875" y="72.129796875" size="2.54" layer="25"/>
 </element>
-<element name="IC2" library="Arduino-AVR" package="DIL28-3" value="ATMEGA328-PU" x="69.57684375" y="57.552728125" rot="R90"/>
+<element name="IC2" library="Arduino-AVR" package="DIL28-3" value="ATMEGA328-PU" x="69.57684375" y="57.552728125" smashed="yes" rot="R90">
+<attribute name="NAME" x="68.11684375" y="38.150328125" size="1.778" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="70.21184375" y="41.677728125" size="1.778" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="X1" library="crystal" package="HC49/S" value="16MHz" x="85.219790625" y="62.1965125" rot="R270">
 <attribute name="OC_FARNELL" value="1667008" x="84.572796875" y="62.1965125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="84.572796875" y="62.1965125" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2127,24 +2116,29 @@ design rules under a new name.</description>
 <element name="C9" library="resistor" package="C0805K" value="22n" x="78.534459375" y="64.810346875" rot="R90"/>
 <element name="C8" library="resistor" package="C0805K" value="22n" x="78.715996875" y="60.314690625" rot="R270"/>
 <element name="JP2" library="pinhead" package="1X08" value="" x="58.67934375" y="67.63278125" rot="R270"/>
-<element name="VOUT-" library="pinhead" package="1X03" value="" x="4.7416125" y="54.2266625" rot="R90"/>
+<element name="VOUT-" library="pinhead" package="1X03" value="" x="5.3416125" y="54.2266625" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.8871875" y="56.4595375" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="8.5166125" y="50.4166625" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="VIN_BUCK" library="pinhead" package="1X03" value="" x="89.51104375" y="42.26514375" rot="R90"/>
 <element name="JP1" library="pinhead" package="1X06" value="" x="82.827475" y="44.875575" rot="R270"/>
 <element name="C6" library="resistor" package="C1206K" value="10u" x="77.3007875" y="54.52579375" rot="R270"/>
-<element name="VIN_BUCK/BOOST" library="pinhead" package="1X03" value="" x="23.54176875" y="14.49299375"/>
-<element name="R2" library="resistor-power" package="RWM8X45" value="22R" x="64.94721875" y="16.610334375">
-<attribute name="MF" value="" x="64.94721875" y="16.610334375" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="64.94721875" y="16.610334375" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="64.94721875" y="16.610334375" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="64.94721875" y="16.610334375" size="1.778" layer="27" display="off"/>
+<element name="VIN_BUCK/BOOST" library="pinhead" package="1X03" value="" x="5.29299375" y="30.05823125" rot="R270"/>
+<element name="R2" library="resistor-power" package="RWM8X45" value="22R" x="64.94721875" y="19.210334375" smashed="yes">
+<attribute name="MF" value="" x="64.94721875" y="19.210334375" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="64.94721875" y="19.210334375" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="64.94721875" y="19.210334375" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="64.94721875" y="19.210334375" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="38.38221875" y="13.935334375" size="1.778" layer="25" ratio="10"/>
+<attribute name="VALUE" x="60.50221875" y="18.575334375" size="1.778" layer="27" ratio="10"/>
 </element>
-<element name="R3" library="resistor-power" package="RWM8X45" value="22R" x="64.92248125" y="27.993921875">
-<attribute name="MF" value="" x="64.92248125" y="27.993921875" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="64.92248125" y="27.993921875" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="64.92248125" y="27.993921875" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="64.92248125" y="27.993921875" size="1.778" layer="27" display="off"/>
+<element name="R3" library="resistor-power" package="RWM8X45" value="22R" x="64.92248125" y="28.993921875">
+<attribute name="MF" value="" x="64.92248125" y="28.993921875" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="64.92248125" y="28.993921875" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="64.92248125" y="28.993921875" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="64.92248125" y="28.993921875" size="1.778" layer="27" display="off"/>
 </element>
-<element name="USB_OUT" library="pinhead" package="1X03" value="" x="12.150340625" y="14.674365625"/>
+<element name="USB_OUT" library="pinhead" package="1X03" value="" x="12.750340625" y="19.274365625"/>
 <element name="S2" library="switch-omron" package="B3F-10XX" value="" x="85.21319375" y="73.54805625">
 <attribute name="MPN" value="B3F-1000" x="85.21319375" y="73.54805625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="85.21319375" y="73.54805625" size="1.778" layer="27" display="off"/>
@@ -2155,9 +2149,9 @@ design rules under a new name.</description>
 <element name="POT1" library="resistor" package="RTRIM3296W" value="500k" x="53.759509375" y="68.771371875"/>
 <element name="D1" library="diode" package="DO35Z10" value="5.1V" x="61.15450625" y="41.3841125" rot="R270"/>
 <element name="C4" library="resistor" package="C1206K" value="0.1u" x="40.8" y="40.2"/>
-<element name="SW_OUT" library="pinhead" package="1X03" value="" x="31.8" y="23.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="28.7138" y="28.0288" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="28.625" y="27.41" size="1.27" layer="27" rot="R270"/>
+<element name="SW_OUT" library="pinhead" package="1X03" value="" x="22.8" y="19.2" smashed="yes">
+<attribute name="NAME" x="18.3712" y="16.1138" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="18.99" y="16.025" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -2210,32 +2204,32 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="8"/>
 <contactref element="D1" pad="A"/>
 <polygon width="0.6096" layer="1" isolate="0.3">
-<vertex x="0.56875625" y="83.02533125"/>
-<vertex x="0.36875625" y="1.73100625"/>
-<vertex x="96.277296875" y="1.53100625"/>
-<vertex x="96.477296875" y="82.849265625"/>
+<vertex x="0.56875625" y="82.22533125"/>
+<vertex x="0.36875625" y="11.93100625"/>
+<vertex x="96.277296875" y="11.73100625"/>
+<vertex x="96.477296875" y="82.049265625"/>
 </polygon>
 <polygon width="0.6096" layer="16" isolate="0.3">
-<vertex x="0.409765625" y="82.388990625"/>
-<vertex x="0.409765625" y="1.54854375"/>
-<vertex x="96.3012125" y="1.54854375"/>
-<vertex x="96.3012125" y="82.607853125"/>
+<vertex x="0.409765625" y="82.188990625"/>
+<vertex x="0.409765625" y="11.74854375"/>
+<vertex x="96.3012125" y="11.74854375"/>
+<vertex x="96.3012125" y="82.407853125"/>
 </polygon>
 <via x="46.6" y="40.8" extent="1-16" drill="0.6" shape="square"/>
 <via x="53.4" y="44.8" extent="1-16" drill="0.6" shape="square"/>
 <via x="53.2" y="41.6" extent="1-16" drill="0.6" shape="square"/>
 <via x="59.2" y="42" extent="1-16" drill="0.6" shape="square"/>
 <via x="61.8" y="51.2" extent="1-16" drill="0.6" shape="square"/>
-<via x="66.2" y="35.8" extent="1-16" drill="0.6" shape="square"/>
-<via x="90.8" y="13.4" extent="1-16" drill="0.6" shape="square"/>
-<via x="69.4" y="15.8" extent="1-16" drill="0.6" shape="square"/>
-<via x="46.4" y="16.2" extent="1-16" drill="0.6" shape="square"/>
-<via x="40" y="12.8" extent="1-16" drill="0.6" shape="square"/>
-<via x="36" y="12.6" extent="1-16" drill="0.6" shape="square"/>
+<via x="66.2" y="34.8" extent="1-16" drill="0.6" shape="square"/>
+<via x="93.4" y="22" extent="1-16" drill="0.6" shape="square"/>
+<via x="77.6" y="18.4" extent="1-16" drill="0.6" shape="square"/>
+<via x="54" y="18.2" extent="1-16" drill="0.6" shape="square"/>
+<via x="37.8" y="17" extent="1-16" drill="0.6" shape="square"/>
+<via x="32.8" y="16.4" extent="1-16" drill="0.6" shape="square"/>
 <via x="17.6" y="30.4" extent="1-16" drill="0.6" shape="square"/>
 <via x="23.6" y="33" extent="1-16" drill="0.6" shape="square"/>
-<via x="39.2" y="30.8" extent="1-16" drill="0.6" shape="square"/>
-<via x="35.8" y="15.6" extent="1-16" drill="0.6" shape="square"/>
+<via x="39.2" y="32" extent="1-16" drill="0.6" shape="square"/>
+<via x="33" y="21.2" extent="1-16" drill="0.6" shape="square"/>
 <via x="80.4" y="42" extent="1-16" drill="0.6" shape="square"/>
 <via x="65" y="26.8" extent="1-16" drill="0.6" shape="square"/>
 <via x="87.6" y="49.2" extent="1-16" drill="0.6" shape="square"/>
@@ -2258,10 +2252,10 @@ design rules under a new name.</description>
 <via x="57.2" y="53" extent="1-16" drill="0.6" shape="square"/>
 <via x="32.8" y="52.8" extent="1-16" drill="0.6" shape="square"/>
 <via x="6.4" y="59.8" extent="1-16" drill="0.6" shape="square"/>
-<via x="9" y="54.4" extent="1-16" drill="0.6" shape="square"/>
+<via x="10.4" y="54.2" extent="1-16" drill="0.6" shape="square"/>
 <via x="21.4" y="41.2" extent="1-16" drill="0.6" shape="square"/>
-<via x="9" y="38.8" extent="1-16" drill="0.6" shape="square"/>
-<via x="50.2" y="22.2" extent="1-16" drill="0.6" shape="square"/>
+<via x="11.8" y="37.6" extent="1-16" drill="0.6" shape="square"/>
+<via x="49" y="26.6" extent="1-16" drill="0.6" shape="square"/>
 <via x="80" y="27.2" extent="1-16" drill="0.6" shape="square"/>
 <via x="77.8" y="42" extent="1-16" drill="0.6" shape="square"/>
 <via x="72.8" y="34.6" extent="1-16" drill="0.6" shape="square"/>
@@ -2269,7 +2263,7 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="6"/>
 <via x="37.2" y="40.4" extent="1-16" drill="0.6" shape="square"/>
 <via x="39.4" y="43.2" extent="1-16" drill="0.6" shape="square"/>
-<via x="51.4" y="34.2" extent="1-16" drill="0.6" shape="square"/>
+<via x="52" y="34.6" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="POT1" pad="3"/>
 <via x="40" y="55.4" extent="1-16" drill="0.6" shape="square"/>
 <via x="57.4" y="55.4" extent="1-16" drill="0.6" shape="square"/>
@@ -2304,12 +2298,12 @@ design rules under a new name.</description>
 <wire x1="38.6" y1="49.6" x2="38" y2="49.6" width="2.1844" layer="1"/>
 <wire x1="43.3579625" y1="49.6281875" x2="42.8281875" y2="49.6281875" width="0.8128" layer="1"/>
 <wire x1="42.8281875" y1="49.6281875" x2="42.8" y2="49.6" width="0.8128" layer="1"/>
-<wire x1="4.748496875" y1="41.207340625" x2="7.007340625" y2="41.207340625" width="2.1844" layer="1"/>
-<wire x1="7.007340625" y1="41.207340625" x2="11" y2="45.2" width="2.1844" layer="1"/>
+<wire x1="5.548496875" y1="45.207340625" x2="7.807340625" y2="45.207340625" width="2.1844" layer="1"/>
+<wire x1="7.807340625" y1="45.207340625" x2="11" y2="45.2" width="2.1844" layer="1"/>
 <wire x1="11" y1="45.2" x2="14.445103125" y2="45.2" width="2.1844" layer="1"/>
 <wire x1="14.445103125" y1="45.2" x2="14.528428125" y2="45.116675" width="2.1844" layer="1"/>
 <wire x1="14.528428125" y1="45.116675" x2="33.516675" y2="45.116675" width="2.1844" layer="1"/>
-<wire x1="4.748496875" y1="36.127340625" x2="4.748496875" y2="41.207340625" width="0" layer="19" extent="1-1"/>
+<wire x1="5.548496875" y1="40.127340625" x2="5.548496875" y2="45.207340625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC1" pad="1"/>
@@ -2338,13 +2332,14 @@ design rules under a new name.</description>
 <wire x1="28.984390625" y1="65.41981875" x2="26.21981875" y2="65.41981875" width="2.1844" layer="1"/>
 <wire x1="26.21981875" y1="65.41981875" x2="25.8" y2="65" width="2.1844" layer="1"/>
 <wire x1="25.8" y1="65" x2="25.8" y2="59.01055625" width="2.1844" layer="1"/>
-<wire x1="25.8" y1="59.01055625" x2="18.29450625" y2="51.5050625" width="2.1844" layer="1"/>
 <wire x1="28.984390625" y1="65.41981875" x2="28.984390625" y2="67.384390625" width="2.1844" layer="16"/>
 <wire x1="28.984390625" y1="67.384390625" x2="30.2" y2="68.6" width="2.1844" layer="16"/>
 <wire x1="30.2" y1="68.6" x2="40.8" y2="68.6" width="2.1844" layer="16"/>
 <wire x1="40.8" y1="68.6" x2="41.4" y2="68" width="2.1844" layer="16"/>
 <wire x1="41.4" y1="68" x2="41.4" y2="65.505428125" width="2.1844" layer="16"/>
 <wire x1="41.4" y1="65.505428125" x2="41.314390625" y2="65.41981875" width="2.1844" layer="16"/>
+<wire x1="19.49450625" y1="54.1750625" x2="20.96450625" y2="54.1750625" width="2.1844" layer="1"/>
+<wire x1="20.96450625" y1="54.1750625" x2="25.8" y2="59.01055625" width="2.1844" layer="1"/>
 </signal>
 <signal name="N$35">
 <contactref element="Q1" pad="D"/>
@@ -2497,48 +2492,42 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="VIN_BUCK/BOOST" pad="3"/>
 <contactref element="SW_OUT" pad="2"/>
-<wire x1="26.08176875" y1="14.49299375" x2="26.08176875" y2="21.88176875" width="2.1844" layer="1"/>
-<wire x1="26.08176875" y1="21.88176875" x2="27.8" y2="23.6" width="2.1844" layer="1"/>
-<wire x1="27.8" y1="23.6" x2="31.8" y2="23.6" width="2.1844" layer="1"/>
+<wire x1="5.29299375" y1="27.51823125" x2="20.28176875" y2="27.51823125" width="2.1844" layer="16"/>
+<wire x1="20.28176875" y1="27.51823125" x2="22.8" y2="25" width="2.1844" layer="16"/>
+<wire x1="22.8" y1="25" x2="22.8" y2="19.2" width="2.1844" layer="16"/>
 </signal>
 <signal name="N$23">
 <contactref element="R2" pad="2"/>
 <contactref element="R3" pad="2"/>
 <contactref element="USB_OUT" pad="1"/>
 <contactref element="VIN_BUCK/BOOST" pad="1"/>
-<wire x1="9.4" y1="30.6" x2="9.6" y2="30.8" width="2.1844" layer="1"/>
-<wire x1="9.6" y1="30.8" x2="14.6" y2="35.8" width="2.1844" layer="1"/>
 <wire x1="14.6" y1="35.8" x2="39.6" y2="35.8" width="2.1844" layer="1"/>
 <wire x1="39.6" y1="35.8" x2="43.6" y2="31.8" width="2.1844" layer="1"/>
-<wire x1="90.6" y1="28.056403125" x2="90.66248125" y2="27.993921875" width="2.1844" layer="1"/>
 <wire x1="43.6" y1="31.8" x2="86.856403125" y2="31.8" width="2.1844" layer="1"/>
-<wire x1="86.856403125" y1="31.8" x2="90.66248125" y2="27.993921875" width="2.1844" layer="1"/>
-<wire x1="90.66248125" y1="27.993921875" x2="90.66248125" y2="16.635071875" width="2.1844" layer="1"/>
-<wire x1="90.66248125" y1="16.635071875" x2="90.68721875" y2="16.610334375" width="2.1844" layer="1"/>
-<wire x1="9.6" y1="14.68470625" x2="9.6" y2="20" width="2.1844" layer="1"/>
-<wire x1="9.6" y1="20" x2="9.6" y2="30.8" width="2.1844" layer="1"/>
-<wire x1="21.00176875" y1="14.49299375" x2="21.00176875" y2="17.79823125" width="2.1844" layer="1"/>
-<wire x1="21.00176875" y1="17.79823125" x2="18.8" y2="20" width="2.1844" layer="1"/>
-<wire x1="18.8" y1="20" x2="9.6" y2="20" width="2.1844" layer="1"/>
-<wire x1="9.6" y1="14.68470625" x2="9.610340625" y2="14.674365625" width="0" layer="19" extent="1-1"/>
+<wire x1="86.856403125" y1="31.8" x2="90.66248125" y2="28.993921875" width="2.1844" layer="1"/>
+<wire x1="5.29299375" y1="32.59823125" x2="11.39823125" y2="32.59823125" width="2.1844" layer="1"/>
+<wire x1="11.39823125" y1="32.59823125" x2="14.6" y2="35.8" width="2.1844" layer="1"/>
+<wire x1="5.29299375" y1="32.59823125" x2="8.00176875" y2="32.59823125" width="2.1844" layer="1"/>
+<wire x1="8.00176875" y1="32.59823125" x2="10.2" y2="30.4" width="2.1844" layer="1"/>
+<wire x1="10.2" y1="30.4" x2="10.2" y2="19.48470625" width="2.1844" layer="1"/>
+<wire x1="10.2" y1="19.48470625" x2="10.210340625" y2="19.274365625" width="2.1844" layer="1"/>
+<wire x1="90.66248125" y1="28.993921875" x2="90.66248125" y2="19.235071875" width="2.1844" layer="1"/>
+<wire x1="90.66248125" y1="19.235071875" x2="90.68721875" y2="19.210334375" width="2.1844" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="R2" pad="1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="36.621509375" y1="19.19604375" x2="39.20721875" y2="16.610334375" width="2.1844" layer="1"/>
-<wire x1="36.621509375" y1="19.19604375" x2="36.621509375" y2="25.43295" width="2.1844" layer="1"/>
-<wire x1="36.621509375" y1="25.43295" x2="39.18248125" y2="27.993921875" width="2.1844" layer="1"/>
 <contactref element="SW_OUT" pad="3"/>
-<wire x1="31.8" y1="21.06" x2="34.757553125" y2="21.06" width="2.1844" layer="1"/>
-<wire x1="34.757553125" y1="21.06" x2="36.621509375" y2="19.19604375" width="2.1844" layer="1"/>
+<wire x1="39.18248125" y1="28.993921875" x2="39.18248125" y2="19.235071875" width="2.1844" layer="1"/>
+<wire x1="39.18248125" y1="19.235071875" x2="39.20721875" y2="19.210334375" width="2.1844" layer="1"/>
+<wire x1="39.20721875" y1="19.210334375" x2="25.350334375" y2="19.210334375" width="2.1844" layer="1"/>
+<wire x1="25.350334375" y1="19.210334375" x2="25.34" y2="19.2" width="2.1844" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="USB_OUT" pad="3"/>
 <contactref element="SW_OUT" pad="1"/>
-<wire x1="31.8" y1="26.14" x2="17.14" y2="26.14" width="2.1844" layer="16"/>
-<wire x1="17.14" y1="26.14" x2="14.6" y2="23.6" width="2.1844" layer="16"/>
-<wire x1="14.6" y1="23.6" x2="14.6" y2="14.76470625" width="2.1844" layer="16"/>
-<wire x1="14.6" y1="14.76470625" x2="14.690340625" y2="14.674365625" width="2.1844" layer="16"/>
+<wire x1="15.290340625" y1="19.274365625" x2="20.185634375" y2="19.274365625" width="2.1844" layer="1"/>
+<wire x1="20.185634375" y1="19.274365625" x2="20.26" y2="19.2" width="2.1844" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="IC2" pad="15"/>
