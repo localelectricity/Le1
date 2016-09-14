@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,16 +39,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -13145,6 +13145,30 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="3.7338" y="-0.7112" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 <package name="1X03">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
@@ -13453,8 +13477,38 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <rectangle x1="5.969" y1="-2.921" x2="6.731" y2="-1.905" layer="21"/>
 <rectangle x1="8.509" y1="-2.921" x2="9.271" y2="-1.905" layer="21"/>
 </package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
 <symbol name="PINHD3">
 <wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
@@ -13498,6 +13552,32 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="PINHD-1X3" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
@@ -19675,8 +19755,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="R1" library="resistor" deviceset="R-EU_" device="VTA52" value="1k"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
-<part name="VIN" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="VOUT+" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="VIN" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="VOUT+" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="F1" library="fuse" deviceset="FUSE" device="BLANK_5X20MM"/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
 <part name="IC2" library="Arduino-AVR" deviceset="ATMEGA168-PU" device="" value="ATMEGA328-PU"/>
@@ -19689,18 +19769,18 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="VOUT-" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="VIN_BUCK" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="VOUT-" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="VIN_BUCK" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V3" library="supply1" deviceset="+5V" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1206K" value="10u"/>
-<part name="VIN_BUCK/BOOST" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="VIN_BUCK/BOOST" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="R2" library="resistor-power" deviceset="R" device="RWM8X45" value="22R"/>
 <part name="R3" library="resistor-power" deviceset="R" device="RWM8X45" value="22R"/>
-<part name="USB_OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="USB_OUT" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="S2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="+5V2" library="supply1" deviceset="+5V" device=""/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="R1206" value="10k"/>
@@ -19741,8 +19821,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="R1" gate="G$1" x="-49.53" y="71.12" rot="R90"/>
 <instance part="SUPPLY22" gate="GND" x="-49.53" y="63.5"/>
 <instance part="SUPPLY23" gate="GND" x="-62.23" y="63.5"/>
-<instance part="VIN" gate="A" x="-104.14" y="88.9"/>
-<instance part="VOUT+" gate="A" x="54.61" y="86.36"/>
+<instance part="VIN" gate="G$1" x="-104.14" y="88.9"/>
+<instance part="VOUT+" gate="G$1" x="54.61" y="86.36"/>
 <instance part="F1" gate="G$1" x="-68.58" y="88.9" smashed="yes">
 <attribute name="NAME" x="-72.39" y="90.297" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-72.39" y="93.599" size="1.778" layer="96"/>
@@ -19758,18 +19838,18 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="SUPPLY14" gate="GND" x="-107.95" y="16.51"/>
 <instance part="SUPPLY17" gate="GND" x="8.89" y="-12.7"/>
 <instance part="JP2" gate="A" x="19.05" y="-2.54"/>
-<instance part="VOUT-" gate="A" x="54.61" y="63.5"/>
-<instance part="VIN_BUCK" gate="A" x="93.98" y="54.61"/>
+<instance part="VOUT-" gate="G$1" x="54.61" y="63.5"/>
+<instance part="VIN_BUCK" gate="G$1" x="93.98" y="54.61"/>
 <instance part="SUPPLY2" gate="GND" x="74.93" y="44.45"/>
 <instance part="+3V2" gate="1" x="74.93" y="64.77"/>
 <instance part="+3V3" gate="1" x="31.75" y="113.03"/>
 <instance part="JP1" gate="A" x="19.05" y="22.86"/>
 <instance part="SUPPLY6" gate="GND" x="5.08" y="12.7"/>
 <instance part="C6" gate="G$1" x="74.93" y="55.88"/>
-<instance part="VIN_BUCK/BOOST" gate="A" x="115.57" y="93.98"/>
+<instance part="VIN_BUCK/BOOST" gate="G$1" x="115.57" y="93.98"/>
 <instance part="R2" gate="G$1" x="77.47" y="105.41"/>
 <instance part="R3" gate="G$1" x="77.47" y="99.06"/>
-<instance part="USB_OUT" gate="A" x="93.98" y="87.63"/>
+<instance part="USB_OUT" gate="G$1" x="93.98" y="87.63"/>
 <instance part="S2" gate="1" x="36.83" y="1.27"/>
 <instance part="+5V2" gate="1" x="36.83" y="15.24"/>
 <instance part="R5" gate="G$1" x="48.26" y="-10.16" rot="R90"/>
@@ -19842,14 +19922,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="-62.23" y1="66.04" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="11.43" y1="66.04" x2="11.43" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="VOUT-" gate="A" pin="1"/>
+<pinref part="VOUT-" gate="G$1" pin="1"/>
 <wire x1="52.07" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="66.04" x2="11.43" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="66.04" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="VOUT-" gate="A" pin="3"/>
-<wire x1="45.72" y1="60.96" x2="52.07" y2="60.96" width="0.1524" layer="91"/>
-<junction x="45.72" y="66.04"/>
 <junction x="11.43" y="66.04"/>
+<wire x1="45.72" y1="66.04" x2="11.43" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-13.97" y1="66.04" x2="-8.89" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="66.04" x2="-1.27" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-1.27" y1="66.04" x2="11.43" y2="66.04" width="0.1524" layer="91"/>
@@ -19866,6 +19942,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="-40.64" y1="66.04" x2="-13.97" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="POT1" gate="G$1" pin="E"/>
 <junction x="-40.64" y="66.04"/>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="45.72" y="66.04"/>
+<pinref part="VOUT-" gate="G$1" pin="2"/>
+<wire x1="52.07" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -19905,12 +19985,12 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="74.93" y1="46.99" x2="83.82" y2="46.99" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="46.99" x2="83.82" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="VIN_BUCK" gate="A" pin="3"/>
-<wire x1="83.82" y1="52.07" x2="91.44" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="46.99" x2="83.82" y2="54.61" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="74.93" y1="50.8" x2="74.93" y2="46.99" width="0.1524" layer="91"/>
 <junction x="74.93" y="46.99"/>
+<pinref part="VIN_BUCK" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="54.61" x2="83.82" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="8"/>
@@ -19933,16 +20013,16 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="B1" gate="1" pin="AC2"/>
 <wire x1="-83.82" y1="83.82" x2="-111.76" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="VIN" gate="A" pin="3"/>
-<wire x1="-106.68" y1="86.36" x2="-111.76" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="86.36" x2="-111.76" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="VIN" gate="G$1" pin="2"/>
+<wire x1="-106.68" y1="88.9" x2="-111.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="88.9" x2="-111.76" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="B1" gate="1" pin="AC1"/>
 <wire x1="-111.76" y1="99.06" x2="-111.76" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="VIN" gate="A" pin="1"/>
+<pinref part="VIN" gate="G$1" pin="1"/>
 <wire x1="-111.76" y1="91.44" x2="-106.68" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="93.98" x2="-83.82" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="99.06" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
@@ -19952,15 +20032,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <wire x1="11.43" y1="88.9" x2="11.43" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<pinref part="VOUT+" gate="A" pin="1"/>
+<pinref part="VOUT+" gate="G$1" pin="1"/>
 <wire x1="11.43" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="88.9" x2="52.07" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="88.9" x2="45.72" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="VOUT+" gate="A" pin="3"/>
-<wire x1="45.72" y1="83.82" x2="52.07" y2="83.82" width="0.1524" layer="91"/>
-<junction x="45.72" y="88.9"/>
 <pinref part="IC1" gate="G$1" pin="3"/>
 <pinref part="IC1" gate="G$1" pin="4"/>
+<wire x1="45.72" y1="88.9" x2="52.07" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="97.79" x2="-1.27" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="100.33" x2="-7.62" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="100.33" x2="-1.27" y2="100.33" width="0.1524" layer="91"/>
@@ -19969,6 +20045,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="-11.43" y1="100.33" x2="-11.43" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="88.9" x2="11.43" y2="88.9" width="0.1524" layer="91"/>
 <junction x="11.43" y="88.9"/>
+<wire x1="45.72" y1="86.36" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<junction x="45.72" y="88.9"/>
+<pinref part="VOUT+" gate="G$1" pin="2"/>
+<wire x1="52.07" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -20044,7 +20124,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="74.93" y1="62.23" x2="74.93" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="74.93" y1="62.23" x2="83.82" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="62.23" x2="83.82" y2="57.15" width="0.1524" layer="91"/>
-<pinref part="VIN_BUCK" gate="A" pin="1"/>
+<pinref part="VIN_BUCK" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="57.15" x2="91.44" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -20162,11 +20242,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <net name="N$22" class="0">
 <segment>
 <wire x1="67.31" y1="72.39" x2="104.14" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="72.39" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="VIN_BUCK/BOOST" gate="A" pin="3"/>
-<wire x1="113.03" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="72.39" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SW_OUT" gate="A" pin="2"/>
 <wire x1="67.31" y1="72.39" x2="67.31" y2="77.47" width="0.1524" layer="91"/>
+<pinref part="VIN_BUCK/BOOST" gate="G$1" pin="2"/>
+<wire x1="113.03" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -20178,11 +20258,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="82.55" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="99.06" x2="83.82" y2="90.17" width="0.1524" layer="91"/>
-<pinref part="USB_OUT" gate="A" pin="1"/>
+<pinref part="USB_OUT" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="90.17" x2="91.44" y2="90.17" width="0.1524" layer="91"/>
 <junction x="83.82" y="99.06"/>
 <junction x="83.82" y="99.06"/>
-<pinref part="VIN_BUCK/BOOST" gate="A" pin="1"/>
+<pinref part="VIN_BUCK/BOOST" gate="G$1" pin="1"/>
 <wire x1="113.03" y1="96.52" x2="105.41" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="105.41" y1="96.52" x2="105.41" y2="99.06" width="0.1524" layer="91"/>
 </segment>
@@ -20201,10 +20281,12 @@ Source: www.vishay.com .. rwm.pdf</description>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="USB_OUT" gate="A" pin="3"/>
-<wire x1="91.44" y1="85.09" x2="69.85" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="SW_OUT" gate="A" pin="1"/>
-<wire x1="69.85" y1="85.09" x2="69.85" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="85.09" x2="69.85" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="USB_OUT" gate="G$1" pin="2"/>
+<wire x1="69.85" y1="83.82" x2="69.85" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="87.63" x2="69.85" y2="87.63" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="87.63" x2="69.85" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
