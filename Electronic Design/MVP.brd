@@ -2076,10 +2076,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="B1" library="rectifier" package="GBPC6" value="GBPC3506W" x="16.448721875" y="68.669796875" smashed="yes">
+<element name="B1" library="rectifier" package="GBPC6" value="KBPC610" x="16.448721875" y="68.669796875" smashed="yes">
 <attribute name="NAME" x="10.821571875" y="58.107325" size="1.778" layer="25" ratio="10"/>
 </element>
-<element name="C2" library="resistor" package="E3,5-10" value="ECA2DHG221" x="18.728428125" y="43.338675" smashed="yes" rot="R270">
+<element name="C2" library="resistor" package="E3,5-10" value="220uF" x="18.728428125" y="43.338675" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.569428125" y="35.458675" size="1.778" layer="25" ratio="10"/>
 <attribute name="VALUE" x="20.861628125" y="50.282071875" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
