@@ -19817,15 +19817,15 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="D2" gate="G$1" x="52.07" y="105.41" rot="R90"/>
 <instance part="Q1" gate="G$1" x="-54.61" y="81.28"/>
 <instance part="Q2" gate="G$1" x="-41.91" y="86.36" rot="R90"/>
-<instance part="POT3" gate="G$1" x="-62.23" y="83.82"/>
+<instance part="POT3" gate="G$1" x="-66.04" y="83.82"/>
 <instance part="R1" gate="G$1" x="-49.53" y="71.12" rot="R90"/>
 <instance part="SUPPLY22" gate="GND" x="-49.53" y="63.5"/>
-<instance part="SUPPLY23" gate="GND" x="-62.23" y="63.5"/>
+<instance part="SUPPLY23" gate="GND" x="-66.04" y="63.5"/>
 <instance part="VIN" gate="G$1" x="-104.14" y="88.9"/>
 <instance part="VOUT+" gate="G$1" x="54.61" y="86.36"/>
-<instance part="F1" gate="G$1" x="-68.58" y="88.9" smashed="yes">
-<attribute name="NAME" x="-72.39" y="90.297" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-72.39" y="93.599" size="1.778" layer="96"/>
+<instance part="F1" gate="G$1" x="-73.66" y="88.9" smashed="yes">
+<attribute name="NAME" x="-77.47" y="90.297" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-77.47" y="93.599" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY29" gate="GND" x="-92.71" y="-12.7"/>
 <instance part="IC2" gate="1" x="-43.18" y="22.86"/>
@@ -19912,14 +19912,14 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
 <junction x="-49.53" y="66.04"/>
-<wire x1="-62.23" y1="66.04" x2="-49.53" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="66.04" x2="-49.53" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="POT3" gate="G$1" pin="A"/>
-<wire x1="-62.23" y1="78.74" x2="-62.23" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="78.74" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY23" gate="GND" pin="GND"/>
-<junction x="-62.23" y="66.04"/>
+<junction x="-66.04" y="66.04"/>
 <pinref part="B1" gate="1" pin="-"/>
 <wire x1="-88.9" y1="88.9" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-62.23" y1="66.04" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="66.04" x2="-88.9" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="11.43" y1="66.04" x2="11.43" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="VOUT-" gate="G$1" pin="1"/>
@@ -20075,11 +20075,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <wire x1="-52.07" y1="88.9" x2="-46.99" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="POT3" gate="G$1" pin="E"/>
-<wire x1="-62.23" y1="88.9" x2="-52.07" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="88.9" x2="-52.07" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-52.07" y="88.9"/>
-<wire x1="-62.23" y1="88.9" x2="-63.5" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="88.9" x2="-68.58" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
-<junction x="-62.23" y="88.9"/>
+<junction x="-66.04" y="88.9"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -20150,7 +20150,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="B1" gate="1" pin="+"/>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="-78.74" y1="88.9" x2="-73.66" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -20346,6 +20345,13 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="16.51" y1="90.17" x2="16.51" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="6"/>
 <wire x1="16.51" y1="100.33" x2="13.97" y2="100.33" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="POT3" gate="G$1" pin="S"/>
+<wire x1="-60.96" y1="83.82" x2="-59.69" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
