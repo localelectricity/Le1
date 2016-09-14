@@ -1,0 +1,15 @@
+Partlist exported from D:/My Documents/GitHub/MVP/Electronic Design/LED_board.sch at 14/09/2016 19:23
+
+Part Value Device     Package Description               
+JP1        PINHD-1X8  1X08    PIN HEADER                
+LED1       LED5MM     LED5MM  LED                       
+LED2       LED5MM     LED5MM  LED                       
+LED3       LED5MM     LED5MM  LED                       
+LED4       LED5MM     LED5MM  LED                       
+LED5       LED5MM     LED5MM  LED                       
+LED6       LED5MM     LED5MM  LED                       
+R1   270E  R-EU_R1206 R1206   RESISTOR, European symbol 
+R2   270E  R-EU_R1206 R1206   RESISTOR, European symbol 
+R3   270E  R-EU_R1206 R1206   RESISTOR, European symbol 
+R4   270E  R-EU_R1206 R1206   RESISTOR, European symbol 
+R5   270E  R-EU_R1206 R1206   RESISTOR, European symbol 
