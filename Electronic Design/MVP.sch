@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -19790,6 +19790,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="D1" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
 <part name="SW_OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19862,6 +19863,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="D1" gate="G$1" x="-8.89" y="73.66" rot="R90"/>
 <instance part="C4" gate="G$1" x="24.13" y="95.25"/>
 <instance part="SW_OUT" gate="A" x="67.31" y="74.93" rot="R270"/>
+<instance part="SUPPLY4" gate="GND" x="104.14" y="69.85"/>
 </instances>
 <busses>
 </busses>
@@ -20007,6 +20009,16 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="16.51" y1="17.78" x2="5.08" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="17.78" x2="5.08" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<wire x1="67.31" y1="72.39" x2="104.14" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="72.39" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SW_OUT" gate="A" pin="2"/>
+<wire x1="67.31" y1="72.39" x2="67.31" y2="77.47" width="0.1524" layer="91"/>
+<pinref part="VIN_BUCK/BOOST" gate="G$1" pin="2"/>
+<wire x1="113.03" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<junction x="104.14" y="72.39"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -20236,16 +20248,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="16.51" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="30.48" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<wire x1="67.31" y1="72.39" x2="104.14" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="72.39" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SW_OUT" gate="A" pin="2"/>
-<wire x1="67.31" y1="72.39" x2="67.31" y2="77.47" width="0.1524" layer="91"/>
-<pinref part="VIN_BUCK/BOOST" gate="G$1" pin="2"/>
-<wire x1="113.03" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
