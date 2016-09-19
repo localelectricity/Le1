@@ -2114,9 +2114,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="2.573215625" y="52.306196875" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="-0.430584375" y="59.729996875" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="VOUT+" library="pinhead" package="1X02" value="" x="3.544190625" y="29.647540625" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.918396875" y="26.896659375" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="0.369190625" y="32.187540625" size="1.27" layer="27" rot="R270"/>
+<element name="VOUT+" library="pinhead" package="1X02" value="" x="3.424190625" y="26.147540625" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.798396875" y="23.396659375" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="0.249190625" y="28.687540625" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="F1" library="fuse" package="FUSE_HOLDER_5X20MM" value="FUSEBLANK_5X20MM" x="26.974415625" y="60.299996875" smashed="yes">
 <attribute name="MF" value="" x="26.974415625" y="60.299996875" size="1.778" layer="27" display="off"/>
@@ -2140,9 +2140,9 @@ design rules under a new name.</description>
 <element name="C9" library="resistor" package="C0805K" value="22n" x="74.320996875" y="51.667596875" rot="R90"/>
 <element name="C8" library="resistor" package="C0805K" value="22n" x="74.379803125" y="47.5407875" rot="R270"/>
 <element name="JP2" library="pinhead" package="1X08" value="" x="56.8750375" y="51.21298125" rot="R270"/>
-<element name="VOUT-" library="pinhead" package="1X02" value="" x="3.33730625" y="41.2068625" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.88288125" y="43.4397375" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="6.51230625" y="37.3968625" size="1.27" layer="27" rot="R90"/>
+<element name="VOUT-" library="pinhead" package="1X02" value="" x="3.49730625" y="34.2068625" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.04288125" y="36.4397375" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="6.67230625" y="30.3968625" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="VIN_BUCK" library="pinhead" package="1X02" value="" x="85.50119375" y="29.554190625" rot="R90"/>
 <element name="JP1" library="pinhead" package="1X06" value="" x="79.718590625" y="31.978721875" rot="R270"/>
@@ -2315,7 +2315,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="3"/>
 <contactref element="IC1" pad="4"/>
 <contactref element="VOUT+" pad="2"/>
-<wire x1="3.544190625" y1="28.377540625" x2="3.544190625" y2="30.917540625" width="2.1844" layer="1"/>
+<wire x1="3.424190625" y1="25.805809375" x2="3.424190625" y2="27.417540625" width="2.1844" layer="1"/>
 <wire x1="40.08365625" y1="36.6083875" x2="40.5916125" y2="36.6083875" width="2.1844" layer="1"/>
 <wire x1="40.5916125" y1="36.6083875" x2="40.6" y2="36.6" width="2.1844" layer="1"/>
 <wire x1="41.35365625" y1="36.6083875" x2="40.5916125" y2="36.6083875" width="0.6096" layer="1"/>
@@ -2327,8 +2327,8 @@ design rules under a new name.</description>
 <wire x1="33.34" y1="27.01" x2="33.14" y2="26.81" width="2.1844" layer="1"/>
 <wire x1="33.14" y1="26.81" x2="30.9159875" y2="26.81" width="2.1844" layer="1"/>
 <wire x1="30.9159875" y1="26.81" x2="30.902703125" y2="26.823284375" width="2.1844" layer="1"/>
-<wire x1="3.544190625" y1="28.377540625" x2="3.544190625" y2="27.985809375" width="2.1844" layer="1"/>
-<wire x1="3.544190625" y1="27.985809375" x2="5.74" y2="25.79" width="2.1844" layer="1"/>
+<wire x1="3.424190625" y1="24.877540625" x2="3.424190625" y2="25.805809375" width="2.1844" layer="1"/>
+<wire x1="3.424190625" y1="25.805809375" x2="5.74" y2="25.79" width="2.1844" layer="1"/>
 <wire x1="5.74" y1="25.79" x2="29.86941875" y2="25.79" width="2.1844" layer="1"/>
 <wire x1="29.86941875" y1="25.79" x2="30.902703125" y2="26.823284375" width="2.1844" layer="1"/>
 </signal>
