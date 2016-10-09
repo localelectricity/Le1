@@ -1,4 +1,11 @@
-# MVP
-A device which allows users to harvest power from anything that generates electricity, whether it is a solar panel or an electric motor from an old washing machine. The device turns the unregulated voltage from these devices into useful electricity, which can then be used to charge mobile phones or provide lighting.
+# Electronic Design
+All electronic design files are kept here.
 
-The device also provides users with feedback on how a particular generation device is performing through a simpl UI.
+Contents description:
+
+- Eagle Files: Contains all the files required to view our designs in CadSoft Eagle.
+
+- Gerbers: Contains all the files required by PCB manufacturers.
+
+- PDFs: Contains PDF versions of schematics and PCB layouts of our designs.
+
