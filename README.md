@@ -3,4 +3,4 @@ A universal input USB charger which makes it easy to charge your cell phone or l
 
 The charger is able to accept DC as well as single or multi-phase AC electricity, which is then converted into a smooth, uniform 5V for USB powered devices.
 
-The device also provides feedback on how a particular generation device is performing through a simpl UI.
+The device also provides feedback on how your generation device is performing through a simpl UI.
