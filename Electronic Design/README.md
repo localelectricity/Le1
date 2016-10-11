@@ -9,4 +9,8 @@ Contents description:
 
 - PDFs: Contains PDF versions of schematics and PCB layouts of our designs.
 
+# Block Diagramme
+
+![alt tag](https://github.com/localelectricity/MVP/blob/master/Electronic%20Design/General%20Overview/MVP%20Block%20Diagramme.png)
+
 
