@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -19768,13 +19768,13 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="C8" library="resistor" deviceset="C-EU" device="C0805K" value="22n"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X8" device=""/>
+<part name="LED_CONTROL" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="VOUT-" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="VIN_BUCK" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V3" library="supply1" deviceset="+5V" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="PROGAMMING_HEADER" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1206K" value="10u"/>
 <part name="VIN_BUCK/BOOST" library="pinhead" deviceset="PINHD-1X2" device=""/>
@@ -19789,14 +19789,12 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="POT1" library="resistor" deviceset="R-TRIMM" device="3296W" value="500k"/>
 <part name="D1" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
-<part name="SW_OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="SWITCH_OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="41.91" y="74.93" size="1.778" layer="91">IN-</text>
-<text x="39.37" y="90.17" size="1.778" layer="91">IN+</text>
 </plain>
 <instances>
 <instance part="B1" gate="1" x="-83.82" y="88.9" smashed="yes">
@@ -19823,7 +19821,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="SUPPLY22" gate="GND" x="-49.53" y="63.5"/>
 <instance part="SUPPLY23" gate="GND" x="-66.04" y="63.5"/>
 <instance part="VIN" gate="G$1" x="-104.14" y="88.9"/>
-<instance part="VOUT+" gate="G$1" x="54.61" y="86.36"/>
+<instance part="VOUT+" gate="G$1" x="49.53" y="86.36"/>
 <instance part="F1" gate="G$1" x="-73.66" y="88.9" smashed="yes">
 <attribute name="NAME" x="-77.47" y="90.297" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-77.47" y="93.599" size="1.778" layer="96"/>
@@ -19837,32 +19835,35 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="C9" gate="G$1" x="-99.06" y="27.94"/>
 <instance part="C8" gate="G$1" x="-107.95" y="27.94"/>
 <instance part="SUPPLY14" gate="GND" x="-107.95" y="16.51"/>
-<instance part="SUPPLY17" gate="GND" x="8.89" y="-12.7"/>
-<instance part="JP2" gate="A" x="19.05" y="-2.54"/>
-<instance part="VOUT-" gate="G$1" x="54.61" y="63.5"/>
-<instance part="VIN_BUCK" gate="G$1" x="93.98" y="54.61"/>
-<instance part="SUPPLY2" gate="GND" x="74.93" y="44.45"/>
-<instance part="+3V2" gate="1" x="74.93" y="64.77"/>
+<instance part="SUPPLY17" gate="GND" x="34.29" y="-12.7"/>
+<instance part="LED_CONTROL" gate="A" x="49.53" y="-2.54"/>
+<instance part="VOUT-" gate="G$1" x="49.53" y="63.5"/>
+<instance part="VIN_BUCK" gate="G$1" x="93.98" y="49.53"/>
+<instance part="SUPPLY2" gate="GND" x="74.93" y="39.37"/>
+<instance part="+3V2" gate="1" x="74.93" y="59.69"/>
 <instance part="+3V3" gate="1" x="31.75" y="113.03"/>
-<instance part="JP1" gate="A" x="19.05" y="22.86"/>
+<instance part="PROGAMMING_HEADER" gate="A" x="19.05" y="22.86"/>
 <instance part="SUPPLY6" gate="GND" x="5.08" y="12.7"/>
-<instance part="C6" gate="G$1" x="74.93" y="55.88"/>
+<instance part="C6" gate="G$1" x="74.93" y="50.8"/>
 <instance part="VIN_BUCK/BOOST" gate="G$1" x="115.57" y="93.98"/>
-<instance part="R2" gate="G$1" x="77.47" y="105.41"/>
+<instance part="R2" gate="G$1" x="77.47" y="107.95"/>
 <instance part="R3" gate="G$1" x="77.47" y="99.06"/>
 <instance part="USB_OUT" gate="G$1" x="93.98" y="87.63"/>
-<instance part="S2" gate="1" x="36.83" y="1.27"/>
-<instance part="+5V2" gate="1" x="36.83" y="15.24"/>
-<instance part="R5" gate="G$1" x="48.26" y="-10.16" rot="R90"/>
-<instance part="SUPPLY3" gate="GND" x="48.26" y="-21.59"/>
-<instance part="+5V3" gate="1" x="5.08" y="-5.08"/>
+<instance part="S2" gate="1" x="-39.37" y="-31.75"/>
+<instance part="+5V2" gate="1" x="-39.37" y="-17.78"/>
+<instance part="R5" gate="G$1" x="-27.94" y="-43.18" rot="R90"/>
+<instance part="SUPPLY3" gate="GND" x="-27.94" y="-54.61"/>
+<instance part="+5V3" gate="1" x="30.48" y="-5.08"/>
 <instance part="POT1" gate="G$1" x="-40.64" y="71.12" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-39.37" y="65.151" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="-39.37" y="67.31" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="D1" gate="G$1" x="-8.89" y="73.66" rot="R90"/>
 <instance part="C4" gate="G$1" x="24.13" y="95.25"/>
-<instance part="SW_OUT" gate="A" x="67.31" y="74.93" rot="R270"/>
+<instance part="SWITCH_OUT" gate="A" x="67.31" y="74.93" smashed="yes" rot="R270">
+<attribute name="NAME" x="60.96" y="67.945" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.69" y="81.28" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="SUPPLY4" gate="GND" x="104.14" y="69.85"/>
 </instances>
 <busses>
@@ -19925,9 +19926,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="11.43" y1="66.04" x2="11.43" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="VOUT-" gate="G$1" pin="1"/>
-<wire x1="52.07" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="66.04" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 <junction x="11.43" y="66.04"/>
-<wire x1="45.72" y1="66.04" x2="11.43" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="66.04" x2="11.43" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-13.97" y1="66.04" x2="-8.89" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="66.04" x2="-1.27" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-1.27" y1="66.04" x2="11.43" y2="66.04" width="0.1524" layer="91"/>
@@ -19944,10 +19945,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="-40.64" y1="66.04" x2="-13.97" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="POT1" gate="G$1" pin="E"/>
 <junction x="-40.64" y="66.04"/>
-<wire x1="45.72" y1="63.5" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
-<junction x="45.72" y="66.04"/>
+<wire x1="40.64" y1="63.5" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
+<junction x="40.64" y="66.04"/>
 <pinref part="VOUT-" gate="G$1" pin="2"/>
-<wire x1="52.07" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -19986,26 +19987,26 @@ Source: www.vishay.com .. rwm.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="74.93" y1="46.99" x2="83.82" y2="46.99" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="46.99" x2="83.82" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="41.91" x2="83.82" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="41.91" x2="83.82" y2="49.53" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="74.93" y1="50.8" x2="74.93" y2="46.99" width="0.1524" layer="91"/>
-<junction x="74.93" y="46.99"/>
+<wire x1="74.93" y1="45.72" x2="74.93" y2="41.91" width="0.1524" layer="91"/>
+<junction x="74.93" y="41.91"/>
 <pinref part="VIN_BUCK" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="54.61" x2="83.82" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="49.53" x2="83.82" y2="49.53" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="8"/>
+<pinref part="LED_CONTROL" gate="A" pin="8"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="16.51" y1="-10.16" x2="8.89" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="-10.16" x2="34.29" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-15.24" x2="48.26" y2="-19.05" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-48.26" x2="-27.94" y2="-52.07" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="PROGAMMING_HEADER" gate="A" pin="6"/>
 <wire x1="16.51" y1="17.78" x2="5.08" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="17.78" x2="5.08" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
@@ -20013,7 +20014,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <wire x1="67.31" y1="72.39" x2="104.14" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="72.39" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SW_OUT" gate="A" pin="2"/>
+<pinref part="SWITCH_OUT" gate="A" pin="2"/>
 <wire x1="67.31" y1="72.39" x2="67.31" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="VIN_BUCK/BOOST" gate="G$1" pin="2"/>
 <wire x1="113.03" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
@@ -20045,10 +20046,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="11.43" y1="88.9" x2="11.43" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <pinref part="VOUT+" gate="G$1" pin="1"/>
-<wire x1="11.43" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="11.43" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="3"/>
 <pinref part="IC1" gate="G$1" pin="4"/>
-<wire x1="45.72" y1="88.9" x2="52.07" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="88.9" x2="46.99" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="97.79" x2="-1.27" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="100.33" x2="-7.62" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="100.33" x2="-1.27" y2="100.33" width="0.1524" layer="91"/>
@@ -20057,10 +20058,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="-11.43" y1="100.33" x2="-11.43" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="88.9" x2="11.43" y2="88.9" width="0.1524" layer="91"/>
 <junction x="11.43" y="88.9"/>
-<wire x1="45.72" y1="86.36" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
-<junction x="45.72" y="88.9"/>
+<wire x1="40.64" y1="86.36" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
+<junction x="40.64" y="88.9"/>
 <pinref part="VOUT+" gate="G$1" pin="2"/>
-<wire x1="52.07" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -20132,22 +20133,22 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <pinref part="+3V2" gate="1" pin="+5V"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<junction x="74.93" y="62.23"/>
-<wire x1="74.93" y1="62.23" x2="74.93" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="74.93" y1="62.23" x2="83.82" y2="62.23" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="62.23" x2="83.82" y2="57.15" width="0.1524" layer="91"/>
+<junction x="74.93" y="57.15"/>
+<wire x1="74.93" y1="57.15" x2="74.93" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="57.15" x2="83.82" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="57.15" x2="83.82" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="VIN_BUCK" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="57.15" x2="91.44" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="52.07" x2="91.44" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="S"/>
 <pinref part="+5V2" gate="1" pin="+5V"/>
-<wire x1="36.83" y1="6.35" x2="36.83" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-39.37" y1="-26.67" x2="-39.37" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+5V3" gate="1" pin="+5V"/>
-<pinref part="JP2" gate="A" pin="7"/>
-<wire x1="5.08" y1="-7.62" x2="16.51" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="LED_CONTROL" gate="A" pin="7"/>
+<wire x1="30.48" y1="-7.62" x2="46.99" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -20208,23 +20209,23 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="-12.7" y1="-7.62" x2="-11.43" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="-7.62" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="P"/>
-<wire x1="-11.43" y1="-12.7" x2="-11.43" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-11.43" y1="-17.78" x2="36.83" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="36.83" y1="-17.78" x2="36.83" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-11.43" y1="-12.7" x2="-11.43" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-11.43" y1="-68.58" x2="-39.37" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-39.37" y1="-68.58" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="36.83" y1="-5.08" x2="36.83" y2="-3.81" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-5.08" x2="36.83" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="36.83" y="-5.08"/>
+<wire x1="-39.37" y1="-38.1" x2="-39.37" y2="-36.83" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-38.1" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-39.37" y="-38.1"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-12.7" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-11.43" y="-12.7"/>
-<pinref part="JP2" gate="A" pin="5"/>
-<wire x1="16.51" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="LED_CONTROL" gate="A" pin="5"/>
+<wire x1="46.99" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="PROGAMMING_HEADER" gate="A" pin="2"/>
 <wire x1="16.51" y1="27.94" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="27.94" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="1" pin="DIGITAL_1(TX)"/>
@@ -20233,7 +20234,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="PROGAMMING_HEADER" gate="A" pin="3"/>
 <wire x1="16.51" y1="25.4" x2="-2.54" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="25.4" x2="-2.54" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="29.21" x2="-10.16" y2="29.21" width="0.1524" layer="91"/>
@@ -20244,7 +20245,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="PROGAMMING_HEADER" gate="A" pin="1"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="16.51" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="30.48" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
@@ -20253,8 +20254,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="82.55" y1="105.41" x2="83.82" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="105.41" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="107.95" x2="83.82" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="107.95" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="99.06" x2="105.41" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="82.55" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
@@ -20271,18 +20272,18 @@ Source: www.vishay.com .. rwm.pdf</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="72.39" y1="105.41" x2="64.77" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="105.41" x2="64.77" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="107.95" x2="64.77" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="107.95" x2="64.77" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="64.77" y1="99.06" x2="72.39" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="99.06" x2="64.77" y2="77.47" width="0.1524" layer="91"/>
 <junction x="64.77" y="99.06"/>
-<pinref part="SW_OUT" gate="A" pin="3"/>
+<pinref part="SWITCH_OUT" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="SW_OUT" gate="A" pin="1"/>
+<pinref part="SWITCH_OUT" gate="A" pin="1"/>
 <wire x1="69.85" y1="85.09" x2="69.85" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="USB_OUT" gate="G$1" pin="2"/>
 <wire x1="69.85" y1="83.82" x2="69.85" y2="77.47" width="0.1524" layer="91"/>
@@ -20295,14 +20296,14 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="IC2" gate="1" pin="DIGITAL_9(PWM)"/>
 <wire x1="-12.7" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="2.54" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="-7.62" y1="7.62" x2="16.51" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="LED_CONTROL" gate="A" pin="1"/>
+<wire x1="-7.62" y1="7.62" x2="46.99" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="16.51" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="LED_CONTROL" gate="A" pin="2"/>
+<wire x1="46.99" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="1" pin="DIGITAL_10(PWM)"/>
 <wire x1="-5.08" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
@@ -20313,8 +20314,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="IC2" gate="1" pin="DIGITAL_11(PWM)"/>
 <wire x1="-12.7" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="-2.54" y1="2.54" x2="16.51" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="LED_CONTROL" gate="A" pin="3"/>
+<wire x1="-2.54" y1="2.54" x2="46.99" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -20322,22 +20323,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="IC2" gate="1" pin="DIGITAL_12"/>
 <wire x1="-12.7" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="0" y1="-5.08" x2="0" y2="0" width="0.1524" layer="91"/>
-<wire x1="0" y1="0" x2="16.51" y2="0" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="4"/>
-</segment>
-</net>
-<net name="OVERV" class="0">
-<segment>
-<pinref part="POT1" gate="G$1" pin="S"/>
-<wire x1="-35.56" y1="71.12" x2="-31.75" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-31.75" y="71.12"/>
-<label x="-33.02" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="A" pin="6"/>
-<wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="10.16" y="-5.08"/>
-<label x="7.62" y="-5.08" size="1.778" layer="95"/>
+<wire x1="0" y1="0" x2="46.99" y2="0" width="0.1524" layer="91"/>
+<pinref part="LED_CONTROL" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -20354,6 +20341,20 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <pinref part="POT3" gate="G$1" pin="S"/>
 <wire x1="-60.96" y1="83.82" x2="-59.69" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OVER_VOLTAGE" class="0">
+<segment>
+<pinref part="LED_CONTROL" gate="A" pin="6"/>
+<wire x1="46.99" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="10.16" y="-5.08"/>
+<label x="7.62" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POT1" gate="G$1" pin="S"/>
+<wire x1="-35.56" y1="71.12" x2="-31.75" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-31.75" y="71.12"/>
+<label x="-35.56" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
