@@ -5273,7 +5273,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </class>
 </classes>
 <parts>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X8" device=""/>
+<part name="LED_CONTROL_IN" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R1206" value="270E"/>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -5294,7 +5294,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <plain>
 </plain>
 <instances>
-<instance part="JP1" gate="A" x="12.7" y="48.26" rot="R180"/>
+<instance part="LED_CONTROL_IN" gate="A" x="12.7" y="48.26" rot="R180"/>
 <instance part="R1" gate="G$1" x="55.88" y="25.4"/>
 <instance part="LED1" gate="G$1" x="66.04" y="25.4" rot="R90"/>
 <instance part="P+1" gate="1" x="40.64" y="60.96"/>
@@ -5317,13 +5317,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="40.64" y1="58.42" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="7"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="7"/>
 <wire x1="40.64" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="1"/>
 <wire x1="15.24" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="38.1" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -5332,7 +5332,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="2"/>
 <wire x1="15.24" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="40.64" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -5343,13 +5343,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="40.64" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="3"/>
 <wire x1="50.8" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="6"/>
 <wire x1="15.24" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="50.8" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="LED6" gate="G$1" pin="A"/>
@@ -5361,7 +5361,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="48.26" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="5"/>
 <wire x1="48.26" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5369,13 +5369,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="4"/>
 <wire x1="50.8" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="8"/>
+<pinref part="LED_CONTROL_IN" gate="A" pin="8"/>
 <wire x1="15.24" y1="55.88" x2="25.4" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="55.88" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
