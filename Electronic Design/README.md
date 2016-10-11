@@ -9,3 +9,4 @@ Contents description:
 
 - PDFs: Contains PDF versions of schematics and PCB layouts of our designs.
 
+![alt tag](https://raw.githubusercontent.com/samsonfsb/localelectricity/master/MVP/ElectronicDesign/GeneralOverview/System Overview.png)
