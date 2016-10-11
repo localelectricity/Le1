@@ -9,6 +9,4 @@ Contents description:
 
 - PDFs: Contains PDF versions of schematics and PCB layouts of our designs.
 
-# System Overview
 
-![alt tag](https://github.com/localelectricity/MVP/blob/master/Electronic%20Design/General%20Overview/System%20Overview.png)
