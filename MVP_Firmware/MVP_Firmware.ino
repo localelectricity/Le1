@@ -1,13 +1,13 @@
+// firmware for the MVP
 
-
-  float Vin=0;
-  float Iin=0;
-  float Iin_raw=0;
-  float Pin=0;
+  float Vin=0; // input voltage
+  float Iin=0;                     // input current
+  float Iin_raw=0;                 // untuned current input
+  float Pin=0;                     // input power in
   
-  const int numReadings = 10;
-  int rstButton = 0;
-  int pinval=0;
+  const int numReadings = 10;      // number of reading taken for smoothing
+  int rstButton = 0;               // reset button 
+  int pinval=0;                    // pin value
 
   int Vreadings[numReadings];      // the readings from the analog input
   int VreadIndex = 0;              // the index of the current reading
@@ -19,23 +19,27 @@
   int IreadIndex = 0;              // the index of the current reading
   int Itotal = 0;                  // the running total
   int Iaverage = 0;                // the average
-  int Ioffset = 510;
-  int IinOld = 0;
+  int Ioffset = 510;               // initial current offset for ACS712ELC-5A
+  int IinOld = 0;                  // current value from previous iteration (used for calibration)
   
   int Preadings[numReadings];      // the readings from the analog input
   int PreadIndex = 0;              // the index of the current reading
   int Ptotal = 0;                  // the running total
   
-// the setup function runs once when you press reset or power the board
+
+
 void setup() {
-  // initialize digital pin 13 as an output.
+  // initialize digital pins as outputs.
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(13, INPUT);
-  Serial.begin(9600);
-  //analogReference(EXTERNAL);
+  
+  Serial.begin(9600); // begin reading serial
+
+ // below is the initialisation of the values used for the smoothing of voltage and current readings
+ 
     // initialize all the readings to 0:
   for (int thisReading = 0; thisReading < numReadings; thisReading++) {
     Vreadings[thisReading] = 0;
@@ -48,8 +52,10 @@ void setup() {
     }
 }
 
-// the loop function runs over and over again forever
 void loop() {
+
+// LED output control for power readings 0-3W
+
   if (Pin < 0.5){
       digitalWrite(9, LOW);
       digitalWrite(10, LOW);
@@ -57,7 +63,7 @@ void loop() {
       digitalWrite(12, LOW);
   }
   else if (Pin < 1){
-      pinval = (Pin-1)*255;
+      pinval = (Pin-1)*255; // convert the power reading into a PWM value 
       analogWrite(9, pinval);
       digitalWrite(10, LOW);
       digitalWrite(11, LOW);
@@ -80,6 +86,7 @@ void loop() {
       digitalWrite(11, HIGH);
   }
 
+// calbration button, allowing the calbration of the current sensor
   rstButton = digitalRead (13);
   if (rstButton == HIGH){
     if ( Iin < 0.53 || Iin > 0.55){
@@ -90,7 +97,7 @@ void loop() {
        else{
         Ioffset = Ioffset+1;
        }
-    digitalWrite(12, HIGH);
+    digitalWrite(12, HIGH); // turn on LED to let user know the calbration is in progress
     }
     else{
     Ioffset = Ioffset;
@@ -101,7 +108,9 @@ void loop() {
     Ioffset = Ioffset; 
   }
   IinOld = Iin;
-  
+
+// voltage reading smoothing
+
    // subtract the last reading:
   Vtotal = Vtotal - Vreadings[VreadIndex];
   // read from the sensor:
@@ -118,6 +127,8 @@ void loop() {
   // calculate the average:
   Vaverage = Vtotal / numReadings;
   delay(1);        // delay in between reads for stability
+
+// current reading smoothing
 
    // subtract the last reading:
   Itotal = Itotal - Ireadings[IreadIndex];
@@ -136,6 +147,8 @@ void loop() {
   Iaverage = Itotal / numReadings;
   delay(1);        // delay in between reads for stability
 
+// power reading smoothing
+
      // subtract the last reading:
   Ptotal = Ptotal - Preadings[IreadIndex];
   // read from the sensor:
@@ -153,6 +166,8 @@ void loop() {
   Pin = Ptotal / numReadings;
   delay(1);        // delay in between reads for stability
 
+// converting voltage and curret reading to decimal values
+
   Vin = (Vaverage*0.039);
   Iin_raw = (Iaverage-Ioffset)*0.02642*0.5;
   Iin = Iin_raw; //(-0.1118*Iin_raw*Iin_raw)+(0.725*Iin_raw) + 0.0048;
@@ -161,6 +176,7 @@ void loop() {
 //  Vin = analogRead(4);//*0.039;
 //  Iin = analogRead(5);//-512)*0.029326;
 //  Pin = Vin*Iin;
+
   Serial.print("Vin:");
   Serial.print(Vin);
   Serial.print(" Iin:");
