@@ -7,4 +7,4 @@ The power supply also provides feedback on how your generation device is perform
 
 # System Overview
 
-![alt tag](https://github.com/localelectricity/MVP/blob/master/Electronic%20Design/General%20Overview/System%20Overview.png)
+![System Overview](Electronic%20Design/General%20Overview/System%20Overview.png)
