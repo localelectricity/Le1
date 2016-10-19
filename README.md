@@ -3,7 +3,7 @@ A universal input USB power supply which makes it easy to charge your cell phone
 
 The power supply is able to accept DC as well as single or multi-phase AC electricity, which is then converted into a smooth, uniform 5V for USB powered devices.
 
-The power supply also provides feedback on how your generation device is performing through a simpl UI.
+The power supply also provides feedback on how your generation device is performing through a simple UI.
 
 # System Overview
 
