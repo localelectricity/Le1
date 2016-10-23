@@ -13,6 +13,6 @@ Contents description:
 
 # Block Diagramme
 
-![alt tag](General%20Overview/MVP%20Block%20Diagramme.png)
+![alt tag](General%20Overview/L.E.One%20Block%20Diagramme.png)
 
 
