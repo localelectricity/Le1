@@ -8,8 +8,8 @@ C3                0.1u             C-EUC1206K       C1206K             CAPACITOR
 C4                0.1u             C-EUC1206K       C1206K             CAPACITOR, European symbol                                           
 C6                10u              C-EUC1206K       C1206K             CAPACITOR, European symbol                                           
 C7                0.1u             C-EUC1206K       C1206K             CAPACITOR, European symbol                                           
-C8                22n              C-EUC0805K       C0805K             CAPACITOR, European symbol                                           
-C9                22n              C-EUC0805K       C0805K             CAPACITOR, European symbol                                           
+C8                22p              C-EUC0805K       C0805K             CAPACITOR, European symbol                                           
+C9                22p              C-EUC0805K       C0805K             CAPACITOR, European symbol                                           
 D1                5.1V             ZPD              DO35Z10            Z DIODE                                                              
 D2                5.1V             ZPD              DO35Z10            Z DIODE                                                              
 F1                FUSEBLANK_5X20MM FUSEBLANK_5X20MM FUSE_HOLDER_5X20MM Fuse                                             unknown    unknown  
