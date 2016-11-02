@@ -19764,8 +19764,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R1206" value="10k"/>
 <part name="+5V1" library="supply1" deviceset="+5V" device=""/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
-<part name="C9" library="resistor" deviceset="C-EU" device="C0805K" value="22n"/>
-<part name="C8" library="resistor" deviceset="C-EU" device="C0805K" value="22n"/>
+<part name="C9" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
+<part name="C8" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="LED_CONTROL_OUT" library="pinhead" deviceset="PINHD-1X8" device=""/>
