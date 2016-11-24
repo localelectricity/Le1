@@ -2384,7 +2384,7 @@ design rules under a new name.</description>
 <via x="56.01569375" y="26.9402" extent="1-16" drill="0.6" shape="square"/>
 <via x="62.81569375" y="27.3402" extent="1-16" drill="0.6" shape="square"/>
 <via x="68.40569375" y="28.1402" extent="1-16" drill="0.6" shape="square"/>
-<via x="69.01569375" y="37.9402" extent="1-16" drill="0.6" shape="square"/>
+<via x="72.22569375" y="42.5502" extent="1-16" drill="0.6" shape="square"/>
 <via x="74.01569375" y="22.3402" extent="1-16" drill="0.6" shape="square"/>
 <via x="79.359946875" y="12.911478125" extent="1-16" drill="0.6" shape="square"/>
 <via x="72.72569375" y="16.0602" extent="1-16" drill="0.6" shape="square"/>
@@ -2424,7 +2424,7 @@ design rules under a new name.</description>
 <via x="49.93569375" y="27.8502" extent="1-16" drill="0.6" shape="square"/>
 <via x="61.41569375" y="20.7402" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="POT1" pad="3"/>
-<via x="72.21569375" y="42.9402" extent="1-16" drill="0.6" shape="square"/>
+<via x="71.85569375" y="47.3202" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="C4" pad="1"/>
 <contactref element="C6" pad="2"/>
 <contactref element="SWITCH_OUT" pad="2"/>
@@ -2454,7 +2454,7 @@ design rules under a new name.</description>
 <vertex x="-0.93" y="71.14"/>
 </polygon>
 <contactref element="LED_CONTROL_OUT" pad="11"/>
-<wire x1="68.6050375" y1="42.44298125" x2="69.01569375" y2="37.9402" width="0" layer="19" extent="1-1"/>
+<wire x1="68.6050375" y1="42.44298125" x2="72.22569375" y2="42.5502" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="M1S">
 <contactref element="C2" pad="+"/>
@@ -2673,7 +2673,12 @@ design rules under a new name.</description>
 <signal name="OVER_VOLTAGE">
 <contactref element="POT1" pad="2"/>
 <contactref element="LED_CONTROL_OUT" pad="9"/>
-<wire x1="68.6050375" y1="47.52298125" x2="63.175203125" y2="54.911571875" width="0" layer="19" extent="1-1"/>
+<wire x1="63.175203125" y1="54.911571875" x2="64.618428125" y2="54.911571875" width="0.6096" layer="1"/>
+<wire x1="64.618428125" y1="54.911571875" x2="66.03" y2="53.5" width="0.6096" layer="1"/>
+<wire x1="66.03" y1="53.5" x2="66.03" y2="48.46" width="0.6096" layer="1"/>
+<wire x1="66.03" y1="48.46" x2="66.98" y2="47.51" width="0.6096" layer="1"/>
+<wire x1="66.98" y1="47.51" x2="68.59205625" y2="47.51" width="0.6096" layer="1"/>
+<wire x1="68.59205625" y1="47.51" x2="68.6050375" y2="47.52298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="VIN" pad="1"/>
