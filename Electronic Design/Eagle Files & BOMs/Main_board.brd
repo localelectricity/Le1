@@ -2383,7 +2383,7 @@ design rules under a new name.</description>
 <via x="21.05569375" y="15.3902" extent="1-16" drill="0.6" shape="square"/>
 <via x="42.50569375" y="12.9602" extent="1-16" drill="0.6" shape="square"/>
 <via x="73.25569375" y="19.7902" extent="1-16" drill="0.6" shape="square"/>
-<via x="67.53569375" y="9.1902" extent="1-16" drill="0.6" shape="square"/>
+<via x="66.96569375" y="10.8502" extent="1-16" drill="0.6" shape="square"/>
 <via x="49.31569375" y="23.7302" extent="1-16" drill="0.6" shape="square"/>
 <via x="15.13569375" y="13.4402" extent="1-16" drill="0.6" shape="square"/>
 <via x="78.05569375" y="19.1902" extent="1-16" drill="0.6" shape="square"/>
