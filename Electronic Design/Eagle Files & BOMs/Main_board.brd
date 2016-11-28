@@ -2702,12 +2702,12 @@ design rules under a new name.</description>
 <signal name="OVER_VOLTAGE">
 <contactref element="LED_CONTROL_OUT" pad="6"/>
 <contactref element="POT1" pad="2"/>
-<wire x1="66.81701875" y1="46.56298125" x2="65.22" y2="48.16" width="0.6096" layer="1"/>
-<wire x1="65.22" y1="48.16" x2="65.22" y2="54.56" width="0.6096" layer="1"/>
-<wire x1="65.22" y1="54.56" x2="64.82" y2="54.96" width="0.6096" layer="1"/>
-<wire x1="64.82" y1="54.96" x2="63.22363125" y2="54.96" width="0.6096" layer="1"/>
-<wire x1="63.22363125" y1="54.96" x2="63.175203125" y2="54.911571875" width="0.6096" layer="1"/>
-<wire x1="66.81701875" y1="46.56298125" x2="68.5950375" y2="47.54298125" width="0" layer="19" extent="1-1"/>
+<wire x1="63.175203125" y1="54.911571875" x2="63.938428125" y2="54.911571875" width="0.6096" layer="1"/>
+<wire x1="63.938428125" y1="54.911571875" x2="65.89" y2="52.96" width="0.6096" layer="1"/>
+<wire x1="65.89" y1="52.96" x2="65.89" y2="48.39" width="0.6096" layer="1"/>
+<wire x1="65.89" y1="48.39" x2="66.78" y2="47.5" width="0.6096" layer="1"/>
+<wire x1="66.78" y1="47.5" x2="68.55205625" y2="47.5" width="0.6096" layer="1"/>
+<wire x1="68.55205625" y1="47.5" x2="68.5950375" y2="47.54298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="VIN" pad="1"/>
