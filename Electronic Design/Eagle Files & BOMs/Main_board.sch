@@ -20074,7 +20074,7 @@ Block, Siemens and generic&lt;p&gt;
 <part name="SWITCH_OUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="R6" library="varistor" deviceset="S14K17" device="" value="S14K75"/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="DIO_PINS" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -20151,7 +20151,7 @@ Block, Siemens and generic&lt;p&gt;
 </instance>
 <instance part="SUPPLY4" gate="GND" x="104.14" y="69.85"/>
 <instance part="R6" gate="G$1" x="-97.79" y="88.9" rot="R270"/>
-<instance part="JP1" gate="A" x="12.7" y="15.24"/>
+<instance part="DIO_PINS" gate="A" x="12.7" y="15.24"/>
 <instance part="SUPPLY5" gate="GND" x="20.32" y="17.78"/>
 </instances>
 <busses>
@@ -20310,7 +20310,7 @@ Block, Siemens and generic&lt;p&gt;
 <wire x1="113.03" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="DIO_PINS" gate="A" pin="1"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="10.16" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 </segment>
@@ -20604,9 +20604,13 @@ Block, Siemens and generic&lt;p&gt;
 <net name="OVER_VOLTAGE" class="0">
 <segment>
 <pinref part="LED_CONTROL_OUT" gate="G$1" pin="6"/>
-<wire x1="46.99" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="10.16" y="-5.08"/>
 <label x="7.62" y="-7.62" size="1.778" layer="95"/>
+<wire x1="24.13" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-5.08" x2="35.56" y2="-3.81" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-3.81" x2="24.13" y2="-3.81" width="0.1524" layer="91"/>
+<wire x1="24.13" y1="-3.81" x2="24.13" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="POT1" gate="G$1" pin="S"/>
@@ -20712,7 +20716,7 @@ Block, Siemens and generic&lt;p&gt;
 <segment>
 <pinref part="IC2" gate="1" pin="DIGITAL_8"/>
 <wire x1="-7.62" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="DIO_PINS" gate="A" pin="5"/>
 <wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
 </segment>
@@ -20722,7 +20726,7 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="IC2" gate="1" pin="DIGITAL_7"/>
 <wire x1="-8.89" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-8.89" y1="10.16" x2="-8.89" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="DIO_PINS" gate="A" pin="4"/>
 <wire x1="-8.89" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -20731,7 +20735,7 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="IC2" gate="1" pin="DIGITAL_6(PWM)"/>
 <wire x1="-12.7" y1="12.7" x2="-10.16" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="DIO_PINS" gate="A" pin="3"/>
 <wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -20740,7 +20744,7 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="IC2" gate="1" pin="DIGITAL_5(PWM)"/>
 <wire x1="-12.7" y1="15.24" x2="-11.43" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="15.24" x2="-11.43" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="DIO_PINS" gate="A" pin="2"/>
 <wire x1="-11.43" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
