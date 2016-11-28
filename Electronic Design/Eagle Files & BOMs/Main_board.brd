@@ -129,12 +129,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.062675" y1="0.0095125" x2="99.7111375" y2="0.0193875" width="0" layer="20"/>
-<wire x1="99.7111375" y1="0.0193875" x2="99.913640625" y2="67.89416875" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="99.9" y2="0" width="0" layer="20"/>
+<wire x1="99.9" y1="0" x2="99.9" y2="68" width="0" layer="20"/>
 <hole x="3.19508125" y="64.469571875" drill="3.2"/>
 <hole x="72.259146875" y="64.22315" drill="3.2"/>
 <hole x="60.695490625" y="3.4702" drill="3.2"/>
 <hole x="2.85523125" y="2.6960375" drill="3.2"/>
+<wire x1="0" y1="0" x2="0" y2="68" width="0" layer="20"/>
+<wire x1="99.9" y1="68" x2="0" y2="68" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="rectifier">
