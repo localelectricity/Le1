@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,16 +39,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -17116,7 +17116,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="C8" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
-<part name="LED_CONTROL_OUT" library="pinhead" deviceset="PINHD-1X12" device=""/>
+<part name="ATMEGA_AIO_DIO" library="pinhead" deviceset="PINHD-1X12" device=""/>
 <part name="+3V3" library="supply1" deviceset="+5V" device=""/>
 <part name="PROGAMMING_HEADER" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
@@ -17130,12 +17130,12 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="R6" library="varistor" deviceset="S14K17" device="" value="S14K75"/>
 <part name="DIO_PINS" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="ARDUINO_PS" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
 <part name="USB_PS" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
+<part name="ATMEGA_PS" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+5V" device=""/>
-<part name="VIN1" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="VOUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17180,7 +17180,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="C8" gate="G$1" x="-107.95" y="27.94"/>
 <instance part="SUPPLY14" gate="GND" x="-107.95" y="16.51"/>
 <instance part="SUPPLY17" gate="GND" x="8.89" y="-12.7"/>
-<instance part="LED_CONTROL_OUT" gate="G$1" x="49.53" y="-5.08"/>
+<instance part="ATMEGA_AIO_DIO" gate="G$1" x="49.53" y="-5.08"/>
 <instance part="+3V3" gate="1" x="31.75" y="113.03"/>
 <instance part="PROGAMMING_HEADER" gate="A" x="38.1" y="22.86"/>
 <instance part="SUPPLY6" gate="GND" x="30.48" y="11.43"/>
@@ -17194,12 +17194,12 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="R6" gate="G$1" x="-97.79" y="88.9" rot="R270"/>
 <instance part="DIO_PINS" gate="A" x="12.7" y="15.24"/>
 <instance part="SUPPLY5" gate="GND" x="20.32" y="17.78"/>
-<instance part="ARDUINO_PS" gate="G$1" x="88.9" y="76.2"/>
-<instance part="USB_PS" gate="G$1" x="88.9" y="43.18"/>
+<instance part="USB_PS" gate="G$1" x="88.9" y="76.2"/>
+<instance part="ATMEGA_PS" gate="G$1" x="88.9" y="43.18"/>
 <instance part="SUPPLY2" gate="GND" x="106.68" y="68.58"/>
 <instance part="SUPPLY4" gate="GND" x="106.68" y="35.56"/>
-<instance part="+3V1" gate="1" x="118.11" y="88.9"/>
-<instance part="VIN1" gate="A" x="120.65" y="41.91"/>
+<instance part="+3V1" gate="1" x="115.57" y="55.88"/>
+<instance part="VOUT" gate="A" x="119.38" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -17273,11 +17273,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="-1.27" y="66.04"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="-49.53" y1="66.04" x2="-13.97" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_PS" gate="G$1" pin="IN-"/>
+<pinref part="USB_PS" gate="G$1" pin="IN-"/>
 <wire x1="11.43" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="66.04" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="USB_PS" gate="G$1" pin="IN-"/>
+<pinref part="ATMEGA_PS" gate="G$1" pin="IN-"/>
 <wire x1="71.12" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="38.1" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
 <junction x="55.88" y="66.04"/>
@@ -17319,7 +17319,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="-107.95" y="19.05"/>
 </segment>
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="8"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="8"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 <wire x1="46.99" y1="-10.16" x2="8.89" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
@@ -17340,16 +17340,16 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="10.16" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ARDUINO_PS" gate="G$1" pin="OUT-"/>
+<pinref part="USB_PS" gate="G$1" pin="OUT-"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<pinref part="VOUT" gate="A" pin="3"/>
+<wire x1="116.84" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="76.2" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<junction x="106.68" y="71.12"/>
 </segment>
 <segment>
-<pinref part="USB_PS" gate="G$1" pin="OUT-"/>
+<pinref part="ATMEGA_PS" gate="G$1" pin="OUT-"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="106.68" y1="39.37" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
-<junction x="106.68" y="38.1"/>
-<pinref part="VIN1" gate="A" pin="3"/>
-<wire x1="118.11" y1="39.37" x2="106.68" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="M1S" class="0">
@@ -17365,12 +17365,12 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-11.43" y1="100.33" x2="-7.62" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="100.33" x2="-11.43" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="88.9" x2="11.43" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_PS" gate="G$1" pin="IN+"/>
+<pinref part="USB_PS" gate="G$1" pin="IN+"/>
 <wire x1="11.43" y1="88.9" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="88.9" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="88.9" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="USB_PS" gate="G$1" pin="IN+"/>
+<pinref part="ATMEGA_PS" gate="G$1" pin="IN+"/>
 <wire x1="60.96" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
 <junction x="60.96" y="88.9"/>
 <junction x="11.43" y="88.9"/>
@@ -17441,7 +17441,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </segment>
 <segment>
 <pinref part="+5V3" gate="1" pin="+5V"/>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="7"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="7"/>
 <wire x1="30.48" y1="-7.62" x2="46.99" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -17459,9 +17459,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </segment>
 <segment>
 <pinref part="+3V1" gate="1" pin="+5V"/>
-<wire x1="118.11" y1="86.36" x2="118.11" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_PS" gate="G$1" pin="OUT+"/>
-<wire x1="118.11" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="53.34" x2="115.57" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="ATMEGA_PS" gate="G$1" pin="OUT+"/>
+<wire x1="115.57" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -17515,7 +17515,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-12.7" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-11.43" y="-12.7"/>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="5"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="5"/>
 <wire x1="46.99" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="P1"/>
 <wire x1="-39.37" y1="-36.83" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
@@ -17555,13 +17555,13 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="IC2" gate="1" pin="DIGITAL_9(PWM)"/>
 <wire x1="-12.7" y1="2.54" x2="-6.35" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-6.35" y1="2.54" x2="-6.35" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="1"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="1"/>
 <wire x1="-6.35" y1="7.62" x2="46.99" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="2"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="2"/>
 <wire x1="46.99" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="1" pin="DIGITAL_10(PWM)"/>
@@ -17573,7 +17573,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="IC2" gate="1" pin="DIGITAL_11(PWM)"/>
 <wire x1="-12.7" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="3"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="3"/>
 <wire x1="-2.54" y1="2.54" x2="46.99" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17583,7 +17583,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="-12.7" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="0" y1="-5.08" x2="0" y2="0" width="0.1524" layer="91"/>
 <wire x1="0" y1="0" x2="46.99" y2="0" width="0.1524" layer="91"/>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="4"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -17604,7 +17604,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </net>
 <net name="OVER_VOLTAGE" class="0">
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="6"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="6"/>
 <wire x1="46.99" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="10.16" y="-5.08"/>
 <label x="7.62" y="-7.62" size="1.778" layer="95"/>
@@ -17651,7 +17651,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="-2.54" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="12"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="12"/>
 <wire x1="46.99" y1="-20.32" x2="36.83" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="36.83" y="-20.32"/>
 <label x="22.86" y="-20.32" size="1.778" layer="95"/>
@@ -17665,7 +17665,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="-2.54" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="11"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="11"/>
 <wire x1="46.99" y1="-17.78" x2="36.83" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="36.83" y="-17.78"/>
 <label x="22.86" y="-17.78" size="1.778" layer="95"/>
@@ -17679,7 +17679,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="-2.54" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="10"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="10"/>
 <wire x1="46.99" y1="-15.24" x2="36.83" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="36.83" y="-15.24"/>
 <label x="22.86" y="-15.24" size="1.778" layer="95"/>
@@ -17693,7 +17693,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="-2.54" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED_CONTROL_OUT" gate="G$1" pin="9"/>
+<pinref part="ATMEGA_AIO_DIO" gate="G$1" pin="9"/>
 <wire x1="46.99" y1="-12.7" x2="36.83" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="36.83" y="-12.7"/>
 <label x="22.86" y="-12.7" size="1.778" layer="95"/>
@@ -17738,9 +17738,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="N$13" class="0">
 <segment>
 <pinref part="USB_PS" gate="G$1" pin="OUT+"/>
-<pinref part="VIN1" gate="A" pin="1"/>
-<wire x1="118.11" y1="44.45" x2="106.68" y2="44.45" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="44.45" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="VOUT" gate="A" pin="1"/>
+<wire x1="106.68" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

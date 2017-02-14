@@ -19,7 +19,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -2233,7 +2233,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="B1" library="rectifier" package="GBPC6" value="KBPC610" x="44.234415625" y="58.439996875" smashed="yes">
-<attribute name="NAME" x="38.607265625" y="47.877525" size="1.778" layer="25" ratio="10"/>
+<attribute name="NAME" x="32.257265625" y="64.517525" size="1.778" layer="25" ratio="10"/>
 </element>
 <element name="C2" library="resistor" package="E3,5-10" value="220uF" x="13.977296875" y="27.508715625" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.818296875" y="19.628715625" size="1.778" layer="25" ratio="10"/>
@@ -2244,15 +2244,15 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="66.151653125" y="32.00511875" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="C3" library="resistor" package="C1206K" value="0.1u" x="58.069975" y="30.12475625" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.724975" y="27.52975625" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="57.514975" y="27.29975625" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="60.010875" y="31.897678125" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D2" library="diode" package="DO35Z10" value="5.1V" x="60.99920625" y="24.108646875" smashed="yes">
-<attribute name="NAME" x="58.71320625" y="25.378646875" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="60.40320625" y="25.818646875" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="61.252478125" y="21.51099375" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="IC1" library="mylibrary" package="SOIC8" value="ACS712ELC-5A" x="53.40865625" y="33.1683875" smashed="yes" rot="R180">
-<attribute name="NAME" x="56.07565625" y="35.0733875" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="48.94565625" y="34.0033875" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="44.31456875" y="36.552" size="1.27" layer="27"/>
 </element>
 <element name="POT2" library="resistor" package="RTRIM3296W" value="500k" x="53.8116125" y="44.01865625" smashed="yes" rot="R270">
@@ -2262,10 +2262,13 @@ design rules under a new name.</description>
 <element name="Q1" library="transistor-power" package="TO220BH" value="IRF9540" x="28.920084375" y="40.51001875" rot="MR180"/>
 <element name="Q2" library="transistor-power" package="TO220BH" value="IRF9540" x="43.060084375" y="40.62001875" rot="MR180"/>
 <element name="POT3" library="resistor" package="RTRIM3296W" value="5k" x="17.645396875" y="46.30505" smashed="yes" rot="R270">
-<attribute name="NAME" x="16.305396875" y="49.78005" size="1.27" layer="25"/>
+<attribute name="NAME" x="8.135396875" y="45.71005" size="1.27" layer="25"/>
 <attribute name="VALUE" x="15.105396875" y="42.26005" size="1.27" layer="27"/>
 </element>
-<element name="R1" library="resistor" package="VTA52" value="1k" x="20.64296875" y="38.686728125"/>
+<element name="R1" library="resistor" package="VTA52" value="1k" x="20.64296875" y="38.686728125" smashed="yes">
+<attribute name="NAME" x="5.50296875" y="41.286728125" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="17.46796875" y="38.051728125" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="VIN" library="pinhead" package="1X03" value="" x="2.955584375" y="54.870003125" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.126784375" y="59.753803125" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="6.130584375" y="52.330003125" size="1.27" layer="27" rot="R90"/>
@@ -2277,7 +2280,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="18.654415625" y="61.699996875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC2" library="Arduino-AVR" package="DIL28-3" value="ATMEGA328-PU" x="71.9725375" y="44.092928125" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.5125375" y="24.690528125" size="1.778" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="71.769471875" y="56.8525375" size="1.778" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="72.6075375" y="28.217928125" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="X1" library="crystal" package="HC49/S" value="16MHz" x="83.68809375" y="48.982609375" rot="R270">
@@ -2286,11 +2289,26 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="83.0411" y="48.982609375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="83.0411" y="48.982609375" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R4" library="resistor" package="R1206" value="10k" x="73.06636875" y="23.501790625"/>
-<element name="C7" library="resistor" package="C1206K" value="0.1u" x="79.1032625" y="23.429071875"/>
-<element name="C9" library="resistor" package="C0805K" value="22p" x="78.720996875" y="51.227596875" rot="R90"/>
-<element name="C8" library="resistor" package="C0805K" value="22p" x="78.779803125" y="47.1007875" rot="R270"/>
-<element name="LED_CONTROL_OUT" library="pinhead" package="1X12" value="" x="61.5750375" y="46.67298125" rot="R270"/>
+<element name="R4" library="resistor" package="R1206" value="10k" x="73.06636875" y="23.501790625" smashed="yes">
+<attribute name="NAME" x="68.09636875" y="22.941790625" size="1.27" layer="25"/>
+<attribute name="VALUE" x="71.79636875" y="20.961790625" size="1.27" layer="27"/>
+</element>
+<element name="C7" library="resistor" package="C1206K" value="0.1u" x="79.1032625" y="23.429071875" smashed="yes">
+<attribute name="NAME" x="82.4832625" y="22.939071875" size="1.016" layer="25"/>
+<attribute name="VALUE" x="77.5032625" y="21.329071875" size="1.016" layer="27"/>
+</element>
+<element name="C9" library="resistor" package="C0805K" value="22p" x="78.720996875" y="51.227596875" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.582403125" y="54.615996875" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="80.620996875" y="50.227596875" size="1.016" layer="27" rot="R90"/>
+</element>
+<element name="C8" library="resistor" package="C0805K" value="22p" x="78.779803125" y="47.1007875" smashed="yes" rot="R270">
+<attribute name="NAME" x="78.2492125" y="43.534803125" size="1.016" layer="25"/>
+<attribute name="VALUE" x="76.879803125" y="48.1007875" size="1.016" layer="27" rot="R270"/>
+</element>
+<element name="ATMEGA_AIO_DIO" library="pinhead" package="1X12" value="" x="61.5750375" y="46.67298125" smashed="yes" rot="R270">
+<attribute name="NAME" x="58.0538375" y="63.85918125" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="58.4000375" y="61.91298125" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="PROGAMMING_HEADER" library="pinhead" package="1X06" value="" x="84.188590625" y="33.728721875" rot="R270"/>
 <element name="S2" library="switch-omron" package="B3F-10XX" value="" x="83.011790625" y="64.233684375" rot="R180">
 <attribute name="MPN" value="B3F-1000" x="83.011790625" y="64.233684375" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2301,14 +2319,20 @@ design rules under a new name.</description>
 <element name="R5" library="resistor" package="R1206" value="10k" x="72.057740625" y="65.005540625" rot="R180"/>
 <element name="D1" library="diode" package="DO35Z10" value="5.1V" x="61.5302" y="24.2543125" rot="MR270"/>
 <element name="C4" library="resistor" package="C1206K" value="0.1u" x="52.2593625" y="25.052384375" rot="R90"/>
-<element name="R6" library="varistor" package="S14K17" value="S14K75" x="15.67" y="51.73" rot="R270"/>
+<element name="R6" library="varistor" package="S14K17" value="S14K75" x="15.67" y="51.73" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.26" y="51.787" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="15.289" y="54.397" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="DIO_PINS" library="pinhead" package="1X05" value="" x="90.03" y="54.15" smashed="yes" rot="R90">
-<attribute name="NAME" x="87.4112" y="54.6438" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="93.9112" y="52.7138" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="93.205" y="49.07" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="ARDUINO_PS" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="72.38" y="11.36"/>
-<element name="USB_PS" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="27.38" y="11.32"/>
-<element name="VIN1" library="pinhead" package="1X03" value="" x="94.16" y="34.58" rot="R90"/>
+<element name="USB_PS" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="72.38" y="11.36" smashed="yes">
+<attribute name="NAME" x="96.7" y="11.93" size="1.27" layer="25" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="72.38" y="-0.07" size="1.27" layer="27" align="top-center"/>
+</element>
+<element name="ATMEGA_PS" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="27.38" y="11.32"/>
+<element name="VOUT" library="pinhead" package="1X03" value="" x="94.16" y="34.58" rot="R90"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -2350,13 +2374,13 @@ design rules under a new name.</description>
 <contactref element="C2" pad="-"/>
 <contactref element="C1" pad="2"/>
 <contactref element="POT2" pad="1"/>
-<contactref element="LED_CONTROL_OUT" pad="8"/>
+<contactref element="ATMEGA_AIO_DIO" pad="8"/>
 <contactref element="D1" pad="A"/>
 <via x="56.01569375" y="26.9402" extent="1-16" drill="0.6" shape="square"/>
 <via x="64.41569375" y="19.8202" extent="1-16" drill="0.6" shape="square"/>
 <via x="56.33569375" y="2.3502" extent="1-16" drill="0.6" shape="square"/>
 <via x="49.80569375" y="5.7902" extent="1-16" drill="0.6" shape="square"/>
-<via x="61.39569375" y="15.5302" extent="1-16" drill="0.6" shape="square"/>
+<via x="61.55569375" y="16.1502" extent="1-16" drill="0.6" shape="square"/>
 <via x="3.33569375" y="20.5102" extent="1-16" drill="0.6" shape="square"/>
 <via x="43.43569375" y="17.1902" extent="1-16" drill="0.6" shape="square"/>
 <via x="90.74569375" y="5.3202" extent="1-16" drill="0.6" shape="square"/>
@@ -2379,12 +2403,12 @@ design rules under a new name.</description>
 <via x="47.15569375" y="7.2602" extent="1-16" drill="0.6" shape="square"/>
 <via x="11.15569375" y="4.9702" extent="1-16" drill="0.6" shape="square"/>
 <via x="10.48569375" y="2.4102" extent="1-16" drill="0.6" shape="square"/>
-<via x="55.63569375" y="15.1802" extent="1-16" drill="0.6" shape="square"/>
+<via x="64.40569375" y="17.0502" extent="1-16" drill="0.6" shape="square"/>
 <via x="7.81569375" y="7.2902" extent="1-16" drill="0.6" shape="square"/>
 <via x="8.90569375" y="31.4902" extent="1-16" drill="0.6" shape="square"/>
 <via x="3.82569375" y="24.6402" extent="1-16" drill="0.6" shape="square"/>
 <via x="54.78569375" y="5.5002" extent="1-16" drill="0.6" shape="square"/>
-<via x="84.18569375" y="23.2702" extent="1-16" drill="0.6" shape="square"/>
+<via x="88.97569375" y="27.3102" extent="1-16" drill="0.6" shape="square"/>
 <via x="49.75569375" y="3.4602" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="R5" pad="1"/>
 <contactref element="PROGAMMING_HEADER" pad="6"/>
@@ -2405,11 +2429,11 @@ design rules under a new name.</description>
 <vertex x="100.52" y="68.77"/>
 </polygon>
 <contactref element="DIO_PINS" pad="1"/>
-<contactref element="ARDUINO_PS" pad="IN-"/>
 <contactref element="USB_PS" pad="IN-"/>
-<contactref element="ARDUINO_PS" pad="OUT-"/>
+<contactref element="ATMEGA_PS" pad="IN-"/>
 <contactref element="USB_PS" pad="OUT-"/>
-<contactref element="VIN1" pad="3"/>
+<contactref element="ATMEGA_PS" pad="OUT-"/>
+<contactref element="VOUT" pad="3"/>
 </signal>
 <signal name="M1S">
 <contactref element="C2" pad="+"/>
@@ -2424,8 +2448,8 @@ design rules under a new name.</description>
 <wire x1="14.26" y1="32.39" x2="14.09" y2="32.22" width="2.1844" layer="1"/>
 <wire x1="14.09" y1="32.22" x2="14.09" y2="29.39941875" width="2.1844" layer="1"/>
 <wire x1="14.09" y1="29.39941875" x2="13.977296875" y2="29.286715625" width="2.1844" layer="1"/>
-<contactref element="ARDUINO_PS" pad="IN+"/>
 <contactref element="USB_PS" pad="IN+"/>
+<contactref element="ATMEGA_PS" pad="IN+"/>
 <wire x1="13.977296875" y1="29.286715625" x2="9.256715625" y2="29.286715625" width="2.1844" layer="1"/>
 <wire x1="9.256715625" y1="29.286715625" x2="7.56" y2="27.59" width="2.1844" layer="1"/>
 <wire x1="7.56" y1="27.59" x2="7.56" y2="19.54" width="2.1844" layer="1"/>
@@ -2493,7 +2517,7 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="7"/>
 <contactref element="IC2" pad="20"/>
 <contactref element="R4" pad="1"/>
-<contactref element="LED_CONTROL_OUT" pad="7"/>
+<contactref element="ATMEGA_AIO_DIO" pad="7"/>
 <contactref element="IC1" pad="8"/>
 <contactref element="C3" pad="1"/>
 <contactref element="IC2" pad="21"/>
@@ -2508,7 +2532,6 @@ design rules under a new name.</description>
 <wire x1="71.59" y1="49.34" x2="70.26" y2="48.01" width="0.6096" layer="16"/>
 <wire x1="70.26" y1="48.01" x2="68.269609375" y2="48.01" width="0.6096" layer="16"/>
 <wire x1="68.269609375" y1="48.01" x2="68.1625375" y2="47.902928125" width="0.6096" layer="16"/>
-<contactref element="ARDUINO_PS" pad="OUT+"/>
 <wire x1="75.7825375" y1="42.822928125" x2="75.7825375" y2="42.8874625" width="0.6096" layer="1"/>
 <wire x1="71.64436875" y1="47.02563125" x2="75.7825375" y2="42.8874625" width="0.6096" layer="1"/>
 <wire x1="70.94" y1="47.73" x2="68.335465625" y2="47.73" width="0.6096" layer="1"/>
@@ -2516,14 +2539,17 @@ design rules under a new name.</description>
 <wire x1="68.1625375" y1="47.902928125" x2="68.1625375" y2="45.362928125" width="0.6096" layer="1"/>
 <wire x1="71.64436875" y1="23.501790625" x2="71.64436875" y2="47.02563125" width="0.6096" layer="1"/>
 <wire x1="71.64436875" y1="47.02563125" x2="70.94" y2="47.73" width="0.6096" layer="1"/>
-<wire x1="92.192" y1="19.996" x2="72.764" y2="19.996" width="0.6096" layer="1"/>
-<wire x1="72.764" y1="19.996" x2="71.65" y2="21.11" width="0.6096" layer="1"/>
-<wire x1="71.65" y1="21.11" x2="71.65" y2="23.496159375" width="0.6096" layer="1"/>
-<wire x1="71.65" y1="23.496159375" x2="71.64436875" y2="23.501790625" width="0.6096" layer="1"/>
+<wire x1="71.64436875" y1="23.501790625" x2="71.65" y2="23.496159375" width="0.6096" layer="1"/>
 <wire x1="61.5750375" y1="45.40298125" x2="59.44298125" y2="45.40298125" width="0.6096" layer="1"/>
 <wire x1="59.44298125" y1="45.40298125" x2="58.13" y2="44.09" width="0.6096" layer="1"/>
 <wire x1="58.13" y1="44.09" x2="58.13" y2="31.68478125" width="0.6096" layer="1"/>
 <wire x1="58.13" y1="31.68478125" x2="58.069975" y2="31.62475625" width="0.6096" layer="1"/>
+<contactref element="ATMEGA_PS" pad="OUT+"/>
+<wire x1="47.192" y1="19.956" x2="47.192" y2="15.728" width="0.6096" layer="1"/>
+<wire x1="47.192" y1="15.728" x2="49.06" y2="13.86" width="0.6096" layer="1"/>
+<wire x1="68.56" y1="13.86" x2="49.06" y2="13.86" width="0.6096" layer="1"/>
+<wire x1="71.65" y1="16.95" x2="68.56" y2="13.86" width="0.6096" layer="1"/>
+<wire x1="71.65" y1="23.496159375" x2="71.65" y2="16.95" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="X1" pad="1"/>
@@ -2559,7 +2585,7 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="IC2" pad="19"/>
 <contactref element="R5" pad="2"/>
-<contactref element="LED_CONTROL_OUT" pad="5"/>
+<contactref element="ATMEGA_AIO_DIO" pad="5"/>
 <wire x1="68.1625375" y1="50.442928125" x2="61.615090625" y2="50.442928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="50.442928125" x2="61.5750375" y2="50.48298125" width="0.6096" layer="1"/>
 <contactref element="S2" pad="4"/>
@@ -2596,25 +2622,25 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="IC2" pad="15"/>
-<contactref element="LED_CONTROL_OUT" pad="1"/>
+<contactref element="ATMEGA_AIO_DIO" pad="1"/>
 <wire x1="68.1625375" y1="60.602928125" x2="61.615090625" y2="60.602928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="60.602928125" x2="61.5750375" y2="60.64298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$9">
-<contactref element="LED_CONTROL_OUT" pad="2"/>
+<contactref element="ATMEGA_AIO_DIO" pad="2"/>
 <contactref element="IC2" pad="16"/>
 <wire x1="68.1625375" y1="58.062928125" x2="61.615090625" y2="58.062928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="58.062928125" x2="61.5750375" y2="58.10298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="IC2" pad="17"/>
-<contactref element="LED_CONTROL_OUT" pad="3"/>
+<contactref element="ATMEGA_AIO_DIO" pad="3"/>
 <wire x1="68.1625375" y1="55.522928125" x2="61.615090625" y2="55.522928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="55.522928125" x2="61.5750375" y2="55.56298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="IC2" pad="18"/>
-<contactref element="LED_CONTROL_OUT" pad="4"/>
+<contactref element="ATMEGA_AIO_DIO" pad="4"/>
 <wire x1="68.1625375" y1="52.982928125" x2="61.615090625" y2="52.982928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="52.982928125" x2="61.5750375" y2="53.02298125" width="0.6096" layer="1"/>
 </signal>
@@ -2635,7 +2661,7 @@ design rules under a new name.</description>
 <wire x1="17.67" y1="46.280446875" x2="17.645396875" y2="46.30505" width="2.1844" layer="1"/>
 </signal>
 <signal name="OVER_VOLTAGE">
-<contactref element="LED_CONTROL_OUT" pad="6"/>
+<contactref element="ATMEGA_AIO_DIO" pad="6"/>
 </signal>
 <signal name="N$19">
 <contactref element="VIN" pad="1"/>
@@ -2671,25 +2697,25 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANALOG_3">
 <contactref element="IC2" pad="26"/>
-<contactref element="LED_CONTROL_OUT" pad="12"/>
+<contactref element="ATMEGA_AIO_DIO" pad="12"/>
 <wire x1="68.1625375" y1="32.662928125" x2="61.615090625" y2="32.662928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="32.662928125" x2="61.5750375" y2="32.70298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="ANALOG_2">
 <contactref element="IC2" pad="25"/>
-<contactref element="LED_CONTROL_OUT" pad="11"/>
+<contactref element="ATMEGA_AIO_DIO" pad="11"/>
 <wire x1="68.1625375" y1="35.202928125" x2="61.615090625" y2="35.202928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="35.202928125" x2="61.5750375" y2="35.24298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="ANALOG_1">
 <contactref element="IC2" pad="24"/>
-<contactref element="LED_CONTROL_OUT" pad="10"/>
+<contactref element="ATMEGA_AIO_DIO" pad="10"/>
 <wire x1="68.1625375" y1="37.742928125" x2="61.615090625" y2="37.742928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="37.742928125" x2="61.5750375" y2="37.78298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="ANALOG_0">
 <contactref element="IC2" pad="23"/>
-<contactref element="LED_CONTROL_OUT" pad="9"/>
+<contactref element="ATMEGA_AIO_DIO" pad="9"/>
 <wire x1="68.1625375" y1="40.282928125" x2="61.615090625" y2="40.282928125" width="0.6096" layer="1"/>
 <wire x1="61.615090625" y1="40.282928125" x2="61.5750375" y2="40.32298125" width="0.6096" layer="1"/>
 </signal>
@@ -2727,13 +2753,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$13">
 <contactref element="USB_PS" pad="OUT+"/>
-<contactref element="VIN1" pad="1"/>
-<wire x1="47.192" y1="19.956" x2="47.192" y2="13.578" width="2.1844" layer="1"/>
-<wire x1="47.192" y1="13.578" x2="51.49" y2="9.28" width="2.1844" layer="1"/>
-<wire x1="51.49" y1="9.28" x2="93.7" y2="9.28" width="2.1844" layer="1"/>
-<wire x1="93.7" y1="9.28" x2="96.26" y2="11.84" width="2.1844" layer="1"/>
-<wire x1="96.26" y1="11.84" x2="96.26" y2="29.94" width="2.1844" layer="1"/>
-<wire x1="96.26" y1="29.94" x2="94.16" y2="32.04" width="2.1844" layer="1"/>
+<contactref element="VOUT" pad="1"/>
+<wire x1="92.192" y1="19.996" x2="92.192" y2="24.862" width="2.1844" layer="1"/>
+<wire x1="92.192" y1="24.862" x2="94.03" y2="26.7" width="2.1844" layer="1"/>
+<wire x1="94.03" y1="26.7" x2="94.03" y2="31.91" width="2.1844" layer="1"/>
+<wire x1="94.03" y1="31.91" x2="94.16" y2="32.04" width="2.1844" layer="1"/>
 </signal>
 </signals>
 <errors>
