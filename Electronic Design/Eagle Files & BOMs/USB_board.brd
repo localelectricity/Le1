@@ -57,16 +57,16 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="35" y2="0" width="0" layer="20"/>
-<wire x1="35" y1="0" x2="35" y2="55" width="0" layer="20"/>
-<wire x1="35" y1="55" x2="0" y2="55" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="27.2" y2="0" width="0" layer="20"/>
+<wire x1="27.2" y1="0" x2="27.2" y2="55" width="0" layer="20"/>
+<wire x1="27.2" y1="55" x2="0" y2="55" width="0" layer="20"/>
 <wire x1="0" y1="55" x2="0" y2="0" width="0" layer="20"/>
 <hole x="3" y="52" drill="3.2"/>
-<hole x="32" y="52" drill="3.2"/>
+<hole x="24.2" y="52" drill="3.2"/>
 <hole x="3" y="3" drill="3.2"/>
-<hole x="32" y="3" drill="3.2"/>
-<text x="2.794" y="24.13" size="1.778" layer="25">+</text>
-<text x="3.302" y="29.464" size="1.778" layer="25" rot="R90">_</text>
+<hole x="24.2" y="3" drill="3.2"/>
+<text x="1.524" y="21.336" size="1.778" layer="25">+</text>
+<text x="2.032" y="33.02" size="1.778" layer="25" rot="R90">_</text>
 </plain>
 <libraries>
 <library name="con-berg">
@@ -375,43 +375,39 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="USB_1" library="con-berg" package="PN87520" value="" x="24.8" y="15" rot="R90">
-<attribute name="OC_FARNELL" value="unknown" x="24.8" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="24.8" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="24.8" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="24.8" y="15" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="USB_1" library="con-berg" package="PN87520" value="" x="16.926" y="15" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="16.926" y="15" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="16.926" y="15" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="16.926" y="15" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="16.926" y="15" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="USB_2" library="con-berg" package="PN87520" value="" x="24.8" y="40" rot="R90">
-<attribute name="OC_FARNELL" value="unknown" x="24.8" y="40" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="24.8" y="40" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="24.8" y="40" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="24.8" y="40" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="USB_2" library="con-berg" package="PN87520" value="" x="16.926" y="40" rot="R90">
+<attribute name="OC_FARNELL" value="unknown" x="16.926" y="40" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="16.926" y="40" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="16.926" y="40" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="16.926" y="40" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="USB_IN" library="pinhead" package="1X03" value="" x="7" y="27.5" rot="R270"/>
+<element name="USB_IN" library="pinhead" package="1X03" value="" x="5.73" y="27.5" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="USB_IN" pad="3"/>
 <contactref element="USB_1" pad="1"/>
 <contactref element="USB_2" pad="1"/>
-<wire x1="7.068" y1="24.892" x2="14.732" y2="24.892" width="2.1844" layer="1"/>
-<wire x1="7.068" y1="24.892" x2="7" y2="24.96" width="2.1844" layer="1"/>
-<wire x1="14.732" y1="24.892" x2="18.034" y2="21.59" width="2.1844" layer="1"/>
-<wire x1="18.034" y1="21.59" x2="18.034" y2="13.462" width="2.1844" layer="1"/>
-<wire x1="18.034" y1="13.462" x2="20.066" y2="11.43" width="2.1844" layer="1"/>
-<wire x1="20.066" y1="11.43" x2="22.02" y2="11.43" width="2.1844" layer="1"/>
-<wire x1="22.02" y1="11.43" x2="22.09" y2="11.5" width="2.1844" layer="1"/>
-<wire x1="14.732" y1="24.892" x2="14.732" y2="25.146" width="2.1844" layer="1"/>
-<wire x1="14.732" y1="25.146" x2="17.526" y2="27.94" width="2.1844" layer="1"/>
-<wire x1="17.526" y1="35.052" x2="17.526" y2="27.94" width="2.1844" layer="1"/>
-<wire x1="22.09" y1="36.5" x2="18.974" y2="36.5" width="2.1844" layer="1"/>
-<wire x1="18.974" y1="36.5" x2="17.526" y2="35.052" width="2.1844" layer="1"/>
+<wire x1="14.216" y1="36.5" x2="14.216" y2="28.948" width="2.1844" layer="1"/>
+<wire x1="14.216" y1="28.948" x2="10.16" y2="24.892" width="2.1844" layer="1"/>
+<wire x1="10.16" y1="24.892" x2="5.798" y2="24.892" width="2.1844" layer="1"/>
+<wire x1="5.798" y1="24.892" x2="5.73" y2="24.96" width="2.1844" layer="1"/>
+<wire x1="5.73" y1="24.96" x2="5.73" y2="12.558" width="2.1844" layer="1"/>
+<wire x1="5.73" y1="12.558" x2="6.858" y2="11.43" width="2.1844" layer="1"/>
+<wire x1="6.858" y1="11.43" x2="14.146" y2="11.43" width="2.1844" layer="1"/>
+<wire x1="14.146" y1="11.43" x2="14.216" y2="11.5" width="2.1844" layer="1"/>
 </signal>
 <signal name="GND">
 <polygon width="2.54" layer="1">
 <vertex x="0.762" y="57.404"/>
-<vertex x="36.322" y="57.404"/>
-<vertex x="35.56" y="0"/>
+<vertex x="28.702" y="57.404"/>
+<vertex x="27.94" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="USB_IN" pad="1"/>
@@ -420,8 +416,8 @@ design rules under a new name.</description>
 <polygon width="2.54" layer="16">
 <vertex x="0.508" y="56.896"/>
 <vertex x="0" y="0"/>
-<vertex x="35.56" y="0"/>
-<vertex x="35.052" y="56.642"/>
+<vertex x="28.702" y="0.762"/>
+<vertex x="28.194" y="57.404"/>
 </polygon>
 </signal>
 </signals>
