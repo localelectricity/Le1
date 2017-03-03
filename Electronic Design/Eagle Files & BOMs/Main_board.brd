@@ -2010,7 +2010,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2043,7 +2043,7 @@ design rules under a new name.</description>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msDrill" value="20mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -2202,7 +2202,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="63.128346875" y="38.90488125" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="C3" library="resistor" package="C1206K" value="0.1u" x="56.659975" y="24.57475625" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.74975625" y="29.455025" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="56.90975625" y="28.875025" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="58.600875" y="26.347678125" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D2" library="diode" package="DO35Z10" value="5.1V" x="43.33079375" y="23.991353125" smashed="yes" rot="R180">
@@ -2347,11 +2347,11 @@ design rules under a new name.</description>
 <contactref element="C1" pad="2"/>
 <contactref element="POT2" pad="1"/>
 <contactref element="D1" pad="A"/>
-<via x="52.97569375" y="22.6002" extent="1-16" drill="0.6" shape="square"/>
-<via x="64.41569375" y="19.8202" extent="1-16" drill="0.6" shape="square"/>
+<via x="54.15569375" y="22.9202" extent="1-16" drill="0.6" shape="square"/>
+<via x="59.68569375" y="23.1002" extent="1-16" drill="0.6" shape="square"/>
 <via x="56.33569375" y="2.3502" extent="1-16" drill="0.6" shape="square"/>
 <via x="49.80569375" y="5.7902" extent="1-16" drill="0.6" shape="square"/>
-<via x="61.55569375" y="16.1502" extent="1-16" drill="0.6" shape="square"/>
+<via x="52.83569375" y="8.1302" extent="1-16" drill="0.6" shape="square"/>
 <via x="3.33569375" y="20.5102" extent="1-16" drill="0.6" shape="square"/>
 <via x="43.43569375" y="17.1902" extent="1-16" drill="0.6" shape="square"/>
 <via x="90.53569375" y="5.8002" extent="1-16" drill="0.6" shape="square"/>
@@ -2362,7 +2362,7 @@ design rules under a new name.</description>
 <via x="91.83569375" y="40.3702" extent="1-16" drill="0.6" shape="square"/>
 <via x="88.46569375" y="42.4402" extent="1-16" drill="0.6" shape="square"/>
 <via x="82.59569375" y="42.7402" extent="1-16" drill="0.6" shape="square"/>
-<via x="90.02569375" y="43.4802" extent="1-16" drill="0.6" shape="square"/>
+<via x="60.58569375" y="42.3902" extent="1-16" drill="0.6" shape="square"/>
 <via x="86.95569375" y="47.4202" extent="1-16" drill="0.6" shape="square"/>
 <via x="45.88569375" y="5.5302" extent="1-16" drill="0.6" shape="square"/>
 <via x="49.50569375" y="60.0602" extent="1-16" drill="0.6" shape="square"/>
@@ -2374,7 +2374,7 @@ design rules under a new name.</description>
 <via x="47.15569375" y="7.2602" extent="1-16" drill="0.6" shape="square"/>
 <via x="11.15569375" y="4.9702" extent="1-16" drill="0.6" shape="square"/>
 <via x="10.48569375" y="2.4102" extent="1-16" drill="0.6" shape="square"/>
-<via x="64.40569375" y="17.0502" extent="1-16" drill="0.6" shape="square"/>
+<via x="77.60569375" y="16.6802" extent="1-16" drill="0.6" shape="square"/>
 <via x="7.81569375" y="7.2902" extent="1-16" drill="0.6" shape="square"/>
 <via x="7.41569375" y="31.7502" extent="1-16" drill="0.6" shape="square"/>
 <via x="8.24569375" y="24.5802" extent="1-16" drill="0.6" shape="square"/>
@@ -2384,7 +2384,7 @@ design rules under a new name.</description>
 <contactref element="R5" pad="1"/>
 <contactref element="PROGAMMING_HEADER" pad="6"/>
 <via x="38.04569375" y="20.8302" extent="1-16" drill="0.6" shape="square"/>
-<via x="48.55569375" y="30.2802" extent="1-16" drill="0.6" shape="square"/>
+<via x="49.44569375" y="30.3202" extent="1-16" drill="0.6" shape="square"/>
 <via x="34.45569375" y="52.9802" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="C4" pad="1"/>
 <polygon width="0.8128" layer="16">
@@ -2414,13 +2414,9 @@ design rules under a new name.</description>
 <via x="17.94569375" y="30.7202" extent="1-16" drill="0.6" shape="square"/>
 <via x="20.19569375" y="28.0202" extent="1-16" drill="0.6" shape="square"/>
 <via x="18.00569375" y="25.1102" extent="1-16" drill="0.6" shape="square"/>
-<via x="89.18569375" y="19.9502" extent="1-16" drill="0.6" shape="square"/>
+<via x="78.87569375" y="37.6502" extent="1-16" drill="0.6" shape="square"/>
 <via x="95.42569375" y="19.8402" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="ATMEGA_DIO" pad="7"/>
-<wire x1="68.1625375" y1="42.822928125" x2="66.927071875" y2="42.822928125" width="0.6096" layer="1"/>
-<wire x1="66.927071875" y1="42.822928125" x2="64.91" y2="44.84" width="0.6096" layer="1"/>
-<wire x1="64.91" y1="44.84" x2="61.99801875" y2="44.84" width="0.6096" layer="1"/>
-<wire x1="61.99801875" y1="44.84" x2="61.4150375" y2="45.37298125" width="0.6096" layer="1"/>
 </signal>
 <signal name="M1S">
 <contactref element="C2" pad="+"/>
