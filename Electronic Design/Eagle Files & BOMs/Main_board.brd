@@ -2264,7 +2264,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="76.879803125" y="48.1007875" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="ATMEGA_DIO" library="pinhead" package="1X07" value="" x="61.4150375" y="52.99298125" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.8938375" y="70.17918125" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="58.1038375" y="59.68918125" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="58.2400375" y="68.23298125" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="PROGAMMING_HEADER" library="pinhead" package="1X06" value="" x="84.188590625" y="33.728721875" smashed="yes" rot="R270">
