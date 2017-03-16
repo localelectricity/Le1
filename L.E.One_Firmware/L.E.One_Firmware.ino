@@ -19,7 +19,8 @@ Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 #error("Height incorrect, please fix Adafruit_SSD1306.h!");
 #endif
 
-
+  const int voltagePin = 0;
+  const int currentPin = 1;
   float Vin=0;                     // input voltage
   float Iin=0;                     // input current
   float Iin_raw=0;                 // untuned current input
@@ -128,7 +129,7 @@ void loop() {
    // subtract the last reading:
   Vtotal = Vtotal - Vreadings[VreadIndex];
   // read from the sensor:
-  Vreadings[VreadIndex] = analogRead(4);
+  Vreadings[VreadIndex] = analogRead(voltagePin);
   // add the reading to the total:
   Vtotal = Vtotal + Vreadings[VreadIndex];
   // advance to the next position in the array:
@@ -147,7 +148,7 @@ void loop() {
    // subtract the last reading:
   Itotal = Itotal - Ireadings[IreadIndex];
   // read from the sensor:
-  Ireadings[IreadIndex] = analogRead(5);
+  Ireadings[IreadIndex] = analogRead(currentPin);
   // add the reading to the total:
   Itotal = Itotal + Ireadings[IreadIndex];
   // advance to the next position in the array:
@@ -258,8 +259,8 @@ void loop() {
   Serial.print(" Ioffset");
   Serial.print(Ioffset);
   Serial.print("  | ");
-  Serial.print(analogRead(4));
+  Serial.print(analogRead(voltagePin));
   Serial.print(",");
-  Serial.print(analogRead(5));
+  Serial.print(analogRead(currentPin));
   Serial.println(pinval);  
 }
