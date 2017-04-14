@@ -18080,6 +18080,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <pinref part="VOUT" gate="A" pin="1"/>
 <wire x1="153.67" y1="81.28" x2="168.91" y2="81.28" width="0.1524" layer="91"/>
 <junction x="153.67" y="81.28"/>
+<junction x="139.7" y="81.28"/>
 </segment>
 </net>
 </nets>
