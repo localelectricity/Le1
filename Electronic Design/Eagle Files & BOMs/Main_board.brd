@@ -2405,6 +2405,8 @@ design rules under a new name.</description>
 <element name="D2" library="adafruit" package="SMADIODE" value="" x="-53.58" y="-100.97"/>
 <element name="L1" library="Samson" package="MSS1278" value="MSS1278" x="-50.99" y="-111.32"/>
 <element name="C3" library="resistor" package="E3,5-10" value="220uF" x="-50.38" y="-128.09"/>
+<element name="C4" library="resistor" package="C1206K" value="0.1u" x="-57.81" y="-159.31"/>
+<element name="C5" library="resistor" package="C1206K" value="0.1u" x="-57.81" y="-165.98"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -2508,13 +2510,15 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="2"/>
 <contactref element="D2" pad="A"/>
 <contactref element="C3" pad="-"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C5" pad="2"/>
+<wire x1="-56.31" y1="-159.31" x2="-56.31" y2="-165.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-48.602" y1="-128.09" x2="-56.31" y2="-159.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.2305" y1="-100.97" x2="-48.602" y2="-128.09" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.75" y1="-64.74" x2="-51.2305" y2="-100.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.242" y1="-56.79" x2="-57.75" y2="-64.74" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.212" y1="-44.67" x2="-37.242" y2="-56.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.4036" y1="-152.3724" x2="-4.212" y2="-44.67" width="0" layer="19" extent="1-1"/>
-<wire x1="0" y1="-152.3724" x2="-3.4036" y2="-152.3724" width="0" layer="19" extent="1-1"/>
-<wire x1="10.48569375" y1="2.4102" x2="-3.4036" y2="-152.3724" width="0" layer="19" extent="1-1"/>
+<wire x1="10.48569375" y1="2.4102" x2="-4.212" y2="-44.67" width="0" layer="19" extent="1-1"/>
 <wire x1="11.15569375" y1="4.9702" x2="10.48569375" y2="2.4102" width="0" layer="19" extent="1-1"/>
 <wire x1="7.81569375" y1="7.2902" x2="11.15569375" y2="4.9702" width="0" layer="19" extent="1-1"/>
 <wire x1="7.14569375" y1="13.8802" x2="7.81569375" y2="7.2902" width="0" layer="19" extent="1-1"/>
@@ -2577,6 +2581,8 @@ design rules under a new name.</description>
 <wire x1="38.773415625" y1="52.978996875" x2="51.2716125" y2="44.01865625" width="0" layer="19" extent="1-1"/>
 <wire x1="34.45569375" y1="52.9802" x2="38.773415625" y2="52.978996875" width="0" layer="19" extent="1-1"/>
 <wire x1="49.50569375" y1="60.0602" x2="38.773415625" y2="52.978996875" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.4036" y1="-152.3724" x2="-48.602" y2="-128.09" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-152.3724" x2="-3.4036" y2="-152.3724" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="M1S">
 <contactref element="R2" pad="2"/>
@@ -2682,8 +2688,12 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$2" pad="5"/>
-<wire x1="-2.54" y1="-90.14" x2="-58.7" y2="-62.14" width="0" layer="19" extent="1-1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C5" pad="1"/>
+<wire x1="-59.31" y1="-159.31" x2="-59.31" y2="-165.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.54" y1="-90.14" x2="-59.31" y2="-159.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.398" y1="-50.73" x2="-2.54" y2="-90.14" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.7" y1="-62.14" x2="-34.398" y2="-50.73" width="0" layer="19" extent="1-1"/>
 <wire x1="47.192" y1="15.728" x2="-34.398" y2="-50.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
