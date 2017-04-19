@@ -17439,6 +17439,8 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <part name="C5" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
+<part name="C11" library="resistor" deviceset="C-EU" device="C1206K" value="10n"/>
+<part name="D3" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 </parts>
 <sheets>
 <sheet>
@@ -17498,7 +17500,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <instance part="+5V4" gate="1" x="-7.62" y="36.83"/>
 <instance part="R2" gate="G$1" x="22.86" y="88.9"/>
 <instance part="+3V2" gate="1" x="50.8" y="119.38"/>
-<instance part="SUPPLY1" gate="GND" x="-2.54" y="101.6"/>
+<instance part="SUPPLY1" gate="GND" x="-6.35" y="92.71"/>
 <instance part="IC3" gate="G$1" x="82.55" y="78.74"/>
 <instance part="SUPPLY7" gate="GND" x="67.31" y="63.5"/>
 <instance part="R3" gate="G$1" x="99.06" y="67.31" rot="R90"/>
@@ -17519,6 +17521,8 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <instance part="C5" gate="G$1" x="115.57" y="38.1"/>
 <instance part="SUPPLY10" gate="GND" x="50.8" y="96.52"/>
 <instance part="SUPPLY11" gate="GND" x="115.57" y="25.4"/>
+<instance part="C11" gate="G$1" x="-6.35" y="105.41"/>
+<instance part="D3" gate="G$1" x="-13.97" y="104.14" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17552,10 +17556,18 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <pinref part="IC2" gate="1" pin="ANALOG_1"/>
 </segment>
 <segment>
-<wire x1="10.16" y1="111.76" x2="-2.54" y2="111.76" width="0.1524" layer="91"/>
-<junction x="-2.54" y="111.76"/>
-<label x="-6.35" y="111.76" size="1.778" layer="95"/>
+<wire x1="10.16" y1="111.76" x2="-6.35" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-6.35" y="115.57"/>
+<label x="-3.81" y="115.57" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="OUT"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="-6.35" y1="111.76" x2="-6.35" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="-6.35" y1="111.76" x2="-6.35" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="-6.35" y1="109.22" x2="-6.35" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="106.68" x2="-13.97" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="109.22" x2="-6.35" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-6.35" y="109.22"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17659,10 +17671,19 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <junction x="163.83" y="71.12"/>
 </segment>
 <segment>
-<wire x1="10.16" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="106.68" x2="-2.54" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="-6.35" y1="99.06" x2="-6.35" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="-6.35" y1="100.33" x2="-6.35" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="-13.97" y1="101.6" x2="-13.97" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="99.06" x2="-6.35" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-6.35" y="99.06"/>
+<junction x="-6.35" y="99.06"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="10.16" y1="106.68" x2="2.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="106.68" x2="2.54" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="99.06" x2="-6.35" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -17725,6 +17746,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <wire x1="7.62" y1="101.6" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
 <junction x="7.62" y="88.9"/>
 <pinref part="U$2" gate="G$1" pin="VP"/>
+<junction x="-13.97" y="88.9"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -18073,8 +18095,25 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <junction x="111.76" y="81.28"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$24" class="0">
 <segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<pinref part="POT1" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+<wire x1="139.7" y1="81.28" x2="153.67" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="81.28" x2="153.67" y2="80.01" width="0.1524" layer="91"/>
+<pinref part="VOUT" gate="A" pin="1"/>
+<wire x1="153.67" y1="81.28" x2="168.91" y2="81.28" width="0.1524" layer="91"/>
+<junction x="153.67" y="81.28"/>
+<junction x="139.7" y="81.28"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="POT1" gate="G$1" pin="S"/>
+<wire x1="133.35" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="FB"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="95.25" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
@@ -18083,28 +18122,11 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <wire x1="104.14" y1="76.2" x2="104.14" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="POT1" gate="G$1" pin="E"/>
 <wire x1="139.7" y1="68.58" x2="139.7" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="64.77" x2="104.14" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="64.77" x2="133.35" y2="64.77" width="0.1524" layer="91"/>
 <junction x="99.06" y="76.2"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="POT1" gate="G$1" pin="A"/>
-<wire x1="129.54" y1="81.28" x2="133.35" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="POT1" gate="G$1" pin="S"/>
-<wire x1="133.35" y1="81.28" x2="133.35" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
-<junction x="133.35" y="81.28"/>
-<pinref part="C3" gate="G$1" pin="+"/>
-<wire x1="139.7" y1="81.28" x2="153.67" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="81.28" x2="153.67" y2="80.01" width="0.1524" layer="91"/>
-<pinref part="VOUT" gate="A" pin="1"/>
-<wire x1="153.67" y1="81.28" x2="168.91" y2="81.28" width="0.1524" layer="91"/>
-<junction x="153.67" y="81.28"/>
-<junction x="139.7" y="81.28"/>
+<wire x1="133.35" y1="64.77" x2="104.14" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="73.66" x2="133.35" y2="64.77" width="0.1524" layer="91"/>
+<junction x="133.35" y="64.77"/>
 </segment>
 </net>
 </nets>
