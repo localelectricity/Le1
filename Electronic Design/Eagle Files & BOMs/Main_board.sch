@@ -17888,18 +17888,10 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <pinref part="IC2" gate="1" pin="DIGITAL_13"/>
 <wire x1="-12.7" y1="-7.62" x2="-11.43" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-11.43" y1="-7.62" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-11.43" y1="-12.7" x2="-11.43" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-11.43" y1="-38.1" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="-38.1" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-12.7" x2="-11.43" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-11.43" y="-12.7"/>
 <pinref part="ATMEGA_DIO" gate="A" pin="5"/>
 <wire x1="49.53" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="P1"/>
-<wire x1="-39.37" y1="-36.83" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-39.37" y="-38.1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -18125,6 +18117,24 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <wire x1="133.35" y1="64.77" x2="104.14" y2="64.77" width="0.1524" layer="91"/>
 <wire x1="133.35" y1="73.66" x2="133.35" y2="64.77" width="0.1524" layer="91"/>
 <junction x="133.35" y="64.77"/>
+</segment>
+</net>
+<net name="BUTTON" class="0">
+<segment>
+<pinref part="IC2" gate="1" pin="DIGITAL_2"/>
+<wire x1="-12.7" y1="22.86" x2="-8.89" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-8.89" y="22.86"/>
+<label x="-7.62" y="21.59" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-38.1" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="P1"/>
+<wire x1="-39.37" y1="-36.83" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-39.37" y="-38.1"/>
+<wire x1="-11.43" y1="-38.1" x2="-39.37" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-11.43" y="-38.1"/>
+<label x="-8.89" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
