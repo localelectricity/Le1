@@ -17416,7 +17416,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <part name="VOUT" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
 <part name="C10" library="resistor" deviceset="C-EU" device="C1206K" value="0.1u"/>
-<part name="AIO" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="AIO" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="+5V4" library="supply1" deviceset="+5V" device=""/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="M1206" value="0R01"/>
 <part name="+3V2" library="supply1" deviceset="+5V" device=""/>
@@ -17442,6 +17442,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <part name="D3" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0805" value="1k13"/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0805" value="21k5"/>
+<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17493,7 +17494,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <instance part="VOUT" gate="A" x="171.45" y="78.74"/>
 <instance part="C6" gate="G$1" x="-118.11" y="27.94"/>
 <instance part="C10" gate="G$1" x="-128.27" y="27.94"/>
-<instance part="AIO" gate="A" x="11.43" y="40.64"/>
+<instance part="AIO" gate="A" x="11.43" y="38.1"/>
 <instance part="+5V4" gate="1" x="-7.62" y="36.83"/>
 <instance part="R2" gate="G$1" x="22.86" y="88.9"/>
 <instance part="+3V2" gate="1" x="50.8" y="119.38"/>
@@ -17522,6 +17523,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <instance part="D3" gate="G$1" x="-13.97" y="104.14" rot="R90"/>
 <instance part="R9" gate="G$1" x="-16.51" y="83.82" rot="R90"/>
 <instance part="R10" gate="G$1" x="-16.51" y="71.12" rot="R90"/>
+<instance part="SUPPLY12" gate="GND" x="1.27" y="31.75"/>
 </instances>
 <busses>
 </busses>
@@ -17542,6 +17544,7 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-16.51" y1="78.74" x2="-16.51" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-16.51" y="78.74"/>
+<junction x="-8.89" y="78.74"/>
 </segment>
 <segment>
 <junction x="-5.08" y="50.8"/>
@@ -17710,6 +17713,13 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <wire x1="115.57" y1="33.02" x2="115.57" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="1.27" y1="34.29" x2="6.35" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="6.35" y1="34.29" x2="6.35" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="AIO" gate="A" pin="6"/>
+<wire x1="6.35" y1="33.02" x2="8.89" y2="33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="M1S" class="0">
 <segment>
@@ -17838,7 +17848,6 @@ Source: http://www.ti.com/lit/ds/symlink/lm2576.pdf</description>
 <wire x1="50.8" y1="111.76" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="1" pin="+5V"/>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
-<wire x1="38.1" y1="111.76" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="111.76" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="111.76" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
