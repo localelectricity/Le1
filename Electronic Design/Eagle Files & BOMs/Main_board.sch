@@ -19019,7 +19019,6 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="60.96" y="88.9"/>
 <pinref part="U$1" gate="G$1" pin="VIN"/>
 <pinref part="U$2" gate="G$1" pin="VM"/>
-<wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="101.6" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 <junction x="40.64" y="88.9"/>
 </segment>
@@ -19348,7 +19347,6 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<wire x1="86.36" y1="33.02" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="30.48" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="27.94" x2="105.41" y2="27.94" width="0.1524" layer="91"/>
