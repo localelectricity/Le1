@@ -18697,6 +18697,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="Q1" library="Samson" deviceset="BSS192P" device=""/>
 <part name="Q2" library="Samson" deviceset="FQD7P20" device=""/>
+<part name="F2" library="fuse" deviceset="FUSE" device="SH22,5A" value="FUSESH22,5A"/>
 </parts>
 <sheets>
 <sheet>
@@ -18786,6 +18787,10 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="SUPPLY15" gate="GND" x="138.43" y="24.13"/>
 <instance part="Q1" gate="G$1" x="-52.07" y="81.28" rot="MR180"/>
 <instance part="Q2" gate="G$1" x="-41.91" y="86.36" rot="R90"/>
+<instance part="F2" gate="G$1" x="-111.76" y="93.98" smashed="yes">
+<attribute name="NAME" x="-115.57" y="95.377" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-115.57" y="98.679" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -19424,11 +19429,11 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="VIN_AC1" class="0">
 <segment>
-<pinref part="VIN" gate="A" pin="3"/>
-<wire x1="-127" y1="93.98" x2="-97.79" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="B1" gate="1" pin="AC1"/>
 <wire x1="-83.82" y1="93.98" x2="-97.79" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="2"/>
+<wire x1="-106.68" y1="93.98" x2="-97.79" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-97.79" y="93.98"/>
 </segment>
 </net>
@@ -19455,6 +19460,13 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="138.43" y1="39.37" x2="138.43" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="VIN" gate="A" pin="3"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="-127" y1="93.98" x2="-116.84" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
