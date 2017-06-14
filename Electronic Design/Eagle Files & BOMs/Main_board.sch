@@ -18690,8 +18690,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="D4" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="D5" library="diode" deviceset="ZPD" device="" value="5.1V"/>
-<part name="LED1" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="LED2" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="UC_PWR" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="PWR" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R1206" value="2k"/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R1206" value="2k"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
@@ -18782,8 +18782,8 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="D4" gate="G$1" x="113.03" y="38.1" rot="R90"/>
 <instance part="SUPPLY13" gate="GND" x="113.03" y="24.13"/>
 <instance part="D5" gate="G$1" x="180.34" y="73.66" rot="R90"/>
-<instance part="LED1" gate="G$1" x="138.43" y="44.45"/>
-<instance part="LED2" gate="G$1" x="170.18" y="64.77"/>
+<instance part="UC_PWR" gate="G$1" x="138.43" y="44.45"/>
+<instance part="PWR" gate="G$1" x="170.18" y="64.77"/>
 <instance part="R11" gate="G$1" x="170.18" y="74.93" rot="R90"/>
 <instance part="R12" gate="G$1" x="138.43" y="33.02" rot="R90"/>
 <instance part="SUPPLY15" gate="GND" x="138.43" y="24.13"/>
@@ -18950,7 +18950,7 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="195.58" y="57.15"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="180.34" y1="71.12" x2="180.34" y2="57.15" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="170.18" y1="59.69" x2="170.18" y2="57.15" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="57.15" x2="180.34" y2="57.15" width="0.1524" layer="91"/>
 <junction x="180.34" y="57.15"/>
@@ -19143,7 +19143,7 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="113.03" y="48.26"/>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="113.03" y1="40.64" x2="113.03" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="UC_PWR" gate="G$1" pin="A"/>
 <wire x1="123.19" y1="48.26" x2="138.43" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="138.43" y1="48.26" x2="138.43" y2="46.99" width="0.1524" layer="91"/>
 </segment>
@@ -19468,13 +19468,13 @@ Source: http://www.osram.convergy.de/</description>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 <wire x1="170.18" y1="69.85" x2="170.18" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="UC_PWR" gate="G$1" pin="C"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="138.43" y1="39.37" x2="138.43" y2="38.1" width="0.1524" layer="91"/>
 </segment>
