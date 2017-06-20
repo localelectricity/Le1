@@ -18626,7 +18626,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="B1" library="rectifier" deviceset="GBPC6" device="" value="KBPC610"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C1206K" value="10n"/>
 <part name="C2" library="resistor" deviceset="CPOL-EU" device="E3.5-10" value="220uF"/>
-<part name="POT3" library="resistor" deviceset="R-TRIMM" device="3296W" value="5k"/>
+<part name="POT3" library="resistor" deviceset="R-TRIMM" device="3296W" value="100k"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
