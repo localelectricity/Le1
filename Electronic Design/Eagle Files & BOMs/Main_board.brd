@@ -2365,9 +2365,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="50.24703125" y="55.823271875" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="49.05203125" y="58.448271875" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="VIN" library="pinhead" package="1X03" value="" x="5.14" y="21.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.0338" y="16.0488" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="8.315" y="19.43" size="1.27" layer="27" rot="R90"/>
+<element name="VIN" library="pinhead" package="1X03" value="" x="3" y="21.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.8938" y="16.0488" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="6.175" y="19.43" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="F1" library="fuse" package="SH22,5A" value="FUSESH22,5A" x="71.774415625" y="7.229996875" smashed="yes">
 <attribute name="MF" value="" x="71.774415625" y="7.229996875" size="1.778" layer="27" display="off"/>
@@ -2540,11 +2540,11 @@ design rules under a new name.</description>
 <contactref element="C1" pad="2"/>
 <contactref element="D1" pad="A"/>
 <via x="86.3898" y="7.63569375" extent="1-16" drill="0.6" shape="square"/>
-<via x="17.52569375" y="48.3202" extent="1-16" drill="0.6" shape="square"/>
+<via x="17.06569375" y="47.6602" extent="1-16" drill="0.6" shape="square"/>
 <via x="24.2998" y="27.93569375" extent="1-16" drill="0.6" shape="square"/>
 <via x="75.35569375" y="38.8602" extent="1-16" drill="0.6" shape="square"/>
 <via x="79.71569375" y="43.5402" extent="1-16" drill="0.6" shape="square"/>
-<via x="19.2198" y="50.98569375" extent="1-16" drill="0.6" shape="square"/>
+<via x="19.1198" y="50.68569375" extent="1-16" drill="0.6" shape="square"/>
 <via x="73.55569375" y="40.8602" extent="1-16" drill="0.6" shape="square"/>
 <via x="80.064609375" y="46.02186875" extent="1-16" drill="0.6" shape="square"/>
 <via x="78.58569375" y="16.6602" extent="1-16" drill="0.6" shape="square"/>
@@ -2588,7 +2588,7 @@ design rules under a new name.</description>
 <contactref element="C12" pad="-"/>
 <contactref element="D5" pad="A"/>
 <contactref element="PWR" pad="C"/>
-<via x="22.0998" y="49.58569375" extent="1-16" drill="0.6" shape="square"/>
+<via x="18.2498" y="52.27569375" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="49.17" y1="43.75" x2="49.17" y2="44.75549375" width="0.6096" layer="1"/>
 <wire x1="49.17" y1="44.75549375" x2="46.3598" y2="47.56569375" width="0.6096" layer="1"/>
 <wire x1="57.45" y1="36.84" x2="59.44" y2="38.83" width="0.6096" layer="1"/>
@@ -2872,12 +2872,10 @@ design rules under a new name.</description>
 <wire x1="15.828996875" y1="39.851003125" x2="12.66" y2="43.02" width="2.1844" layer="1"/>
 <wire x1="12.66" y1="43.02" x2="12.66" y2="55.329" width="2.1844" layer="1"/>
 <wire x1="12.66" y1="55.329" x2="10.45" y2="57.249" width="2.1844" layer="1"/>
-<wire x1="5.14" y1="19.43" x2="6.85" y2="19.43" width="2.1844" layer="1"/>
-<wire x1="6.85" y1="19.43" x2="8.29" y2="20.87" width="2.1844" layer="1"/>
-<wire x1="8.29" y1="20.87" x2="8.29" y2="23.6" width="2.1844" layer="1"/>
-<wire x1="8.29" y1="23.6" x2="15.91" y2="31.22" width="2.1844" layer="1"/>
 <wire x1="15.91" y1="31.22" x2="15.91" y2="39.74358125" width="2.1844" layer="1"/>
 <wire x1="15.91" y1="39.74358125" x2="15.828996875" y2="39.824584375" width="2.1844" layer="1"/>
+<wire x1="3" y1="19.43" x2="4.12" y2="19.43" width="2.1844" layer="1"/>
+<wire x1="4.12" y1="19.43" x2="15.91" y2="31.22" width="2.1844" layer="1"/>
 </signal>
 <signal name="ANALOG_3">
 <contactref element="IC2" pad="26"/>
@@ -3008,8 +3006,8 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="VIN" pad="3"/>
 <contactref element="F2" pad="1"/>
-<wire x1="6.85" y1="29.5478" x2="6.85" y2="26.22" width="2.1844" layer="16"/>
-<wire x1="6.85" y1="26.22" x2="5.14" y2="24.51" width="2.1844" layer="16"/>
+<wire x1="6.85" y1="29.5478" x2="6.85" y2="28.36" width="2.1844" layer="16"/>
+<wire x1="6.85" y1="28.36" x2="3" y2="24.51" width="2.1844" layer="16"/>
 </signal>
 <signal name="GND1">
 </signal>
