@@ -2440,23 +2440,29 @@ design rules under a new name.</description>
 </element>
 <element name="C10" library="resistor" package="C1206K" value="0.1u" x="71.59" y="37.41" rot="R270"/>
 <element name="AIO" library="pinhead" package="1X06" value="" x="56.77" y="24.95" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.5788" y="28.7462" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="53.4288" y="26.1362" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="53.595" y="32.57" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R2" library="resistor" package="M1206" value="0R01" x="45.09" y="42.13" smashed="yes" rot="R270">
-<attribute name="NAME" x="46.23" y="40.09" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="43.31" y="42.45" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="42.55" y="43.4" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R7" library="resistor" package="R1206" value="1k" x="53.93" y="29.11" rot="R90"/>
 <element name="R8" library="resistor" package="R1206" value="3k" x="52.75" y="25.22" rot="MR0"/>
 <element name="U$1" library="Samson" package="TO220BH" value="LM317" x="44.31" y="30.64" rot="R90"/>
-<element name="U$2" library="Samson" package="SOT23-5L" value="CS30" x="49.17" y="42.45" rot="R180"/>
+<element name="U$2" library="Samson" package="SOT23-5L" value="CS30" x="49.17" y="42.45" smashed="yes" rot="R180">
+<attribute name="NAME" x="50.615" y="39.425" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="51.075" y="45.879" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="C4" library="resistor" package="C1206K" value="0.1u" x="50.98" y="47.05" rot="R90"/>
 <element name="C5" library="resistor" package="C1206K" value="0.1u" x="56.7" y="14.63" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.58" y="11.54" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="54.6" y="16.23" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="C11" library="resistor" package="C1206K" value="10n" x="57.45" y="35.34" rot="R90"/>
+<element name="C11" library="resistor" package="C1206K" value="10n" x="57.45" y="35.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="55.65" y="34.3" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="59.55" y="33.74" size="1.016" layer="27" rot="R90"/>
+</element>
 <element name="D3" library="diode" package="DO35Z10" value="5.1V" x="65.28" y="32.85" rot="MR270"/>
 <element name="R9" library="resistor" package="R0805" value="21k5" x="44.45" y="34.88" rot="MR0"/>
 <element name="R10" library="resistor" package="R0805" value="1k13" x="44.45" y="32.9" rot="MR180"/>
@@ -2471,8 +2477,14 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="85.27" y="41.54" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R11" library="resistor" package="R1206" value="2k" x="84" y="36.8" rot="R180"/>
-<element name="R12" library="resistor" package="R1206" value="2k" x="84" y="43.4" rot="R180"/>
-<element name="Q1" library="Samson" package="BSS192P" value="BSS192P" x="36.85" y="54.93" rot="R180"/>
+<element name="R12" library="resistor" package="R1206" value="2k" x="84" y="43.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="85" y="48.4" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="85.27" y="45.94" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="Q1" library="Samson" package="BSS192P" value="BSS192P" x="36.85" y="54.93" smashed="yes" rot="R180">
+<attribute name="NAME" x="37.735" y="52.015" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="39.055" y="58.755" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="Q2" library="Samson" package="TO252" value="FQD7P20" x="34.15" y="46.03" rot="R180"/>
 <element name="F2" library="fuse" package="SH22,5A" value="FUSESH22,5A" x="6.85" y="40.8" rot="R90">
 <attribute name="MF" value="" x="6.85" y="40.8" size="1.778" layer="27" rot="R90" display="off"/>
