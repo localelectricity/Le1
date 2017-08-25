@@ -5,14 +5,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-// If using software SPI (the default case):
-#define OLED_CLK   13
-#define OLED_MOSI  12
-#define OLED_RESET 11
-#define OLED_DC    10
-#define OLED_CS    9
-
-Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+#define OLED_RESET 4
+Adafruit_SSD1306 display(OLED_RESET);
 
 #define SSD1306_LCDHEIGHT 64
 #if (SSD1306_LCDHEIGHT != 64)
@@ -40,7 +34,7 @@ Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
   int IreadIndex = 0;              // the index of the current reading
   int Itotal = 0;                  // the running total
   int Iaverage = 0;                // the average
-  int Ioffset = 512;               // initial current offset for ACS712ELC-5A
+  int Ioffset = 0;               // initial current offset for ACS712ELC-5A
   int IinOld = 0;                  // current value from previous iteration (used for calibration)
   
   int Preadings[numReadings];      // the readings from the analog input
@@ -183,8 +177,8 @@ void loop() {
 
 // converting voltage and curret reading to decimal values
 
-  Vin = (Vaverage*0.039);
-  Iin_raw = (Iaverage-Ioffset)*0.02642*0.5;
+  Vin = Vaverage*0.104;
+  Iin_raw = (Iaverage-Ioffset)*0.02642*0.25;
   Iin = (2.5247*Iin_raw*Iin_raw)+ (0.9098*Iin_raw) + 0.012;
 
   Pin = Vin*Iin;
@@ -253,7 +247,7 @@ void loop() {
   Serial.print("Vin:");
   Serial.print(Vin, 1);
   Serial.print(" Iin:");
-  Serial.print(Iin);
+  Serial.print(Iaverage);
   Serial.print(" Pin:");
   Serial.print(Pin,1); 
   Serial.print(" Ioffset");
