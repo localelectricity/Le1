@@ -18709,7 +18709,7 @@ Source: www.kingbright.com</description>
 <instance part="R11" gate="G$1" x="170.18" y="74.93" rot="R90"/>
 <instance part="R12" gate="G$1" x="138.43" y="33.02" rot="R90"/>
 <instance part="SUPPLY15" gate="GND" x="138.43" y="24.13"/>
-<instance part="Q1" gate="G$1" x="-55.88" y="82.55" rot="MR180"/>
+<instance part="Q1" gate="G$1" x="-55.88" y="81.28"/>
 <instance part="Q2" gate="G$1" x="-41.91" y="86.36" rot="R90"/>
 <instance part="F2" gate="G$1" x="-111.76" y="93.98" smashed="yes">
 <attribute name="NAME" x="-115.57" y="95.377" size="1.778" layer="95"/>
@@ -18975,20 +18975,21 @@ Source: www.kingbright.com</description>
 <wire x1="-78.74" y1="88.9" x2="-66.04" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-66.04" y="88.9"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="-53.34" y1="87.63" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="-53.34" y1="86.36" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-53.34" y="88.9"/>
 </segment>
 </net>
 <net name="Q2_GATE" class="0">
 <segment>
+<wire x1="-49.53" y1="74.93" x2="-49.53" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-53.34" y1="76.2" x2="-49.53" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="-44.45" y1="77.47" x2="-44.45" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="77.47" x2="-49.53" y2="77.47" width="0.1524" layer="91"/>
-<wire x1="-49.53" y1="74.93" x2="-49.53" y2="77.47" width="0.1524" layer="91"/>
-<wire x1="-49.53" y1="77.47" x2="-44.45" y2="77.47" width="0.1524" layer="91"/>
-<junction x="-49.53" y="77.47"/>
+<wire x1="-44.45" y1="76.2" x2="-44.45" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-44.45" y1="76.2" x2="-49.53" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<junction x="-49.53" y="76.2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -19189,7 +19190,6 @@ Source: www.kingbright.com</description>
 <net name="Q1_GATE" class="0">
 <segment>
 <pinref part="POT3" gate="G$1" pin="S"/>
-<wire x1="-60.96" y1="80.01" x2="-60.96" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 </net>
