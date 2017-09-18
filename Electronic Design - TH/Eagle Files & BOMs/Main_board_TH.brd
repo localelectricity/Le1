@@ -2436,8 +2436,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.58" y="11.54" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="54.6" y="16.23" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="R9" library="resistor" package="0207/10" value="21k5" x="44.45" y="34.88" rot="MR0"/>
-<element name="R10" library="resistor" package="0207/10" value="1k13" x="44.45" y="32.9" rot="MR180"/>
+<element name="R9" library="resistor" package="0207/10" value="10k" x="44.45" y="34.88" rot="MR0"/>
+<element name="R10" library="resistor" package="0207/10" value="1k" x="44.45" y="32.9" rot="MR180"/>
 <element name="D4" library="diode" package="DO35Z10" value="5.1V" x="80.93" y="21.5" rot="R270"/>
 <element name="D5" library="diode" package="DO35Z10" value="5.1V" x="86.46" y="16.37" rot="R270"/>
 <element name="UC_PWR" library="led" package="LED3MM" value="" x="84" y="41.2" smashed="yes">

@@ -17405,8 +17405,8 @@ Source: www.kingbright.com</description>
 <part name="U$1" library="Samson" deviceset="LM317" device=""/>
 <part name="C5" library="resistor" deviceset="C-EU" device="050-024X044" value="0.1u"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="0207/10" value="21k5"/>
-<part name="R10" library="resistor" deviceset="R-EU_" device="0207/10" value="1k13"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="R10" library="resistor" deviceset="R-EU_" device="0207/10" value="1k"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="D4" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="D5" library="diode" deviceset="ZPD" device="" value="5.1V"/>
