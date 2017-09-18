@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -17414,8 +17414,8 @@ Source: www.kingbright.com</description>
 <part name="PWR" library="led" deviceset="LED" device="3MM"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="0207/10" value="2k"/>
-<part name="Q1" library="Samson" deviceset="PMOSFET_P" device="TO220BH"/>
-<part name="Q2" library="Samson" deviceset="PMOSFET_P" device="TO220BH"/>
+<part name="Q1" library="Samson" deviceset="PMOSFET_P" device="TO220BH" value="IRF9520"/>
+<part name="Q2" library="Samson" deviceset="PMOSFET_P" device="TO220BH" value="IRF9520"/>
 <part name="F2" library="fuse" deviceset="FUSE" device="SH22,5A" value="FUSESH22,5A"/>
 <part name="U$3" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
