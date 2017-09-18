@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -15397,11 +15397,11 @@ grid 2.54 mm</description>
 <connect gate="G$1" pin="1OUT" pad="1"/>
 <connect gate="G$1" pin="1OUT+" pad="3"/>
 <connect gate="G$1" pin="1OUT-" pad="2"/>
-<connect gate="G$1" pin="2OUT" pad="8"/>
+<connect gate="G$1" pin="2OUT" pad="7"/>
 <connect gate="G$1" pin="2OUT+" pad="5"/>
 <connect gate="G$1" pin="2OUT-" pad="6"/>
 <connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17433,6 +17433,7 @@ Source: www.kingbright.com</description>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="resistor" deviceset="C-EU" device="050-024X044" value="10u"/>
+<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17507,6 +17508,7 @@ Source: www.kingbright.com</description>
 <instance part="JP1" gate="A" x="-16.51" y="-15.24"/>
 <instance part="SUPPLY5" gate="GND" x="-30.48" y="-26.67"/>
 <instance part="C3" gate="G$1" x="76.2" y="22.86"/>
+<instance part="SUPPLY6" gate="GND" x="-34.29" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -17552,6 +17554,7 @@ Source: www.kingbright.com</description>
 <wire x1="27.94" y1="26.67" x2="27.94" y2="34.29" width="0.1524" layer="91"/>
 <junction x="27.94" y="34.29"/>
 <label x="27.94" y="35.56" size="1.778" layer="95"/>
+<junction x="27.94" y="26.67"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17670,6 +17673,12 @@ Source: www.kingbright.com</description>
 <wire x1="-30.48" y1="-20.32" x2="-30.48" y2="-24.13" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <junction x="-30.48" y="-20.32"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="GND.2"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+<wire x1="-59.69" y1="36.83" x2="-34.29" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="-34.29" y1="36.83" x2="-34.29" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_PROTECTED" class="0">
