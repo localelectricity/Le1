@@ -15653,6 +15653,148 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-berg">
+<description>&lt;b&gt;Berg Connectors&lt;/b&gt;&lt;p&gt;
+Based on  the following source:
+&lt;ul&gt;
+&lt;li&gt;http://catalog.fciconnect.com
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="PN87520-S">
+<description>&lt;b&gt;USB connector&lt;/b&gt; with shield&lt;p&gt;</description>
+<wire x1="-7.4" y1="-10.19" x2="7.4" y2="-10.19" width="0.254" layer="21"/>
+<wire x1="7.4" y1="-10.19" x2="7.4" y2="4.11" width="0.254" layer="21"/>
+<wire x1="7.4" y1="4.11" x2="-7.4" y2="4.11" width="0.254" layer="21"/>
+<wire x1="-7.4" y1="4.11" x2="-7.4" y2="-10.19" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="-2.87" x2="-3.81" y2="-8.72" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-8.72" x2="-2.54" y2="-8.72" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-8.72" x2="-1.27" y2="-2.87" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-2.87" x2="2.54" y2="-8.72" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-8.72" x2="3.81" y2="-8.72" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-8.72" x2="5.08" y2="-2.87" width="0.1524" layer="21"/>
+<wire x1="-2.46" y1="-0.1" x2="-2.46" y2="0.9" width="0.0508" layer="21" curve="180"/>
+<wire x1="-2.46" y1="-1.1" x2="-2.46" y2="-0.1" width="0.0508" layer="21" curve="180"/>
+<wire x1="3.665" y1="0.4" x2="3.665" y2="-0.6" width="0.0508" layer="21" curve="180"/>
+<wire x1="3.415" y1="0.9" x2="3.415" y2="-1.1" width="0.0508" layer="21" curve="180"/>
+<wire x1="3.665" y1="0.4" x2="4.165" y2="0.4" width="0.0508" layer="21" curve="-15.189287"/>
+<wire x1="3.415" y1="0.9" x2="4.175" y2="0.845" width="0.0508" layer="21" curve="-12.057134"/>
+<wire x1="3.415" y1="-1.1" x2="4.165" y2="-0.975" width="0.0508" layer="21" curve="18.422836"/>
+<wire x1="1.665" y1="-0.35" x2="1.665" y2="0.9" width="0.0508" layer="21" curve="180"/>
+<wire x1="1.29" y1="0.025" x2="1.29" y2="0.4" width="0.0508" layer="21" curve="180"/>
+<wire x1="-3.835" y1="0.9" x2="-3.835" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="-3.835" y1="-1.1" x2="-3.21" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="-3.21" y1="-1.1" x2="-3.21" y2="-0.1" width="0.0508" layer="21"/>
+<wire x1="-3.21" y1="-0.1" x2="-3.21" y2="0.9" width="0.0508" layer="21"/>
+<wire x1="-3.21" y1="0.9" x2="-3.835" y2="0.9" width="0.0508" layer="21"/>
+<wire x1="-3.21" y1="0.9" x2="-2.46" y2="0.4" width="0.0508" layer="21"/>
+<wire x1="-2.46" y1="0.4" x2="-3.21" y2="-0.1" width="0.0508" layer="21"/>
+<wire x1="-3.21" y1="-0.1" x2="-2.46" y2="-0.6" width="0.0508" layer="21"/>
+<wire x1="-2.46" y1="-0.6" x2="-3.21" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="-2.46" y1="-1.1" x2="-3.21" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="-2.46" y1="0.9" x2="-3.21" y2="0.9" width="0.0508" layer="21"/>
+<wire x1="-1.71" y1="0.9" x2="-1.71" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="-1.71" y1="-1.1" x2="0.04" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="0.04" y1="-1.1" x2="0.04" y2="-0.6" width="0.0508" layer="21"/>
+<wire x1="0.04" y1="-0.6" x2="-1.085" y2="-0.6" width="0.0508" layer="21"/>
+<wire x1="-1.085" y1="-0.6" x2="-1.085" y2="-0.35" width="0.0508" layer="21"/>
+<wire x1="-1.085" y1="-0.35" x2="0.04" y2="-0.35" width="0.0508" layer="21"/>
+<wire x1="0.04" y1="-0.35" x2="0.04" y2="0.15" width="0.0508" layer="21"/>
+<wire x1="0.04" y1="0.15" x2="-1.085" y2="0.15" width="0.0508" layer="21"/>
+<wire x1="-1.085" y1="0.15" x2="-1.085" y2="0.4" width="0.0508" layer="21"/>
+<wire x1="-1.085" y1="0.4" x2="0.04" y2="0.4" width="0.0508" layer="21"/>
+<wire x1="0.04" y1="0.4" x2="0.04" y2="0.9" width="0.0508" layer="21"/>
+<wire x1="0.04" y1="0.9" x2="-1.71" y2="0.9" width="0.0508" layer="21"/>
+<wire x1="0.29" y1="0.9" x2="0.29" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="0.29" y1="-1.1" x2="0.915" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="0.915" y1="-1.1" x2="0.915" y2="-0.35" width="0.0508" layer="21"/>
+<wire x1="0.915" y1="-0.35" x2="1.415" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="1.415" y1="-1.1" x2="2.165" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="2.165" y1="-1.1" x2="1.665" y2="-0.35" width="0.0508" layer="21"/>
+<wire x1="0.915" y1="0.4" x2="0.915" y2="0.025" width="0.0508" layer="21"/>
+<wire x1="0.29" y1="0.9" x2="1.665" y2="0.9" width="0.0508" layer="21"/>
+<wire x1="0.915" y1="0.4" x2="1.29" y2="0.4" width="0.0508" layer="21"/>
+<wire x1="0.915" y1="0.025" x2="1.29" y2="0.025" width="0.0508" layer="21"/>
+<wire x1="3.665" y1="-0.1" x2="4.165" y2="-0.1" width="0.0508" layer="21"/>
+<wire x1="3.665" y1="-0.1" x2="3.665" y2="-0.6" width="0.0508" layer="21"/>
+<wire x1="4.16" y1="0.4" x2="4.16" y2="0.845" width="0.0508" layer="21"/>
+<wire x1="4.165" y1="-0.1" x2="4.165" y2="-0.975" width="0.0508" layer="21"/>
+<pad name="2" x="-1" y="2.71" drill="0.95" shape="long" rot="R90"/>
+<pad name="3" x="1" y="2.71" drill="0.95" shape="long" rot="R90"/>
+<pad name="1" x="-3.5" y="2.71" drill="0.95" shape="long" rot="R90"/>
+<pad name="4" x="3.5" y="2.71" drill="0.95" shape="long" rot="R90"/>
+<pad name="S1" x="-6.57" y="0" drill="2.3" diameter="2.9"/>
+<pad name="S2" x="6.57" y="0" drill="2.3" diameter="2.9" rot="R180"/>
+<text x="-7.62" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="9.144" y="-10.16" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-3.81" y="-2.04" size="0.4064" layer="21">E L E C T R O N I C S</text>
+</package>
+</packages>
+<symbols>
+<symbol name="USB-SHIELD">
+<wire x1="0" y1="7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-9.398" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-8.89" x2="2.54" y2="-8.128" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-5.334" x2="6.35" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-4.064" x2="6.35" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-2.794" x2="6.35" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-1.524" x2="6.35" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-0.254" x2="6.35" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="1.016" x2="6.35" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="2.286" x2="6.35" y2="3.048" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="3.556" x2="6.35" y2="4.318" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="4.826" x2="6.35" y2="5.588" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="6.096" x2="6.35" y2="6.858" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="7.366" x2="6.35" y2="8.128" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="8.382" x2="5.588" y2="8.382" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="8.382" x2="4.318" y2="8.382" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="8.382" x2="3.048" y2="8.382" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="8.382" x2="1.778" y2="8.382" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.112" x2="2.54" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="-5.842" x2="2.794" y2="-5.842" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="-5.842" x2="4.064" y2="-5.842" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-5.842" x2="5.334" y2="-5.842" width="0.1524" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
+<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="S1" x="0" y="-7.62" visible="off" length="short" direction="pas"/>
+<pin name="S2" x="0" y="-10.16" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PN87520-S" prefix="X">
+<gates>
+<gate name="G$1" symbol="USB-SHIELD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PN87520-S">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="S1" pad="S1"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15738,6 +15880,8 @@ Source: www.kingbright.com</description>
 <part name="C5" library="resistor" deviceset="C-EU" device="050-024X044" value="10n"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="USB_1" library="con-berg" deviceset="PN87520-S" device=""/>
+<part name="USB_2" library="con-berg" deviceset="PN87520-S" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15809,6 +15953,8 @@ Source: www.kingbright.com</description>
 <instance part="C5" gate="G$1" x="25.4" y="11.43"/>
 <instance part="R2" gate="G$1" x="-68.58" y="83.82" rot="R90"/>
 <instance part="R3" gate="G$1" x="-68.58" y="71.12" rot="R90"/>
+<instance part="USB_1" gate="G$1" x="187.96" y="62.23"/>
+<instance part="USB_2" gate="G$1" x="187.96" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -16037,8 +16183,17 @@ Source: www.kingbright.com</description>
 <pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="VOUT" gate="A" pin="1"/>
 <wire x1="148.59" y1="81.28" x2="163.83" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="163.83" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="163.83" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 <junction x="163.83" y="81.28"/>
+<wire x1="182.88" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="81.28" x2="182.88" y2="67.31" width="0.1524" layer="91"/>
+<pinref part="USB_1" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="67.31" x2="185.42" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="67.31" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="USB_2" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
+<junction x="182.88" y="67.31"/>
+<junction x="182.88" y="81.28"/>
 </segment>
 </net>
 <net name="VOUT_PREFUSE" class="0">
@@ -16138,15 +16293,21 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="VOUT" gate="A" pin="3"/>
 <wire x1="190.5" y1="76.2" x2="179.07" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="179.07" y1="76.2" x2="179.07" y2="57.15" width="0.1524" layer="91"/>
-<wire x1="163.83" y1="57.15" x2="179.07" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="76.2" x2="179.07" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="163.83" y1="59.69" x2="179.07" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="163.83" y1="71.12" x2="163.83" y2="57.15" width="0.1524" layer="91"/>
-<junction x="163.83" y="57.15"/>
+<wire x1="163.83" y1="71.12" x2="163.83" y2="59.69" width="0.1524" layer="91"/>
+<junction x="163.83" y="59.69"/>
 <pinref part="LM2596_BUCK_CONVERTER" gate="G$1" pin="OUT-"/>
 <wire x1="119.38" y1="71.12" x2="143.51" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="143.51" y1="71.12" x2="143.51" y2="57.15" width="0.1524" layer="91"/>
-<wire x1="143.51" y1="57.15" x2="163.83" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="143.51" y1="71.12" x2="143.51" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="143.51" y1="59.69" x2="163.83" y2="59.69" width="0.1524" layer="91"/>
+<pinref part="USB_1" gate="G$1" pin="4"/>
+<wire x1="185.42" y1="59.69" x2="179.07" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="179.07" y1="59.69" x2="179.07" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="USB_2" gate="G$1" pin="4"/>
+<wire x1="179.07" y1="35.56" x2="185.42" y2="35.56" width="0.1524" layer="91"/>
+<junction x="179.07" y="59.69"/>
 </segment>
 </net>
 <net name="A5" class="0">
