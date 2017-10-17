@@ -148,14 +148,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="137" x2="0" y2="-0.2" width="0" layer="20"/>
-<wire x1="0" y1="-0.2" x2="90" y2="-0.2" width="0" layer="20"/>
+<wire x1="0" y1="137" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="90" y2="0" width="0" layer="20"/>
 <hole x="87" y="134" drill="3.2"/>
 <hole x="87" y="3" drill="3.2"/>
 <hole x="3" y="3" drill="3.2"/>
 <hole x="3" y="134" drill="3.2"/>
 <wire x1="0" y1="137" x2="90" y2="137" width="0" layer="20"/>
-<wire x1="90" y1="-0.2" x2="90" y2="137" width="0" layer="20"/>
+<wire x1="90" y1="0" x2="90" y2="137" width="0" layer="20"/>
 <text x="2.92" y="115.95" size="1.778" layer="25" rot="R180">+</text>
 <wire x1="86" y1="129.11" x2="60.3" y2="129.11" width="0.15" layer="21" style="shortdash"/>
 <wire x1="60.3" y1="129.11" x2="60.3" y2="97.84" width="0.15" layer="21" style="shortdash"/>
@@ -1876,7 +1876,6 @@ supply here </text>
 <rectangle x1="43.9039" y1="115.3033" x2="45.8851" y2="115.3287" layer="21"/>
 <rectangle x1="44.1071" y1="115.3287" x2="45.7073" y2="115.3541" layer="21"/>
 <rectangle x1="44.8183" y1="115.3541" x2="45.0215" y2="115.3795" layer="21"/>
-<text x="0" y="-0.127" size="0.0508" layer="200" font="vector">C:/Users/kk/Downloads/path4501.bmp</text>
 <rectangle x1="25" y1="22" x2="65" y2="30" layer="22"/>
 <text x="58.674" y="32.131" size="1.778" layer="22" rot="MR0">This Le1 belongs to:</text>
 <text x="73.914" y="11.5062" size="1.778" layer="21">Le1 v1.0</text>
@@ -4140,21 +4139,21 @@ design rules under a new name.</description>
 <attribute name="NAME" x="60.75" y="123.5" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="71.6906" y="124.705" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="USB_1" library="con-berg" package="PN87520-S" value="PN87520-S" x="32.5" y="10.2" smashed="yes">
-<attribute name="MPN" value="" x="32.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="32.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="32.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="32.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="18" y="6" size="1.27" layer="25"/>
-<attribute name="VALUE" x="41.644" y="0.04" size="1.27" layer="27" rot="R90"/>
+<element name="USB_1" library="con-berg" package="PN87520-S" value="PN87520-S" x="32.5" y="10.4" smashed="yes">
+<attribute name="MPN" value="" x="32.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="32.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="32.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="32.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18" y="6.2" size="1.27" layer="25"/>
+<attribute name="VALUE" x="41.644" y="0.24" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="USB_2" library="con-berg" package="PN87520-S" value="PN87520-S" x="57.5" y="10.2" smashed="yes">
-<attribute name="MPN" value="" x="57.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="57.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="57.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="57.5" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="66.8" y="6" size="1.27" layer="25"/>
-<attribute name="VALUE" x="66.644" y="0.04" size="1.27" layer="27" rot="R90"/>
+<element name="USB_2" library="con-berg" package="PN87520-S" value="PN87520-S" x="57.5" y="10.4" smashed="yes">
+<attribute name="MPN" value="" x="57.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="57.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="57.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="57.5" y="10.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="66.8" y="6.2" size="1.27" layer="25"/>
+<attribute name="VALUE" x="66.644" y="0.24" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -4350,11 +4349,8 @@ design rules under a new name.</description>
 <contactref element="USB_1" pad="1"/>
 <contactref element="USB_2" pad="1"/>
 <wire x1="44.17" y1="16.8" x2="55.97" y2="16.8" width="2.1844" layer="1"/>
-<wire x1="44.17" y1="16.8" x2="30.38" y2="16.8" width="2.1844" layer="1"/>
-<wire x1="30.38" y1="16.8" x2="29.08" y2="15.5" width="2.1844" layer="1"/>
-<wire x1="29.08" y1="15.5" x2="29.08" y2="12.79" width="2.1844" layer="1"/>
-<wire x1="29.08" y1="12.79" x2="29" y2="12.91" width="2.1844" layer="1"/>
-<wire x1="54" y1="12.91" x2="54" y2="14.83" width="2.1844" layer="1"/>
+<wire x1="30.38" y1="16.8" x2="44.17" y2="16.8" width="2.1844" layer="1"/>
+<wire x1="54" y1="13.11" x2="54" y2="14.83" width="2.1844" layer="1"/>
 <wire x1="54" y1="14.83" x2="55.97" y2="16.8" width="2.1844" layer="1"/>
 <wire x1="42.46" y1="3" x2="42.46" y2="15.09" width="2.1844" layer="1"/>
 <wire x1="42.46" y1="15.09" x2="44.17" y2="16.8" width="2.1844" layer="1"/>
@@ -4363,6 +4359,8 @@ design rules under a new name.</description>
 <wire x1="74.5822" y1="26.0478" x2="79.33" y2="21.3" width="2.1844" layer="1"/>
 <wire x1="79.33" y1="21.3" x2="78.68" y2="21.3" width="2.1844" layer="1"/>
 <wire x1="78.68" y1="21.3" x2="74.18" y2="16.8" width="2.1844" layer="1"/>
+<wire x1="29" y1="13.11" x2="29" y2="15.42" width="2.1844" layer="1"/>
+<wire x1="29" y1="15.42" x2="30.38" y2="16.8" width="2.1844" layer="1"/>
 </signal>
 <signal name="VOUT_PREFUSE">
 <contactref element="F2" pad="1"/>
@@ -4445,7 +4443,7 @@ design rules under a new name.</description>
 <wire x1="66.964" y1="54.458" x2="66.964" y2="24.856" width="2.1844" layer="1"/>
 <contactref element="USB_1" pad="4"/>
 <contactref element="USB_2" pad="4"/>
-<wire x1="36" y1="12.91" x2="36" y2="13.46" width="2.1844" layer="16"/>
+<wire x1="36" y1="13.11" x2="36" y2="13.46" width="2.1844" layer="16"/>
 <wire x1="36" y1="13.46" x2="36.67" y2="14.13" width="2.1844" layer="16"/>
 <wire x1="36.67" y1="14.13" x2="47.11" y2="14.13" width="2.1844" layer="16"/>
 <wire x1="47.11" y1="14.13" x2="47.59" y2="13.65" width="2.1844" layer="16"/>
@@ -4454,8 +4452,8 @@ design rules under a new name.</description>
 <wire x1="69.17" y1="21.3" x2="62.48" y2="21.3" width="2.1844" layer="16"/>
 <wire x1="62.48" y1="21.3" x2="60.9" y2="19.72" width="2.1844" layer="16"/>
 <wire x1="60.9" y1="19.72" x2="60.9" y2="12.81" width="2.1844" layer="16"/>
-<wire x1="60.9" y1="12.81" x2="61" y2="12.91" width="2.1844" layer="16"/>
-<wire x1="61" y1="12.91" x2="61" y2="7.38" width="2.1844" layer="16"/>
+<wire x1="60.9" y1="12.81" x2="61" y2="13.11" width="2.1844" layer="16"/>
+<wire x1="61" y1="13.11" x2="61" y2="7.38" width="2.1844" layer="16"/>
 <wire x1="61" y1="7.38" x2="56.52" y2="2.9" width="2.1844" layer="16"/>
 <wire x1="56.52" y1="2.9" x2="47.64" y2="2.9" width="2.1844" layer="16"/>
 <wire x1="47.64" y1="2.9" x2="47.54" y2="3" width="2.1844" layer="16"/>
