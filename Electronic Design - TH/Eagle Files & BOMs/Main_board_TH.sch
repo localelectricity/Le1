@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15861,7 +15861,7 @@ Based on  the following source:
 <part name="Q1" library="Samson" deviceset="PMOSFET_P" device="TO220BV" value="IRF9520"/>
 <part name="Q2" library="Samson" deviceset="PMOSFET_P" device="TO220BV" value="IRF9520"/>
 <part name="F1" library="fuse" deviceset="FUSE" device="SH22,5A" value="FUSESH22,5A"/>
-<part name="LM2596_BUCK_CONVERTER" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
+<part name="LM2596" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="M1" library="diy-modules" deviceset="ARDUINO-NANO-3.0" device=""/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="0207/10" value="1k"/>
@@ -15934,7 +15934,7 @@ Based on  the following source:
 <attribute name="NAME" x="-96.52" y="90.297" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-96.52" y="93.599" size="1.778" layer="96"/>
 </instance>
-<instance part="LM2596_BUCK_CONVERTER" gate="G$1" x="101.6" y="76.2"/>
+<instance part="LM2596" gate="G$1" x="101.6" y="76.2"/>
 <instance part="SUPPLY9" gate="GND" x="-5.08" y="63.5"/>
 <instance part="M1" gate="G$1" x="-77.47" y="21.59"/>
 <instance part="R12" gate="G$1" x="11.43" y="57.15" rot="R90"/>
@@ -16075,7 +16075,7 @@ Based on  the following source:
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="88.9" x2="82.55" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="88.9" x2="82.55" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="LM2596_BUCK_CONVERTER" gate="G$1" pin="IN+"/>
+<pinref part="LM2596" gate="G$1" pin="IN+"/>
 <wire x1="82.55" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <junction x="68.58" y="88.9"/>
 <wire x1="-31.75" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
@@ -16199,7 +16199,7 @@ Based on  the following source:
 <net name="VOUT_PREFUSE" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
-<pinref part="LM2596_BUCK_CONVERTER" gate="G$1" pin="OUT+"/>
+<pinref part="LM2596" gate="G$1" pin="OUT+"/>
 <wire x1="119.38" y1="81.28" x2="138.43" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16221,7 +16221,7 @@ Based on  the following source:
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LM2596_BUCK_CONVERTER" gate="G$1" pin="IN-"/>
+<pinref part="LM2596" gate="G$1" pin="IN-"/>
 <wire x1="82.55" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="66.04" x2="82.55" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -16298,7 +16298,7 @@ Based on  the following source:
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="163.83" y1="71.12" x2="163.83" y2="59.69" width="0.1524" layer="91"/>
 <junction x="163.83" y="59.69"/>
-<pinref part="LM2596_BUCK_CONVERTER" gate="G$1" pin="OUT-"/>
+<pinref part="LM2596" gate="G$1" pin="OUT-"/>
 <wire x1="119.38" y1="71.12" x2="143.51" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="143.51" y1="71.12" x2="143.51" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="143.51" y1="59.69" x2="163.83" y2="59.69" width="0.1524" layer="91"/>
