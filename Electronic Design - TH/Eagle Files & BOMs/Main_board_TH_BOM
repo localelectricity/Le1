@@ -1,0 +1,44 @@
+Partlist exported from C:/Users/kk/Documents/GitHub/L.E.One/Electronic Design - TH/Eagle Files & BOMs/Main_board_TH.sch at 18/10/2017 11:02
+
+Part       Value                  Device                 Package                Description                                        MF MPN OC_FARNELL OC_NEWARK
+B1         GBU406                 GBU4                   GBU4S                  GENERAL INSTRUMENT RECTIFIER                                                  
+C1         220uF                  CPOL-EUE3.5-10         E3,5-10                POLARIZED CAPACITOR, European symbol                                          
+C2         10n                    C-EU050-024X044        C050-024X044           CAPACITOR, European symbol                                                    
+C3         10u                    CPOL-EUE2.5-7          E2,5-7                 POLARIZED CAPACITOR, European symbol                                          
+C4         10u                    CPOL-EUE2.5-7          E2,5-7                 POLARIZED CAPACITOR, European symbol                                          
+C5         10n                    C-EU050-024X044        C050-024X044           CAPACITOR, European symbol                                                    
+C6         10u                    CPOL-EUE2.5-7          E2,5-7                 POLARIZED CAPACITOR, European symbol                                          
+D1         5.1V                   ZPD                    DO35Z10                Z DIODE                                                                       
+D2         5.1V                   ZPD                    DO35Z10                Z DIODE                                                                       
+D3         5.1V                   ZPD                    DO35Z10                Z DIODE                                                                       
+D4         5.1V                   ZPD                    DO35Z10                Z DIODE                                                                       
+F1         FUSESH22,5A            FUSESH22,5A            SH22,5A                Fuse                                                      unknown    unknown  
+F2         FUSESH22,5A            FUSESH22,5A            SH22,5A                Fuse                                                      unknown    unknown  
+LM317      LM317                  LM317                  TO220BV                                                                                              
+LM358      LM358                  LM358                  DIL08                                                                                                
+LM2596     DC-DC-STEP-DOWN-LM2596 DC-DC-STEP-DOWN-LM2596 DC-DC-STEP-DOWN-LM2596 DC/DC Step-Down Regulator based on LM2596-ADJ chip                            
+M1         ARDUINO-NANO-3.0       ARDUINO-NANO-3.0       ARDUINO-NANO-3.0       Arduino Nano 3.0 and compatible devices                                       
+Q1         IRF9520                PMOSFET_PTO220BV       TO220BV                Power MOSFET P-Channel                                                        
+Q2         IRF9520                PMOSFET_PTO220BV       TO220BV                Power MOSFET P-Channel                                                        
+R1         S14K75                 S14K17                 S14K17                 VARISTOR                                                                      
+R2         10k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R3         10k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R4         100k                   R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R5         10k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R6         1k                     R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R7         220R                   R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R8         680R                   R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R9         2k                     R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R10        0R01                   R-EU_0207/15           0207/15                RESISTOR, European symbol                                                     
+R11        1k                     R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R12        1k                     R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R13        47k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R14        47k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R15        10k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+R16        10k                    R-EU_0207/10           0207/10                RESISTOR, European symbol                                                     
+SCREEN_OUT                        PINHD-1X4              1X04                   PIN HEADER                                                                    
+UC_PWR                            LED3MM                 LED3MM                 LED                                                                           
+USB_1      PN87520-S              PN87520-S              PN87520-S                                                                        unknown    unknown  
+USB_2      PN87520-S              PN87520-S              PN87520-S                                                                        unknown    unknown  
+VIN                               PINHD-1X3              1X03                   PIN HEADER                                                                    
+VOUT                              PINHD-1X3              1X03                   PIN HEADER                                                                    
