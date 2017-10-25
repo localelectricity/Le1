@@ -4131,11 +4131,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="25.3" y="34" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="24.341" y="34.073" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R2" library="resistor" package="0207/10" value="10k" x="69.43" y="126.61" smashed="yes">
+<element name="R2" library="resistor" package="0207/10" value="13k" x="69.43" y="126.61" smashed="yes">
 <attribute name="NAME" x="60.75" y="126.5" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="67.1694" y="125.975" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R3" library="resistor" package="0207/10" value="10k" x="69.43" y="124.07" smashed="yes" rot="R180">
+<element name="R3" library="resistor" package="0207/10" value="100k" x="69.43" y="124.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.75" y="123.5" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="71.6906" y="124.705" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>

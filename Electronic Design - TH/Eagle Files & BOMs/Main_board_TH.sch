@@ -15878,8 +15878,8 @@ Based on  the following source:
 <part name="C3" library="resistor" deviceset="CPOL-EU" device="E2.5-7" value="10u"/>
 <part name="D3" library="diode" deviceset="ZPD" device="" value="5.1V"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="050-024X044" value="10n"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="10k"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="13k"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="USB_1" library="con-berg" deviceset="PN87520-S" device=""/>
 <part name="USB_2" library="con-berg" deviceset="PN87520-S" device=""/>
 </parts>
