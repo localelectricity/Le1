@@ -177,15 +177,15 @@ void loop() {
 
 // converting voltage and curret reading to decimal values
 
-  Vin = Vaverage*0.104;
-  Iin_raw = (Iaverage-Ioffset)*0.02642*0.25;
-  Iin = (2.5247*Iin_raw*Iin_raw)+ (0.9098*Iin_raw) + 0.012;
+//  Vin = Vaverage*0.104;
+  //Iin_raw = (Iaverage-Ioffset)*0.02642*0.25;
+  //Iin = (2.5247*Iin_raw*Iin_raw)+ (0.9098*Iin_raw) + 0.012;
 
-  Pin = Vin*Iin;
+  //Pin = Vin*Iin;
 //
-//  Vin = analogRead(4);//*0.039;
-//  Iin = analogRead(5);//-512)*0.029326;
-//  Pin = Vin*Iin;
+  Vin = analogRead(7)*0.0528;
+  Iin = (analogRead(6)-468)*0.01;
+  Pin = Vin*Iin;
 
   x1=otherHandsize*cos(((Vin*9)+135)*0.0175);
   y1=otherHandsize*sin(((Vin*9)+135)*0.0175);

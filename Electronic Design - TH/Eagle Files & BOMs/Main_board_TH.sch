@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16310,20 +16310,6 @@ Based on  the following source:
 <junction x="179.07" y="59.69"/>
 </segment>
 </net>
-<net name="A5" class="0">
-<segment>
-<pinref part="SCREEN_OUT" gate="A" pin="1"/>
-<pinref part="M1" gate="G$1" pin="A5"/>
-<wire x1="-20.32" y1="24.13" x2="-59.69" y2="24.13" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="A4" class="0">
-<segment>
-<pinref part="M1" gate="G$1" pin="A4"/>
-<pinref part="SCREEN_OUT" gate="A" pin="2"/>
-<wire x1="-59.69" y1="21.59" x2="-20.32" y2="21.59" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -16407,6 +16393,26 @@ Based on  the following source:
 <wire x1="-62.23" y1="83.82" x2="-62.23" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="-62.23" y1="77.47" x2="-68.58" y2="77.47" width="0.1524" layer="91"/>
 <junction x="-68.58" y="77.47"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="A5"/>
+<wire x1="-59.69" y1="24.13" x2="-35.56" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="24.13" x2="-35.56" y2="21.59" width="0.1524" layer="91"/>
+<pinref part="SCREEN_OUT" gate="A" pin="2"/>
+<wire x1="-35.56" y1="21.59" x2="-20.32" y2="21.59" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="A4"/>
+<wire x1="-59.69" y1="21.59" x2="-38.1" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="21.59" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="22.86" x2="-25.4" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="22.86" x2="-25.4" y2="24.13" width="0.1524" layer="91"/>
+<pinref part="SCREEN_OUT" gate="A" pin="1"/>
+<wire x1="-25.4" y1="24.13" x2="-20.32" y2="24.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
