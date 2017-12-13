@@ -15882,6 +15882,9 @@ Based on  the following source:
 <part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="USB_1" library="con-berg" deviceset="PN87520-S" device=""/>
 <part name="USB_2" library="con-berg" deviceset="PN87520-S" device=""/>
+<part name="UC_TEST" library="led" deviceset="LED" device="3MM"/>
+<part name="R17" library="resistor" deviceset="R-EU_" device="0207/10" value="2k"/>
+<part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15955,6 +15958,12 @@ Based on  the following source:
 <instance part="R3" gate="G$1" x="-68.58" y="71.12" rot="R90"/>
 <instance part="USB_1" gate="G$1" x="187.96" y="62.23"/>
 <instance part="USB_2" gate="G$1" x="187.96" y="38.1"/>
+<instance part="UC_TEST" gate="G$1" x="-106.68" y="-7.62" smashed="yes">
+<attribute name="NAME" x="-103.124" y="-16.002" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-100.965" y="-12.192" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R17" gate="G$1" x="-106.68" y="2.54" rot="R90"/>
+<instance part="SUPPLY2" gate="GND" x="-106.68" y="-17.78"/>
 </instances>
 <busses>
 </busses>
@@ -16058,6 +16067,11 @@ Based on  the following source:
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="-59.69" y1="36.83" x2="-34.29" y2="36.83" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="36.83" x2="-34.29" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="UC_TEST" gate="G$1" pin="C"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<wire x1="-106.68" y1="-12.7" x2="-106.68" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_PROTECTED" class="0">
@@ -16413,6 +16427,21 @@ Based on  the following source:
 <wire x1="-25.4" y1="22.86" x2="-25.4" y2="24.13" width="0.1524" layer="91"/>
 <pinref part="SCREEN_OUT" gate="A" pin="1"/>
 <wire x1="-25.4" y1="24.13" x2="-20.32" y2="24.13" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D10"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="-97.79" y1="8.89" x2="-106.68" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="8.89" x2="-106.68" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="UC_TEST" gate="G$1" pin="A"/>
+<wire x1="-106.68" y1="-2.54" x2="-106.68" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
