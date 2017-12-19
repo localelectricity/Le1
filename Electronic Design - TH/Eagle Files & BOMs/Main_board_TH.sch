@@ -16636,9 +16636,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C5" library="resistor" deviceset="C-EU" device="050-024X044" value="10n"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="13k"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="100k"/>
-<part name="USB_1" library="con-berg" deviceset="PN87520-S" device=""/>
-<part name="USB_2" library="con-berg" deviceset="PN87520-S" device=""/>
-<part name="UC_TEST" library="led" deviceset="LED" device="3MM"/>
+<part name="12.1_USB_1" library="con-berg" deviceset="PN87520-S" device=""/>
+<part name="12.2_USB_2" library="con-berg" deviceset="PN87520-S" device=""/>
+<part name="TEST_LED" library="led" deviceset="LED" device="3MM"/>
 <part name="R17" library="resistor" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="JP1" library="jumper" deviceset="JP1E" device=""/>
@@ -16724,9 +16724,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C5" gate="G$1" x="25.4" y="2.54"/>
 <instance part="R2" gate="G$1" x="-68.58" y="83.82" rot="R90"/>
 <instance part="R3" gate="G$1" x="-68.58" y="71.12" rot="R90"/>
-<instance part="USB_1" gate="G$1" x="187.96" y="62.23"/>
-<instance part="USB_2" gate="G$1" x="187.96" y="38.1"/>
-<instance part="UC_TEST" gate="G$1" x="-106.68" y="-7.62" smashed="yes">
+<instance part="12.1_USB_1" gate="G$1" x="187.96" y="62.23"/>
+<instance part="12.2_USB_2" gate="G$1" x="187.96" y="38.1"/>
+<instance part="TEST_LED" gate="G$1" x="-106.68" y="-7.62" smashed="yes">
 <attribute name="NAME" x="-103.124" y="-16.002" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-100.965" y="-12.192" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -16858,7 +16858,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-34.29" y1="36.83" x2="-34.29" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="UC_TEST" gate="G$1" pin="C"/>
+<pinref part="TEST_LED" gate="G$1" pin="C"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="-106.68" y1="-12.7" x2="-106.68" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
@@ -16901,6 +16901,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="V_MAIN" gate="G$1" pin="TP"/>
 <wire x1="-10.16" y1="88.9" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
 <junction x="68.58" y="88.9"/>
+<junction x="-31.75" y="88.9"/>
 </segment>
 </net>
 <net name="VIN_UNPROTECTED" class="0">
@@ -16994,10 +16995,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="163.83" y="81.28"/>
 <wire x1="182.88" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="81.28" x2="182.88" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="USB_1" gate="G$1" pin="1"/>
+<pinref part="12.1_USB_1" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="67.31" x2="185.42" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="67.31" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="USB_2" gate="G$1" pin="1"/>
+<pinref part="12.2_USB_2" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
 <junction x="182.88" y="67.31"/>
 <junction x="182.88" y="81.28"/>
@@ -17106,10 +17107,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="119.38" y1="71.12" x2="143.51" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="143.51" y1="71.12" x2="143.51" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="143.51" y1="59.69" x2="163.83" y2="59.69" width="0.1524" layer="91"/>
-<pinref part="USB_1" gate="G$1" pin="4"/>
+<pinref part="12.1_USB_1" gate="G$1" pin="4"/>
 <wire x1="185.42" y1="59.69" x2="179.07" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="179.07" y1="59.69" x2="179.07" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="USB_2" gate="G$1" pin="4"/>
+<pinref part="12.2_USB_2" gate="G$1" pin="4"/>
 <wire x1="179.07" y1="35.56" x2="185.42" y2="35.56" width="0.1524" layer="91"/>
 <junction x="179.07" y="59.69"/>
 </segment>
@@ -17225,7 +17226,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$14" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="UC_TEST" gate="G$1" pin="A"/>
+<pinref part="TEST_LED" gate="G$1" pin="A"/>
 <wire x1="-106.68" y1="-2.54" x2="-106.68" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
