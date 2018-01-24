@@ -1872,7 +1872,7 @@ supply here </text>
 <rectangle x1="47.9039" y1="125.3033" x2="49.8851" y2="125.3287" layer="21"/>
 <rectangle x1="48.1071" y1="125.3287" x2="49.7073" y2="125.3541" layer="21"/>
 <rectangle x1="48.8183" y1="125.3541" x2="49.0215" y2="125.3795" layer="21"/>
-<text x="77.914" y="7.3152" size="1.778" layer="21" font="vector">Le1 v1.1</text>
+<text x="77.914" y="7.3152" size="1.778" layer="21" font="vector">Le1 v1.2</text>
 <text x="93.673" y="99.5964" size="1.778" layer="21" font="vector" align="center">IN</text>
 <text x="94.562" y="60.3434" size="1.778" layer="21" font="vector" align="center">OUT</text>
 <wire x1="30.8" y1="139.11" x2="3" y2="139.11" width="0.15" layer="21" style="dashdot"/>
