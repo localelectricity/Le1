@@ -17301,6 +17301,26 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-97.79,31.75,M1,GND.1,GND,,,"/>
+<approved hash="204,1,-59.69,39.37,M1,VIN,,,,"/>
+<approved hash="104,1,-59.69,36.83,M1,GND.2,GND,,,"/>
+<approved hash="104,1,-59.69,31.75,M1,5V,+5V,,,"/>
+<approved hash="204,1,-59.69,6.35,M1,3V3,,,,"/>
+<approved hash="106,1,-59.69,11.43,A0,,,,,"/>
+<approved hash="106,1,-59.69,13.97,A1,,,,,"/>
+<approved hash="106,1,-59.69,16.51,A2,,,,,"/>
+<approved hash="106,1,-59.69,19.05,A3,,,,,"/>
+<approved hash="113,1,-127.237,90.0388,VIN,,,,,"/>
+<approved hash="113,1,190.737,80.1412,VOUT,,,,,"/>
+<approved hash="113,1,-17.9717,21.7212,SCREEN_OUT,,,,,"/>
+<approved hash="113,1,146.372,31.75,UC_PWR,,,,,"/>
+<approved hash="113,1,-106.358,-8.89,TEST_LED,,,,,"/>
+<approved hash="113,1,-2.15053,75.2631,JP1,,,,,"/>
+<approved hash="113,1,128.659,82.8831,JP4,,,,,"/>
+<approved hash="113,1,123.579,49.8631,JP2,,,,,"/>
+<approved hash="113,1,22.5269,10.5495,JP3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
