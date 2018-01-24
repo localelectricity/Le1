@@ -16653,6 +16653,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND2" library="testpad" deviceset="TP" device="PAD1-13" value="TPPAD1-13"/>
 <part name="JP4" library="jumper" deviceset="JP1E" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
+<part name="V_OUT" library="testpad" deviceset="TP" device="PAD1-13" value="TPPAD1-13"/>
+<part name="ADJ" library="testpad" deviceset="TP" device="PAD1-13" value="TPPAD1-13"/>
+<part name="GND3" library="testpad" deviceset="TP" device="PAD1-13" value="TPPAD1-13"/>
 </parts>
 <sheets>
 <sheet>
@@ -16744,6 +16747,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND2" gate="G$1" x="44.45" y="-2.54"/>
 <instance part="JP4" gate="A" x="21.59" y="10.16" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="-113.03" y="26.67"/>
+<instance part="V_OUT" gate="G$1" x="115.57" y="58.42"/>
+<instance part="ADJ" gate="G$1" x="120.65" y="20.32"/>
+<instance part="GND3" gate="G$1" x="116.84" y="11.43"/>
 </instances>
 <busses>
 </busses>
@@ -16808,6 +16814,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="76.2" y1="38.1" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="15.24" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
 <junction x="86.36" y="15.24"/>
+<pinref part="GND3" gate="G$1" pin="TP"/>
+<wire x1="116.84" y1="8.89" x2="105.41" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="105.41" y1="8.89" x2="105.41" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="105.41" y1="15.24" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
@@ -16982,6 +16992,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R8" gate="G$1" pin="2"/>
 <junction x="96.52" y="27.94"/>
 <pinref part="LM317" gate="G$1" pin="ADJ"/>
+<wire x1="115.57" y1="27.94" x2="115.57" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="ADJ" gate="G$1" pin="TP"/>
+<wire x1="115.57" y1="17.78" x2="120.65" y2="17.78" width="0.1524" layer="91"/>
+<junction x="115.57" y="27.94"/>
 </segment>
 </net>
 <net name="VOUT_FINAL" class="0">
@@ -17266,6 +17280,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="JP3" gate="A" pin="1"/>
 <wire x1="115.57" y1="48.26" x2="123.19" y2="48.26" width="0.1524" layer="91"/>
 <junction x="115.57" y="48.26"/>
+<pinref part="V_OUT" gate="G$1" pin="TP"/>
+<wire x1="115.57" y1="55.88" x2="115.57" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I_IN_PRE" class="0">
