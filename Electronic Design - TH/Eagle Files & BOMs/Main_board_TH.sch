@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16693,7 +16693,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="resistor" deviceset="CPOL-EU" device="E2.5-7" value="10u"/>
 <part name="D3" library="diode" deviceset="ZPD" device="" value="5.1V"/>
-<part name="C5" library="resistor" deviceset="C-EU" device="050-024X044" value="10n"/>
+<part name="C5" library="resistor" deviceset="CPOL-EU" device="E2-4" value="1u"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="13k"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="12.1_USB_1" library="con-berg" deviceset="PN87520-S" device=""/>
@@ -16906,7 +16906,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <wire x1="38.1" y1="11.43" x2="34.29" y2="11.43" width="0.1524" layer="91"/>
 <wire x1="34.29" y1="11.43" x2="34.29" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="34.29" y1="-5.08" x2="34.29" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-2.54" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-5.08" x2="34.29" y2="-5.08" width="0.1524" layer="91"/>
@@ -17229,7 +17229,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="25.4" y1="10.16" x2="25.4" y2="6.35" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="6.35" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 <junction x="25.4" y="6.35"/>

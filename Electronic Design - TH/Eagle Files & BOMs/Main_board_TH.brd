@@ -3432,6 +3432,26 @@ grid 2.54 mm, diameter 7 mm</description>
 <text x="3.048" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 </package>
+<package name="E2-4">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2 mm, diameter 4 mm</description>
+<wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.016" x2="-0.254" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.524" x2="-0.254" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="1.27" x2="-0.508" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="1.524" x2="0.889" y2="1.524" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.159" width="0.1524" layer="21"/>
+<pad name="-" x="1.016" y="0" drill="0.8128" diameter="1.27" shape="octagon"/>
+<pad name="+" x="-1.016" y="0" drill="0.8128" diameter="1.27"/>
+<text x="2.159" y="0.889" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.159" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
+</package>
 <package name="C050-024X044">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 5 mm, outline 2.4 x 4.4 mm</description>
@@ -4314,9 +4334,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="86.88538125" y="115.1974125" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="86.8582" y="113.21" size="1.27" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="C2" library="resistor" package="C050-024X044" value="10n" x="30.5" y="39.28" smashed="yes">
-<attribute name="NAME" x="28.9952" y="44.2144" size="1.27" layer="25" font="vector"/>
-<attribute name="VALUE" x="28.9045125" y="42.164671875" size="1.27" layer="27" font="vector"/>
+<element name="C2" library="resistor" package="C050-024X044" value="10n" x="30.5" y="41" smashed="yes">
+<attribute name="NAME" x="28.9952" y="45.9344" size="1.27" layer="25" font="vector"/>
+<attribute name="VALUE" x="28.9045125" y="43.884671875" size="1.27" layer="27" font="vector"/>
 </element>
 <element name="R4" library="resistor" package="0207/10" value="100k" x="79.93" y="131.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="70.95" y="130.5" size="1.27" layer="25" font="vector" ratio="10"/>
@@ -4448,9 +4468,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="39.904" y="51.08" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="47.1966" y="52.9224" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C5" library="resistor" package="C050-024X044" value="10n" x="30.5" y="36.74" smashed="yes">
-<attribute name="NAME" x="29.2238" y="34.1778" size="1.27" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="29.1284" y="32.2188" size="1.27" layer="27" font="vector" ratio="10"/>
+<element name="C5" library="resistor" package="E2-4" value="1u" x="30.5" y="36.74" smashed="yes">
+<attribute name="NAME" x="29.2238" y="33" size="1.27" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="29.1284" y="31" size="1.27" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R2" library="resistor" package="0207/10" value="13k" x="77.38" y="136.61" smashed="yes">
 <attribute name="NAME" x="68.7" y="136.5" size="1.27" layer="25" font="vector" ratio="10"/>
@@ -4540,7 +4560,7 @@ design rules under a new name.</description>
 <contactref element="C1" pad="-"/>
 <contactref element="R8" pad="1"/>
 <contactref element="R6" pad="1"/>
-<via x="33.75569375" y="41.7802" extent="1-16" drill="0.6" shape="square"/>
+<via x="33.45089375" y="43.7106" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="D2" pad="A"/>
 <via x="62.36529375" y="134.3878" extent="1-16" drill="0.6" shape="square"/>
 <via x="85.34589375" y="134.448" extent="1-16" drill="0.6" shape="square"/>
@@ -4556,7 +4576,7 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <contactref element="C3" pad="-"/>
 <contactref element="UC_PWR" pad="K"/>
-<contactref element="C5" pad="2"/>
+<contactref element="C5" pad="-"/>
 <contactref element="R3" pad="1"/>
 <contactref element="D3" pad="A"/>
 <via x="63.26509375" y="118.1762" extent="1-16" drill="0.6" shape="square"/>
@@ -4856,33 +4876,32 @@ design rules under a new name.</description>
 <contactref element="D1" pad="C"/>
 <contactref element="C2" pad="1"/>
 <wire x1="43.92" y1="92.6836" x2="43.92" y2="89.5" width="2.1844" layer="1"/>
-<wire x1="27.96" y1="39.28" x2="24.52" y2="39.28" width="0.8128" layer="1"/>
 <wire x1="43.92" y1="89.5" x2="32.7056" y2="89.5" width="0.8128" layer="1"/>
 <wire x1="32.7056" y1="89.5" x2="32.6898" y2="89.4842" width="0.8128" layer="1"/>
 <wire x1="32.6898" y1="89.4842" x2="31.6484" y2="89.4842" width="0.8128" layer="1"/>
 <wire x1="31.6484" y1="89.4842" x2="30.861" y2="88.6968" width="0.8128" layer="1"/>
 <wire x1="30.861" y1="88.6968" x2="30.861" y2="49.8094" width="0.8128" layer="1"/>
 <wire x1="30.861" y1="49.8094" x2="27.9654" y2="46.9138" width="0.8128" layer="1"/>
-<wire x1="27.9654" y1="46.9138" x2="27.9654" y2="39.2854" width="0.8128" layer="1"/>
-<wire x1="27.9654" y1="39.2854" x2="27.96" y2="39.28" width="0.8128" layer="1"/>
+<wire x1="27.9654" y1="46.9138" x2="27.9654" y2="41.0054" width="0.8128" layer="1"/>
+<wire x1="27.96" y1="41" x2="27.9654" y2="41.0054" width="0.8128" layer="1"/>
+<wire x1="24.52" y1="39.28" x2="26.24" y2="39.28" width="0.8128" layer="1"/>
+<wire x1="26.24" y1="39.28" x2="27.96" y2="41" width="0.8128" layer="1"/>
 </signal>
 <signal name="I_IN">
 <contactref element="M1" pad="J2.6"/>
 <contactref element="D3" pad="C"/>
-<contactref element="C5" pad="1"/>
+<contactref element="C5" pad="+"/>
 <contactref element="JP3" pad="1"/>
 <wire x1="43.92" y1="51.5" x2="47.6904" y2="55.2704" width="0.8128" layer="1"/>
 <wire x1="43.92" y1="51.5" x2="43.92" y2="48.6444" width="0.8128" layer="1"/>
 <wire x1="43.92" y1="48.6444" x2="42.7228" y2="47.4472" width="0.8128" layer="1"/>
 <wire x1="42.7228" y1="47.4472" x2="32.766" y2="47.4472" width="0.8128" layer="1"/>
 <wire x1="32.766" y1="47.4472" x2="30.988" y2="45.6692" width="0.8128" layer="1"/>
-<wire x1="30.988" y1="45.6692" x2="30.988" y2="38.4556" width="0.8128" layer="1"/>
-<wire x1="30.988" y1="38.4556" x2="29.3878" y2="36.8554" width="0.8128" layer="1"/>
-<wire x1="29.3878" y1="36.8554" x2="28.0754" y2="36.8554" width="0.8128" layer="1"/>
-<wire x1="28.0754" y1="36.8554" x2="27.96" y2="36.74" width="0.8128" layer="1"/>
-<wire x1="27.96" y1="36.74" x2="24.52" y2="36.74" width="0.8128" layer="1"/>
 <wire x1="47.6904" y1="55.2704" x2="54.8132" y2="55.2704" width="0.8128" layer="1"/>
 <wire x1="54.8132" y1="55.2704" x2="54.8386" y2="55.245" width="0.8128" layer="1"/>
+<wire x1="30.988" y1="38.244" x2="29.484" y2="36.74" width="0.8128" layer="1"/>
+<wire x1="30.988" y1="45.6692" x2="30.988" y2="38.244" width="0.8128" layer="1"/>
+<wire x1="29.484" y1="36.74" x2="24.52" y2="36.74" width="0.8128" layer="1"/>
 </signal>
 <signal name="VIN">
 <contactref element="M1" pad="J2.1"/>
@@ -5020,14 +5039,14 @@ design rules under a new name.</description>
 <approved hash="4,16,c059205ca757c8af"/>
 <approved hash="4,16,b64b8b0d2d3bb3f5"/>
 <approved hash="4,16,40f7975692cee6e7"/>
-<approved hash="4,1,98056d0cd13b7bbe"/>
 <approved hash="4,1,c05d3069ef6240a7"/>
+<approved hash="4,1,98056d0cd13b7bbe"/>
 <approved hash="4,1,2e5f030dcd3b83e8"/>
 <approved hash="4,1,c8ea0f56a2ce06f3"/>
 <approved hash="4,16,98056d0cd13b7bbe"/>
 <approved hash="4,16,c05d3069ef6240a7"/>
-<approved hash="4,16,2e5f030dcd3b83e8"/>
 <approved hash="4,16,c8ea0f56a2ce06f3"/>
+<approved hash="4,16,2e5f030dcd3b83e8"/>
 </errors>
 </board>
 </drawing>
