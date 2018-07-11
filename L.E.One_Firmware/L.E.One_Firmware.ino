@@ -13,8 +13,8 @@ Adafruit_SSD1306 display(OLED_RESET);
 #error("Height incorrect, please fix Adafruit_SSD1306.h!");
 #endif
 
-  const int voltagePin = 0;
-  const int currentPin = 1;
+  const int voltagePin = 7;
+  const int currentPin = 6;
   float Vin=0;                     // input voltage
   float Iin=0;                     // input current
   float Iin_raw=0;                 // untuned current input
@@ -184,7 +184,7 @@ void loop() {
   //Pin = Vin*Iin;
 //
   Vin = analogRead(7)*0.0528;
-  Iin = (analogRead(6)-468)*0.01;
+  Iin = analogRead(6);
   Pin = Vin*Iin;
 
   x1=otherHandsize*cos(((Vin*9)+135)*0.0175);
