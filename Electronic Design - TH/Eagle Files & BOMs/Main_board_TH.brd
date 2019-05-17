@@ -2151,6 +2151,9 @@ protection</text>
 <text x="33.0708" y="24.9682" size="1.778" layer="21" font="vector" rot="R90" align="center">10. Screen</text>
 <text x="81.1" y="121.4882" size="1.778" layer="22" font="vector" rot="MR0" align="center">protection</text>
 <text x="16.9" y="88.2" size="1.778" layer="22" font="vector" rot="MR0" align="center">regulator</text>
+<dimension x1="49" y1="3" x2="43.8912" y2="1.9558" x3="46.4456" y3="-2.9972" textsize="1.778" layer="51" dtype="horizontal"/>
+<dimension x1="49" y1="3" x2="28.9814" y2="1.2954" x3="38.9907" y3="-7.3914" textsize="1.778" layer="51" dtype="horizontal"/>
+<dimension x1="49" y1="3" x2="36.5" y2="10.4" x3="42.75" y3="-12.5476" textsize="1.778" layer="51" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="rectifier">
