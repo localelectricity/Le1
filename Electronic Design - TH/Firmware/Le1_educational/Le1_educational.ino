@@ -50,7 +50,7 @@ void setup() {
 
 void loop() {
 
-  Vin = analogRead(voltagePin);
+  Vin = analogRead(voltagePin)*0.00489*11; // Reading analog pin 7 for voltage and converting to find the correct voltage
   Iin = (analogRead(currentPin)-462)*0.01; 
   if (Iin<0){
     Iin=0;
