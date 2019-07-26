@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-07-26T14:45:34Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Main_board_TH"
+        },
+        "Owner": "Samson SAHMLAND BOWLING <samson.fsb@gmail.com>",
+        "Size": {
+            "X": 98,
+            "Y": 147
+        }
+    }
+}
