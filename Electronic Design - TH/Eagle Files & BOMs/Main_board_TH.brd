@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1877,7 +1877,7 @@ supply here </text>
 <rectangle x1="47.9039" y1="125.3033" x2="49.8851" y2="125.3287" layer="21"/>
 <rectangle x1="48.1071" y1="125.3287" x2="49.7073" y2="125.3541" layer="21"/>
 <rectangle x1="48.8183" y1="125.3541" x2="49.0215" y2="125.3795" layer="21"/>
-<text x="77.914" y="7.3152" size="1.778" layer="21" font="vector">Le1 v1.3</text>
+<text x="77.914" y="7.3152" size="1.778" layer="21" font="vector">Le1 v1.4</text>
 <text x="93.673" y="99.5964" size="1.778" layer="21" font="vector" align="center">IN</text>
 <text x="94.562" y="60.3434" size="1.778" layer="21" font="vector" align="center">OUT</text>
 <wire x1="30.8" y1="139.11" x2="3" y2="139.11" width="0.15" layer="21" style="dashdot"/>
@@ -2159,6 +2159,10 @@ protection</text>
 <dimension x1="49" y1="3" x2="43.8912" y2="1.9558" x3="46.4456" y3="-2.9972" textsize="1.778" layer="51" dtype="horizontal"/>
 <dimension x1="49" y1="3" x2="28.9814" y2="1.2954" x3="38.9907" y3="-7.3914" textsize="1.778" layer="51" dtype="horizontal"/>
 <dimension x1="49" y1="3" x2="36.5" y2="10.4" x3="42.75" y3="-12.5476" textsize="1.778" layer="51" dtype="horizontal"/>
+<text x="1.0668" y="32.4104" size="1.778" layer="25">+</text>
+<text x="1.397" y="38.1508" size="1.778" layer="25">-</text>
+<text x="9.2202" y="67.5386" size="1.778" layer="25">+</text>
+<text x="9.6266" y="63.7032" size="1.778" layer="25">-</text>
 </plain>
 <libraries>
 <library name="rectifier">
@@ -4507,7 +4511,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="61.5" y="10.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TEST_LED" library="led" package="LED3MM" value="" x="4.0386" y="36.0294" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.6576" y="37.9344" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="4.6228" y="39.2552" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="5.6896" y="37.9344" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R17" library="resistor" package="0207/10" value="2k" x="3.9878" y="24.0416" smashed="yes" rot="R270">
@@ -4585,6 +4589,16 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="4.805" y="85.77" size="1" layer="37"/>
 <attribute name="VALUE" x="6.075" y="88.31" size="0.0254" layer="27"/>
 </element>
+<element name="OUT+" library="testpad" package="P1-13" value="TPPAD1-13" x="92.7862" y="52.5018" smashed="yes">
+<attribute name="NAME" x="91.7702" y="53.7718" size="1.27" layer="25" ratio="10"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="92.7862" y="52.5018" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="92.7862" y="52.324" size="0.0254" layer="27"/>
+</element>
+<element name="OUT-" library="testpad" package="P1-13" value="TPPAD1-13" x="69.2912" y="52.5018" smashed="yes">
+<attribute name="NAME" x="68.2752" y="53.7718" size="1.27" layer="25" ratio="10"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="69.2912" y="52.5018" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="69.2912" y="52.5018" size="0.0254" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -4658,7 +4672,7 @@ design rules under a new name.</description>
 <via x="90.29069375" y="32.0702" extent="1-16" drill="0.6" shape="square"/>
 <via x="95.14209375" y="9.3118" extent="1-16" drill="0.6" shape="square"/>
 <via x="13.02389375" y="42.3572" extent="1-16" drill="0.6" shape="square"/>
-<via x="5.35309375" y="40.1982" extent="1-16" drill="0.6" shape="square"/>
+<via x="6.80089375" y="39.3854" extent="1-16" drill="0.6" shape="square"/>
 <via x="12.82069375" y="39.0298" extent="1-16" drill="0.6" shape="square"/>
 <via x="27.37489375" y="49.52" extent="1-16" drill="0.6" shape="square"/>
 <via x="17.06249375" y="22.596" extent="1-16" drill="0.6" shape="square"/>
@@ -4893,7 +4907,8 @@ design rules under a new name.</description>
 <wire x1="51.54" y1="3" x2="51.59" y2="13.05" width="2.1844" layer="16"/>
 <wire x1="65" y1="17.38" x2="65" y2="13.11" width="2.1844" layer="16"/>
 <wire x1="51.64" y1="12.9" x2="51.54" y2="3" width="2.1844" layer="16"/>
-<wire x1="72.464" y1="60.188" x2="72.464" y2="25.106" width="2.1844" layer="16"/>
+<wire x1="72.464" y1="60.188" x2="72.464" y2="52.4256" width="2.1844" layer="16"/>
+<wire x1="72.464" y1="52.4256" x2="72.464" y2="25.106" width="2.1844" layer="16"/>
 <wire x1="72.464" y1="25.106" x2="76.27" y2="21.3" width="2.1844" layer="16"/>
 <wire x1="72.464" y1="25.106" x2="72.464" y2="24.844" width="2.1844" layer="16"/>
 <wire x1="72.464" y1="24.844" x2="65" y2="17.38" width="2.1844" layer="16"/>
@@ -4901,6 +4916,9 @@ design rules under a new name.</description>
 <wire x1="65" y1="15.1116" x2="63.246" y2="16.8656" width="2.1844" layer="16"/>
 <wire x1="63.246" y1="16.8656" x2="54.3744" y2="16.8656" width="2.1844" layer="16"/>
 <wire x1="54.3744" y1="16.8656" x2="51.59" y2="19.65" width="2.1844" layer="16"/>
+<contactref element="OUT-" pad="TP"/>
+<wire x1="69.2912" y1="52.5018" x2="72.3878" y2="52.5018" width="2.1844" layer="16"/>
+<wire x1="72.3878" y1="52.5018" x2="72.464" y2="52.4256" width="2.1844" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="R9" pad="1"/>
@@ -4998,8 +5016,12 @@ design rules under a new name.</description>
 <signal name="N$15">
 <contactref element="JP4" pad="1"/>
 <contactref element="LM2596" pad="OUT+"/>
-<wire x1="89.736" y1="60.188" x2="89.736" y2="48.2324" width="2.1844" layer="1"/>
+<wire x1="89.736" y1="60.188" x2="89.736" y2="52.451" width="2.1844" layer="1"/>
+<wire x1="89.736" y1="52.451" x2="89.736" y2="48.2324" width="2.1844" layer="1"/>
 <wire x1="89.736" y1="48.2324" x2="89.6874" y2="48.1838" width="2.1844" layer="1"/>
+<contactref element="OUT+" pad="TP"/>
+<wire x1="92.7862" y1="52.5018" x2="92.7354" y2="52.451" width="2.1844" layer="1"/>
+<wire x1="92.7354" y1="52.451" x2="89.736" y2="52.451" width="2.1844" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="JP4" pad="2"/>
